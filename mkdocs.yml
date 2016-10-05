@@ -1,4 +1,17 @@
 site_name: My Docs
 pages:
 - Home: index.md
+- Platforms:
+   - Shopify: platforms/shopify.md
+   - WooCommerce: platforms/woocommerce.md
+   - Magento:
+      - 1x: platforms/magento/v1x.md
+      - 2x: platforms/magento/v2x.md
+      - OneStep: platforms/magento/onestep.md
+- Custom Integration:
+   - How it works: custom-integration/how-it-works.md
+   - Gateway Signing Mechanism: custom-integration/gateway-signing-mechanism.md
+   - API reference:
+      - Request values: custom-integration/api-reference/request-values.md
+      - Response values: custom-integration/api-reference/response-values.md
 theme: readthedocs
