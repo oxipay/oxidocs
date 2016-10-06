@@ -19,15 +19,14 @@ The oxidocs repository has all the documentation in markdown format. There is al
 
 To update the documentation the following steps need to be done.
 
-* add the the following alias to your global .gitconfig:
+* To make the instructions easy; we've added some useful configurations in the local .gitconfig. To get this in your git include path, run the following:
 
-        submodule-trackbranch = "!git submodule foreach -q --recursive 'branch=\"$(git config -f $toplevel/.gitmodules submodule.$name.branch)\"; git checkout $branch'"
-        upsub = !git submodule update --init --recursive --remote && git submodule-trackbranch
+        git config --local include.path ../.gitconfig
 * clone this repository and initialise the submodule:
 
         git clone git@github.com:oxipay/oxidocs.git
         cd oxidocs
-        git upsub
+        git init-submodule
 * Make your changes to the documentation
 * Build the documentation:
 
