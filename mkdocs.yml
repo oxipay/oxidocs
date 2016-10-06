@@ -1,4 +1,4 @@
-site_name: My Docs
+site_name: Oxipay Documentation
 pages:
 - Home: index.md
 - Platforms:
@@ -14,4 +14,6 @@ pages:
    - API reference:
       - Request values: custom-integration/api-reference/request-values.md
       - Response values: custom-integration/api-reference/response-values.md
+- Marketing and Advertising Guidelines:
+      - Banner Adverts: guidelines/banner-adverts.md
 theme: readthedocs
