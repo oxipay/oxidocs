@@ -4,14 +4,14 @@ This document outlines the steps needed to install the OxiPay plugin so that it 
 
 > **NOTE** at the time of writing this document; OxiPay was developed and tested using WooCommerce version 2.6.4. Issues might be encountered if using an earlier version. If you do encounter issues, then please contact us to resolve them as soon as possible.
 
-## Installing OxiPay
+## Installing the Plugin
 
 You can install the OxiPay Plugin using one of two ways: **automatically** via the WordPress Admin page, or **manually** by copying files to the WordPress server (to be performed by a web developer).
 
 > **NOTE** Before proceeding with either option, please ensure that the WooCommerce plugin is properly installed and activated on you WordPress site.
 
 ### Automatic Installation via WordPress Admin
-1. Navigate to the URL below and then click on the Download repository link; this will download a zip file; rename that .zip file to OxiPay.zip 
+1 - Navigate to the URL below and then click on the Download repository link; this will download a zip file; rename that .zip file to OxiPay.zip 
 URL: [https://bitbucket.org/oxipay/oxipay-wordpress/downloads?tab=downloads](https://bitbucket.org/oxipay/oxipay-wordpress/downloads?tab=downloads)
 
 2 - Log into the WordPress Admin page.
@@ -38,7 +38,7 @@ URL: https://bitbucket.org/oxipay/oxipay-wordpress/downloads?tab=downloads
 
 2 - Unzip the file and then copy the un-zipped folder into your WordPress server at the following path: [wordpress-folder]/wp-content/plugins
 
-## Configuring OxiPay
+## Configuring the Plugin
 1 - Log into the WordPress Admin page.
 
 2 - Hover over Plugins on the left sidebar. From the submenu that appears, click on Installed Plugins.
@@ -51,7 +51,7 @@ URL: https://bitbucket.org/oxipay/oxipay-wordpress/downloads?tab=downloads
 Next is a description of the various settings that you will find on this page.
 
 
-## Description of various OxiPay Configuration Settings
+## Description of various OxiPay Plugin Settings
 **Enable**: Ticking it enables OxiPay as a payment option, otherwise it is disabled.
 
 **Test Mode**: Enables OxiPay Test Mode. Enable when instructed by Certegy to diagnose and troubleshoot possible issues with OxiPay.
@@ -69,7 +69,7 @@ Next is a description of the various settings that you will find on this page.
 
 Once you have finished updating the various OxiPay settings, click on the Save changes button at the bottom of the page. This will then display a message at the top of the page indicating that the saving was successful.
 
-##OxiPay Updates##
+##Updates to OxiPay##
 
 Updates to OxiPay might be made in the future to either accommodate newer internet technologies that we deem essential to integrate into our OxiPay plugin or newer versions of WooCommerce or WordPress. Our recommendation is that the existing OxiPay plugin is first deactivated and then deleted.
 
