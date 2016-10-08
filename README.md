@@ -26,18 +26,12 @@ To update the documentation the following steps need to be done.
 
         git clone git@github.com:oxipay/oxidocs.git
         cd oxidocs
-        git init-submodule
+        git sync-build
 * Make your changes to the documentation
 * Build the documentation:
 
         mkdocs build
 * commit and push both the oxipay.github.io and oxidocs repositories:
 
-        cd site
-        git add --all
-        git commit -m "message"
-        git push
-        cd ..
-        git add --all
-        git commit -m "message"
-        git push
+        git add-commit-all "message"
+        git push-all
