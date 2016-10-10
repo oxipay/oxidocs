@@ -12,7 +12,8 @@ You can install the OxiPay Plugin using one of two ways: **automatically** via t
 
 ### Automatic Installation via WordPress Admin
 1 - Navigate to the URL below and then click on the Download repository link; this will download a zip file; rename that .zip file to OxiPay.zip 
-URL: [https://bitbucket.org/oxipay/oxipay-wordpress/downloads?tab=downloads](https://bitbucket.org/oxipay/oxipay-wordpress/downloads?tab=downloads)
+
+URL: [https://github.com/oxipay/oxipay-woocommerce/releases](https://github.com/oxipay/oxipay-woocommerce/releases)
 
 2 - Log into the WordPress Admin page.
 
@@ -51,7 +52,6 @@ URL: [https://bitbucket.org/oxipay/oxipay-wordpress/downloads?tab=downloads](htt
 URL: https://bitbucket.org/oxipay/oxipay-wordpress/downloads?tab=downloads
 
 2 - Unzip the file and then copy the un-zipped folder into your WordPress server at the following path: [wordpress-folder]/wp-content/plugins
-
 
 ## Configuring the Plugin
 1 - Log into the WordPress Admin page.
