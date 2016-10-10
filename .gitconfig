@@ -1,3 +1,19 @@
 [alias]
-   smtb = "!git submodule foreach -q --recursive 'branch=\"$(git config -f $toplevel/.gitmodules submodule.$name.branch)\"; git checkout $branch'"
-   init-submodule = !git submodule update --init --recursive --remote && git smtb
+   sync-build = "!f() { \
+      git submodule update --init --recursive --remote; \
+      git submodule foreach -q --recursive 'branch=\"$(git config -f $toplevel/.gitmodules submodule.$name.branch)\"; git checkout $branch'; \
+   }; f"
+   add-commit-all = "!f() { \
+      if [ -u $1 ]; then \
+         echo "commit message required"; \
+      else \
+         git submodule foreach 'git add --all && git commit -m '"$1'"'; \
+         git add --all && git commit -m $1; \
+         echo "success"; \
+      fi; \
+   }; f"
+   push-all = "!f() { \
+         git submodule foreach 'git push'; \
+         git push; \
+         echo "success"; \
+    }; f"
