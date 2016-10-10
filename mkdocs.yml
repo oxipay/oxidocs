@@ -14,7 +14,7 @@ pages:
    - API reference:
       - Request values: custom-integration/api-reference/request-values.md
       - Response values: custom-integration/api-reference/response-values.md
-- Marketing and Advertising:
+- Marketing & Advertising:
       - Introduction: guidelines/banner-adverts.md
       - Installing the Simple Way: guidelines/installing-simple.md
       - Installing the Complex Way: guidelines/installing-complex.md
