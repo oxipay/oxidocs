@@ -18,6 +18,8 @@ URL: [https://bitbucket.org/oxipay/oxipay-wordpress/downloads?tab=downloads](htt
 
 3 - Hover over Plugins on the left sidebar; then from the submenu that appears, click on Add New
 
+![1.png](/img/platforms/woocommerce/1.png)
+
 4 - This will display the Add Plugins page; click on the Upload Plugin button.
 
 5 - This will display an area on the same page where you can chose the file you want to upload.
