@@ -7,13 +7,23 @@ While we do provide two methods to display Oxipay on your website. We do highly 
 
 ##Contents
 <ul>
-    <li><a href="/guidelines/installing-simple"><h3>Installing the Simple Way (Some HTML/CSS Knowledge)</h3></a></li>
-    <li><a href="/guidelines/installing-complex"><h3>Installing the Complex Way (Intimediate HTML/CSS and Javascript Knowledge)</h3></a></li>
-    <li><a href="/guidelines/modal-page"><h3>Javascript Modal Page</h3></a></li>
-    <li><a href="/guidelines/banners"><h3>List of available Banners</h3></a></li>
-    <li><a href="/guidelines/banners"><h3>List of available Tags</h3></a></li>
+    <li><a href="/guidelines/installing-simple"><h4>Installing the Simple Way (Some HTML/CSS Knowledge)</h4></a></li>
+    <li><a href="/guidelines/installing-complex"><h4>Installing the Complex Way (Intimediate HTML/CSS and Javascript Knowledge)</h4></a></li>
+    <li><a href="/guidelines/modal-page"><h4>Javascript Modal Page</h4></a></li>
+    <li><a href="/guidelines/banners"><h4>List of available Banners</h4></a></li>
+    <li><a href="/guidelines/banners"><h4>List of available Tags</h4></a></li>
     
 </ul>
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Note</h3>
+  </div>
+  <div class="panel-body">
+    Please note that this documentation is still a work in process
+  </div>
+</div>
+
 <small>We strive to write good documentation for our merchants. If there is a way we can improve our documentation, please let us know through <a href="mailto:support@oxipay.com.au?Subject=Oxipay Documentation">support@oxipay.com.au</a></small>
 <br>
 <br>

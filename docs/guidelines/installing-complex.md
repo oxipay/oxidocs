@@ -1,5 +1,16 @@
 
 ## The Complex Way (Intimediate HTML/CSS and Javascript Knowledge)
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Note</h3>
+  </div>
+  <div class="panel-body">
+    Please note that this documentation is still a work in process
+  </div>
+</div>
+
+
 If you have some development knowledge or have access to a developer we recommened that you chose this way. 
 Choose one or more of the following banners and place the HTML listed in the your prefered spot on your website.
 Link to or copy our CSS to your website on the page that the banner will be displayed.
@@ -11,7 +22,7 @@ Download, Intergrate or Link to our external provide CSS.
 
 Option 1
 ```
-<link rel="stylesheet" href="https://advertising.oxipay.com.au/css/banners.css" type="text/css">
+<link rel="stylesheet" href="https://images.oxipay.com.au/content/styles/banners.css" type="text/css">
 ```
 Option 2
 <br>Download and install our CSS on your website.
@@ -21,11 +32,10 @@ Option 2
 Option 3
 <br>Install the parts off CSS relivant to the Banners/Tags you are using.
 ```
-/** Installs our font **/
 @font-face {
     font-family: 'AvenirLTStd-Medium';
-    src: url("AvenirLTStd-Medium.eot");
-    src: local("☺"), url("AvenirLTStd-Medium.woff") format("woff"), url("AvenirLTStd-Medium.ttf") format("truetype"), url("AvenirLTStd-Medium.svg") format("svg");
+    src: url("http://images.oxipay.com.au/Content/fonts/AvenirLTStd-Medium.eot");
+    src: local("☺"), url("http://images.oxipay.com.au/Content/fonts/AvenirLTStd-Medium.woff") format("woff"), url("http://images.oxipay.com.au/Content/fonts/AvenirLTStd-Medium.ttf") format("truetype"), url("http://images.oxipay.com.au/Content/fonts/AvenirLTStd-Medium.svg") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -125,4 +135,24 @@ Option 3
         margin: 0 15px 15px;
     }
 }
+
+/** Tag 01 **/
+#oxipay-tag-01 {
+    width: 100%;
+    background: #252525;
+    color: white;
+    margin-top: 20px;
+    padding: 10px;
+    display: block;
+    overflow: hidden;
+}
+#oxipay-tag-01 img {
+    height: 20px;
+    margin-bottom: -6px;
+}
+#oxipay-tag-01 span {
+    float: right;
+    color: white;
+}
+
 ```
