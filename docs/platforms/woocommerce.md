@@ -2,13 +2,27 @@
 
 This document outlines the steps needed to install the OxiPay plugin so that it integrates with WooCommerce on your WordPress site.
 
-> **NOTE** at the time of writing this document; OxiPay was developed and tested using WooCommerce version 2.6.4. Issues might be encountered if using an earlier version. If you do encounter issues, then please contact us to resolve them as soon as possible.
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Note</h3>
+  </div>
+  <div class="panel-body">
+    At the time of writing this document; OxiPay was developed and tested using WooCommerce version 2.6.4. Issues might be encountered if using an earlier version. If you do encounter issues, then please contact us to resolve them as soon as possible.
+  </div>
+</div>
 
 ## Installing the Plugin
 
 You can install the OxiPay Plugin using one of two ways: **automatically** via the WordPress Admin page, or **manually** by copying files to the WordPress server (to be performed by a web developer).
 
-> **NOTE** Before proceeding with either option, please ensure that the WooCommerce plugin is properly installed and activated on you WordPress site.
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Note</h3>
+  </div>
+  <div class="panel-body">
+    Before proceeding with either option, please ensure that the WooCommerce plugin is properly installed and activated on you WordPress site.
+  </div>
+</div>
 
 ### Automatic Installation via WordPress Admin
 1 - Navigate to the URL below and then click on the Download repository link; this will download a zip file; rename that .zip file to OxiPay.zip 
@@ -110,7 +124,14 @@ Once you have finished updating the various OxiPay settings, click on the ![19.p
 
 Updates to OxiPay might be made in the future to either accommodate newer internet technologies that we deem essential to integrate into our OxiPay plugin or newer versions of WooCommerce or WordPress. Our recommendation is that the existing OxiPay plugin is first deactivated and then deleted.
 
-> **NOTE** Deleting the existing plugin ensures that code and any associated files from the previous version of the plugin do not negatively interfere with the newer version of the plugin.
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Note</h3>
+  </div>
+  <div class="panel-body">
+    Deleting the existing plugin ensures that code and any associated files from the previous version of the plugin do not negatively interfere with the newer version of the plugin.
+  </div>
+</div>
 
 ###To delete the existing OxiPay plugin###
 
