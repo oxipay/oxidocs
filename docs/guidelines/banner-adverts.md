@@ -9,7 +9,6 @@ While we do provide two methods to display Oxipay on your website. We do highly 
 <ul>
     <li><a href="/guidelines/installing-simple"><h4>Installing the Simple Way (Some HTML/CSS Knowledge)</h4></a></li>
     <li><a href="/guidelines/installing-complex"><h4>Installing the Complex Way (Intimediate HTML/CSS and Javascript Knowledge)</h4></a></li>
-    <li><a href="/guidelines/modal-page"><h4>Javascript Modal Page</h4></a></li>
     <li><a href="/guidelines/banners"><h4>List of available Banners</h4></a></li>
     <li><a href="/guidelines/banners"><h4>List of available Tags</h4></a></li>
     

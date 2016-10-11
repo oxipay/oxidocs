@@ -1,18 +1,18 @@
-#Setting up OxiPay on your Shopify Store#
-This document outlines the steps needed to integrate the OxiPay Payment Gateway into your Shopify store. The OxiPay Payment Gateway enables customers of your store to purchase items using their credit cards on an interest free payment plan.
+#Setting up Oxipay on your Shopify Store#
+This document outlines the steps needed to integrate the Oxipay Payment Gateway into your Shopify store. The Oxipay Payment Gateway enables customers of your store to purchase items using their credit cards on an interest free payment plan.
 
-Please note that Oxipay makes use of Shopify’s API architecture to enable the processing payments via the OxiPay Payment Gateway. This API architecture significantly simplifies the configuration process and eliminates the need to install additional plugins or third party software packages.
+Please note that Oxipay makes use of Shopify’s API architecture to enable the processing payments via the Oxipay Payment Gateway. This API architecture significantly simplifies the configuration process and eliminates the need to install additional plugins or third party software packages.
 
 <div class="panel panel-primary">
   <div class="panel-heading">
     <h3 class="panel-title">Note</h3>
   </div>
   <div class="panel-body">
-    Beware of sites or email messages that prompt you to install a plugin or a software package to enable OxiPay as a payment gateway on your Shopify site. OxiPay can be configured without the need for plugins or additional software.
+    Beware of sites or email messages that prompt you to install a plugin or a software package to enable Oxipay as a payment gateway on your Shopify site. Oxipay can be configured without the need for plugins or additional software.
   </div>
 </div>
 
-#Integrating OxiPay#
+#Integrating Oxipay#
 1 – First log into the admin area of your Shopify store, then click on the Settings item at the bottom left.
 
 ![1.png](/img/platforms/shopify/1.png)
@@ -30,14 +30,14 @@ Please note that Oxipay makes use of Shopify’s API architecture to enable the 
   </div>
 </div>
 
-3 – From within the Alternative Payments section; open up the ‘Select additional payment method’ drop-down menu and select OxiPay.
+3 – From within the Alternative Payments section; open up the ‘Select additional payment method’ drop-down menu and select Oxipay.
 
 <div class="panel panel-primary">
   <div class="panel-heading">
     <h3 class="panel-title">Note</h3>
   </div>
   <div class="panel-body">
-    The OxiPay option might or might not be visible. If you cannot see Oxipay, proceed to the next step (Step 7). Otherwise, if you can see Oxipay, you can skip to Step 10.
+    The Oxipay option might or might not be visible. If you cannot see Oxipay, proceed to the next step (Step 7). Otherwise, if you can see Oxipay, you can skip to Step 10.
   </div>
 </div>
 
@@ -103,7 +103,7 @@ Below is a description of some of the other settings that might appear on the Ox
     </tr>
     <tr>
       <td>Merchant Number</td>
-      <td>This is the unique number that identifies you as a merchant to the OxiPay Payment Gateway.</td>
+      <td>This is the unique number that identifies you as a merchant to the Oxipay Payment Gateway.</td>
     </tr>
     <tr>
       <td>Encryption Key</td>
@@ -111,7 +111,7 @@ Below is a description of some of the other settings that might appear on the Ox
     </tr>
     <tr>
       <td>Cards Accepted</td>
-      <td>This is where you can specify that types of Credit Cards you want to accept when customers checkout using OxiPay.</td>
+      <td>This is where you can specify that types of Credit Cards you want to accept when customers checkout using Oxipay.</td>
     </tr>
   </tbody>
 </table>
@@ -121,20 +121,20 @@ Below is a description of some of the other settings that might appear on the Ox
     <h3 class="panel-title">Note</h3>
   </div>
   <div class="panel-body">
-    At the time of writing this document, OxiPay has been configured to only accepts Visa and/or MasterCard credit cards. Please contact us to discuss your options in processing OxiPay transaction using other credit card types.
+    At the time of writing this document, Oxipay has been configured to only accepts Visa and/or MasterCard credit cards. Please contact us to discuss your options in processing Oxipay transaction using other credit card types.
   </div>
 </div>
  
-##OxiPay Updates##
-Updates to OxiPay might be made in the future to either accommodate newer internet technologies that we deem essential to integrate into our OxiPay Payment Gateway or to accommodate new or deprecated functionality within the Shopify API.
+##Oxipay Updates##
+Updates to Oxipay might be made in the future to either accommodate newer internet technologies that we deem essential to integrate into our Oxipay Payment Gateway or to accommodate new or deprecated functionality within the Shopify API.
  
-If an update is released to OxiPay – such as additional accepted credit card types for instance - and you notice that these changes haven’t been reflected on your Shopify store, we recommend that you de-activate and then re-active OxiPay again. If the issue persists, please contact us to resolve it as soon as possible.
+If an update is released to Oxipay – such as additional accepted credit card types for instance - and you notice that these changes haven’t been reflected on your Shopify store, we recommend that you de-activate and then re-active Oxipay again. If the issue persists, please contact us to resolve it as soon as possible.
  
 <div class="panel panel-primary">
   <div class="panel-heading">
     <h3 class="panel-title">Note</h3>
   </div>
   <div class="panel-body">
-    De-activating and then re-activating the plugin ensures that your Shopify site detects new configuration changes in the OxiPay Payment Gateway straight away.
+    De-activating and then re-activating the plugin ensures that your Shopify site detects new configuration changes in the Oxipay Payment Gateway straight away.
   </div>
 </div>

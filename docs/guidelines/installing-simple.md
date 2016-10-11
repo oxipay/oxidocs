@@ -1,4 +1,5 @@
-# The Simple Way (Some HTML/CSS Knowledge)
+# The Simple Way
+(Some HTML/CSS Knowledge)
 <div class="panel panel-primary">
   <div class="panel-heading">
     <h3 class="panel-title">Note</h3>
@@ -28,11 +29,11 @@ Alternativly we have provided a small snippit of html that you can use which is 
 The snippit will look something like the following.
 ```
 /** Example HTML **/
-<a id="oxipay-banner-01" target="_blank" href="https://oxipay.com.au/works"> <img alt="Oxipay" src="https://images.oxipay.com.au/content/image/oxipay-banner-01" /> </a>
+<a id="oxipay-banner-01" target="_blank" href="https://oxipay.com.au/works"> <img alt="Oxipay" src="http://images.oxipay.com.au/content/image/oxipay-banner-01" /> </a>
 ```
 #### CSS
 There is no CSS styling required if you choose the Simple Way.
-However sometime the defualt stylying might not look that great. We recommend that you do apply some basic styling for the best presentation possible.
+However sometime the defualt styling might not look that great. We recommend that you do apply some basic styling for the best presentation possible.
 ```
 **** Example CSS ****
 
