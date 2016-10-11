@@ -13,6 +13,8 @@ This document outlines the steps needed to install the Oxipay plugin so that it 
 
 ## Installing the Plugin
 
+<div class="alert alert-info" role="alert">You will need your <b>Merchant ID</b> and an <b>Encryption Key</b> handy before continuing with the installation procdure.</div>
+
 You can install the Oxipay Plugin using one of two ways: **automatically** via the WordPress Admin page, or **manually** by copying files to the WordPress server (to be performed by a web developer).
 
 <div class="panel panel-primary">
