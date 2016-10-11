@@ -1,4 +1,5 @@
-#Setting up Oxipay on your Shopify Store#
+# Setting up Oxipay on a Shopify Store
+
 This document outlines the steps needed to integrate the Oxipay Payment Gateway into your Shopify store. The Oxipay Payment Gateway enables customers of your store to purchase items using their credit cards on an interest free payment plan.
 
 Please note that Oxipay makes use of Shopify’s API architecture to enable the processing payments via the Oxipay Payment Gateway. This API architecture significantly simplifies the configuration process and eliminates the need to install additional plugins or third party software packages.
@@ -13,6 +14,9 @@ Please note that Oxipay makes use of Shopify’s API architecture to enable the 
 </div>
 
 #Integrating Oxipay#
+
+<div class="alert alert-info" role="alert">You will need your <b>Merchant ID</b> and an <b>Encryption Key</b> handy before continuing with the installation procdure.</div>
+
 1 – First log into the admin area of your Shopify store, then click on the Settings item at the bottom left.
 
 ![1.png](/img/platforms/shopify/1.png)
