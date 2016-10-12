@@ -19,4 +19,4 @@ pages:
       - Installing the Simple Way: guidelines/installing-simple.md
       - Installing the Complex Way: guidelines/installing-complex.md
       - Banners and Tags list: guidelines/banners.md
-theme: united
+theme: flatly
