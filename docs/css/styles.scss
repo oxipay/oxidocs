@@ -1,0 +1,76 @@
+$primary-color: #e68821;
+$background: #252525;
+body {
+    color: #555;
+    a {
+        color: $primary-color;
+        &:hover {
+            color: darken($primary-color, 10%);
+        }
+    }
+    .navbar-default {
+    background-color: $background;
+    border-color: $background;
+    border: none;
+    .navbar-brand {
+        text-indent: -9990px;
+        background-image: url("/img/oxidocs.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin: 10px 0 !important;
+        padding: 0;
+        height: 40px;
+    }
+        .navbar-nav {
+            li {
+                a {
+                    &:hover,  &:focus{
+                    color: $primary-color;
+                    }
+                }
+                & .dropdown-menu {
+                        background-color: lighten($background,10%);
+                        border-top: none;
+                        li {
+                            a {
+                            background-color:lighten($background,10%);
+                            &:hover {
+                               color: $primary-color; 
+                            }
+                            } 
+                        }
+                        
+                }
+            }
+            .active, .open {
+                a, a:hover, a:focus {
+                    color: #fff;
+                    background-color:$primary-color;
+                }
+                & .dropdown-menu {
+                        background-color: lighten($background,10%);
+                        border-top: none;
+                        li {
+                            a {
+                            background-color:lighten($background,10%);
+                            &:hover {
+                               color: $primary-color; 
+                            }
+                            } 
+                        }
+                        
+                }
+                }
+            }
+        }
+        .btn-primary {
+            color: #fff;
+            background-color: $primary-color;
+            border-color: $primary-color;
+            &:hover, &:active, &:focus {
+                background-color: darken($primary-color, 10%);
+                border-color: darken($primary-color, 10%);
+            }
+        }
+    }
+

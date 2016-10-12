@@ -1,7 +1,7 @@
 
 # The Complex Way
 (Intimediate HTML/CSS and JQuery Knowledge)
-
+This method describes the Complex Way to add the banners that are found <a href="/guidelines/banners">here.</a>
 <div class="panel panel-primary">
   <div class="panel-heading">
     <h3 class="panel-title">Note</h3>
@@ -12,8 +12,8 @@
 </div>
 
 
-If you have some development knowledge or have access to a developer we recommened that you chose this way. 
-Choose one or more of the following banners and place the HTML listed in the your prefered spot on your website.
+If you have some development knowledge or have access to a developer we recommend that you chose this way. 
+Choose one or more of the following banners and place the HTML listed in the your preferd spot on your website.
 Link to or copy our CSS to your website on the page that the banner will be displayed.
 
 ## Installing the CSS
@@ -27,8 +27,8 @@ Choose the banners or tag that you want to install from our list <a href="/guide
 ## Installing the Modal Page
 
 
-When a user clicks on the banner rather than link away from your website we recommend having a modal to appear that explains the benifits of our service.
-In this page we will explain two methods to achieving this and a third for users who want to dispay it in their own custom modal.
+When a user clicks on the banner rather than link away from your website we recommend having a modal to appear that explains the benefits of our service.
+In this page we will explain two methods to achieving this and a third for users who want to display it in their own custom modal.
 
 
 **Desired outcome:**
@@ -39,10 +39,10 @@ In this page we will explain two methods to achieving this and a third for users
 </a>
 
 ###Option 1 - JQuery Modal:
-Our modal of choice is called JQuery Model and this option is writen to work with it.
+Our modal of choice is called JQuery Model and this option is written to work with it.
 To install JQuery Model please follow the instruction laid out in here <a href="https://github.com/kylefox/jquery-modal">JQuery Modal Installation Guide</a>.
 
-After you have installed JQuery Modal copy the below HTML into your websites HTML on the pages you'd like it to be used. We recommened adding to your websites main layout page just before the closing ```</body>``` tag.
+After you have installed JQuery Modal copy the below HTML into your websites HTML on the pages you'd like it to be used. We recommend adding to your websites main layout page just before the closing ```</body>``` tag.
 <br><br>**Jquery Modal HTML**
 ```
  <div id="oxipay-modal" style="display:none;">
