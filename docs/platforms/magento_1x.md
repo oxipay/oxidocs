@@ -142,3 +142,4 @@ Files:
 7 – This will display the plugin and the message Oxipay was successfully deleted will be displayed at the bottom of the page.
 
 8 – You can now proceed with installing the new version of the plugin using either the manual installation procedure or automatically via WordPress as per the instructions in the Initial Installation section of this document. The URL to use to download the new version of the plugin will be provided to you by Certegy.
+ 
