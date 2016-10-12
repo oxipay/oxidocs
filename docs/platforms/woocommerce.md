@@ -1,5 +1,5 @@
 # Setting up Oxipay on a WooCommerce Store
-
+## Introduction
 This document outlines the steps needed to install the Oxipay plugin on your WooCommerce store that runs on WordPress. Please note that the procedure outlined in this article was performed using Internet Explorer and so you might encounter a slightly different workflow or user interface if using another browser such as FireFox or Chrome.
 
 <div class="panel panel-primary">
@@ -11,7 +11,7 @@ This document outlines the steps needed to install the Oxipay plugin on your Woo
   </div>
 </div>
 
-## Installing the Plugin
+## Installing Oxipay
 
 <div class="alert alert-info" role="alert">You will need your <b>Merchant ID</b> and an <b>Encryption Key</b> handy before continuing with the installation procdure.</div>
 
@@ -26,7 +26,10 @@ You can install the Oxipay Plugin using one of two ways: **automatically** via t
   </div>
 </div>
 
-### Automatic Installation via WordPress Admin
+## Automatic Installation
+
+This section outlines how you can install the Oxipay plugin automatically using the **WordPress Admin**. We recommend that you follow this procedure since it does not require extensive knowledge of how the WooCommerce platform is configured internally and minimises any chance of errors.
+
 1 - Navigate to the URL below and then click on the Download repository link; this will download a zip file; rename that .zip file to Oxipay.zip 
 
 <div class="alert alert-info" role="alert"><b>https://github.com/oxipay/oxipay-woocommerce/releases</b></div>
@@ -63,7 +66,7 @@ You can install the Oxipay Plugin using one of two ways: **automatically** via t
 
 ![7.png](/img/platforms/woocommerce/7.png)
 
-### Manual Installation
+## Manual Installation
 
 <div class="panel panel-danger">
   <div class="panel-heading">
@@ -80,7 +83,7 @@ You can install the Oxipay Plugin using one of two ways: **automatically** via t
 
 2 - Unzip the file and then copy the un-zipped folder into your WordPress server at the following path: [wordpress-folder]/wp-content/plugins
 
-## Configuring the Plugin
+## Configuring Oxipay
 1 - Log into the WordPress Admin page.
 
 2 - Hover over Plugins on the left sidebar. From the submenu that appears, click on Installed Plugins.
@@ -115,15 +118,28 @@ Underneath is a description of the various Oxipay settings that you can configur
 ![12.png](/img/platforms/woocommerce/12.png)
 
 <table class="table">
+<thead></thead>
   <tbody>
     <tr>
-      <td><b>Title and Description</b></td>
-      <td>This controls the title and description of Oxipay that users see when selecting Oxipay as a payment option. Default values are provided which you can override.</td>
+      <td><b>Title</b></td>
+      <td>This controls the title of Oxipay that users see when selecting Oxipay as a payment option. Default value is provided which you can override.</td>
     </tr>
   </tbody>
 </table>
 
 ![14.png](/img/platforms/woocommerce/14.png)
+
+<table>
+<thead></thead>
+  <tbody>
+    <tr>
+      <td><b>Description</b></td>
+      <td>This controls the description of Oxipay that users see when selecting Oxipay as a payment option. Default value is provided which you can override.</td>
+    </tr>
+  </tbody>
+</table>
+
+![27.png](/img/platforms/woocommerce/27.png)
 
 <table class="table">
   <tbody>
@@ -208,32 +224,32 @@ Updates to Oxipay might be made in the future to either accommodate newer intern
   </div>
 </div>
 
-###To delete the existing Oxipay plugin###
+##De-activating and Deleting Oxipay##
 
-1 – Log into WordPress Admin.
+1 – Log into **WordPress Admin**.
 
-2 – Click on Plugins on the left sidebar; then click on Installed Plugins.
+2 – Click on **Plugins** on the left sidebar; then click on **Installed Plugins**.
 
-3 – Scroll to the bottom, bring Oxipay into focus and then click on the Deactive link.
+3 – Scroll to the bottom, bring Oxipay into focus and then click on the **Deactive** link associated with it.
 
 ![21.png](/img/platforms/woocommerce/21.png)
 
-4 – If successful, the message Plugin deactivated will be displayed at the top of the page.
+4 – If successful, the message** Plugin deactivated** will be displayed at the top of the page.
 
 ![22.png](/img/platforms/woocommerce/22.png)
 
-5 – Scroll to the bottom of the page again. This time around, click on the Delete link underneath Oxipay.
+5 – Scroll to the bottom of the page again. This time around, click on the **Delete** link underneath Oxipay.
 
 ![23.png](/img/platforms/woocommerce/23.png)
 
-6 – This will display a browser pop-up asking you to confirm if you want to proceed with deleting Oxipay.
+6 – This will display a page asking you to confirm if you want to proceed with deleting the Oxipay Plugin. Click on **Yes, delete these files**.
 
 ![24.png](/img/platforms/woocommerce/24.png)
 
-7 – This will display the plugin and the message Oxipay was successfully deleted will be displayed at the bottom of the page.
+7 – If successful, you will be re-directed back to the **Plugins** page with the message **The selected plugin has been deleted.** at the top.
 
 ![26.png](/img/platforms/woocommerce/26.png)
 
-8 – You can now proceed with installing the new version of the plugin using either the manual installation procedure or automatically via WordPress as per the instructions in the Initial Installation section of this document. The URL to use is the same as that one included in both the Automatic and Manual installation sections of this article.
+8 – You can now installing the new version of the plugin using either the **automatic** or **manual** procedures outlined above.
 
 
