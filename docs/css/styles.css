@@ -2,7 +2,7 @@ body {
   color: #555; }
   body a {
     color: #e68821; }
-    body a:hover {
+    body a:hover, body a:focus, body a:visited {
       color: #bf6e15; }
   body .navbar-default {
     background-color: #252525;
@@ -15,7 +15,8 @@ body {
       background-position: center center;
       margin: 10px 0 !important;
       padding: 0;
-      height: 40px; }
+      height: 40px;
+      width: 130px; }
     body .navbar-default .navbar-nav li a:hover, body .navbar-default .navbar-nav li a:focus {
       color: #e68821; }
     body .navbar-default .navbar-nav li .dropdown-menu {

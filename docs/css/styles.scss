@@ -4,7 +4,7 @@ body {
     color: #555;
     a {
         color: $primary-color;
-        &:hover {
+        &:hover, &:focus, &:visited {
             color: darken($primary-color, 10%);
         }
     }
@@ -20,6 +20,7 @@ body {
         margin: 10px 0 !important;
         padding: 0;
         height: 40px;
+        width: 130px; 
     }
         .navbar-nav {
             li {
