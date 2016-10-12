@@ -7,12 +7,12 @@ This method describes the Complex Way to add the banners that are found <a href=
     <h3 class="panel-title">Note</h3>
   </div>
   <div class="panel-body">
-    Please note that this documentation is still a work in process
+    Please note that this documentation is still a work in progress
   </div>
 </div>
 
 
-If you have some development knowledge or have access to a developer we recommend that you chose this way. 
+If you have some development knowledge or have access to a developer we recommend that you choose this way. 
 Choose one or more of the following banners and place the HTML listed in the your preferd spot on your website.
 Link to or copy our CSS to your website on the page that the banner will be displayed.
 

@@ -1,6 +1,6 @@
 # Adding an Oxipay Banner
 
-Placing an Oxipay Banner on your website is a good way to introduce Oxipay to your users and drive more sales through your store. So we have created this documentation to give you a selection of banners to chose from and display on your websites. 
+Placing an Oxipay Banner on your website is a good way to introduce Oxipay to your users and drive more sales through your store. So we have created this documentation to give you a selection of banners to choose from and display on your websites. 
 For ease of use we have created two ways* for you to display Oxipay branding on your website. The first way was created to require minimal HTML knowledge and the second way requires intimediate HTML/CSS and JQuery knowledge.
 
 *While we do provide two methods to display Oxipay on your website. We do highly recommend that you choose the second approach if possible. This approach is designed to give the user a better experience, keep them within the contrains of your website and ultimately drive more sales through you website.

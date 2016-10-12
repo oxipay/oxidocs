@@ -43,3 +43,8 @@ body {
     body .btn-primary:hover, body .btn-primary:active, body .btn-primary:focus {
       background-color: #bf6e15;
       border-color: #bf6e15; }
+  body .form-control:focus {
+    border-color: #e68821;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(230, 136, 33, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(230, 136, 33, 0.6); }
