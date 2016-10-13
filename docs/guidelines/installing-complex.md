@@ -19,7 +19,7 @@ Link to or copy our CSS to your website on the page that the banner will be disp
 ## Installing the CSS
 To use our custom css please add the following link to your ```<head>``` tag in you sites HTML.
 ```
-<link rel="stylesheet" href="http://images.oxipay.com.au/content/styles/oxipay-branding.css" type="text/css">
+<link rel="stylesheet" href="//images.oxipay.com.au/content/styles/oxipay-branding.css" type="text/css">
 ```
 ##Installing the Banners and Tags
 Choose the banners or tag that you want to install from our list <a href="/guidelines/banners">here</a> and grab the Complex Way HTML. Place that in the HTML of your website in the desired location that you would like it to appear. If you have the CSS installed than the banner should display correctly.
@@ -46,11 +46,7 @@ After you have installed JQuery Modal copy the below HTML into your websites HTM
 <br><br>**Jquery Modal HTML**
 ```
  <div id="oxipay-modal" style="display:none;">
-    <iframe id="oxipay-external" src="https://oxipay.com.au/externalmodal" style="
-        width: 100%;
-        height: 70vh;
-        border: none;
-      "></iframe>
+    <iframe id="oxipay-external" src="https://oxipay.com.au/externalmodal"></iframe>
   </div>
 ```
 ###Option 2 - Bootstrap Modal: 
@@ -61,11 +57,7 @@ All oyu need to do is copy the below HTML into your sites HTML on the pages you'
 <div class="modal fade" id="oxipay-modal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <iframe id="oxipay-external" src="https://oxipay.com.au/externalmodal" style="
-        width: 100%;
-        height: 70vh;
-        border: none;
-      "></iframe>
+      <iframe id="oxipay-external" src="https://oxipay.com.au/externalmodal"></iframe>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>

@@ -1,18 +1,18 @@
 # Banners
 Recommended placement is at the bottom of each page.
 ## Banner-01
-<p>![Banner 01](http://images.oxipay.com.au/content/images/oxipay-banner-01.png)</p>
+<p>![Banner 01](//images.oxipay.com.au/content/images/oxipay-banner-01.png)</p>
 **Image Download** <br>
-<p><a href="http://images.oxipay.com.au/content/images/oxipay-banner-01.png" download>Download Banner-01</a></p>
+<p><a href="//images.oxipay.com.au/content/images/oxipay-banner-01.png" download>Download Banner-01</a></p>
 **Simple HTML** 
 ```
-<a id="oxipay-banner-01" href="https://oxipay.com.au/works"><img src="http://images.oxipay.com.au/content/images/oxipay-banner-01.png"></a>
+<a id="oxipay-banner-01" href="https://oxipay.com.au/works"><img src="//images.oxipay.com.au/content/images/oxipay-banner-01.png"></a>
 ```
 **Complex HTML** (Requires <a href="/guidelines/installing-complex/#installing-the-css">CSS</a> and <a href="/guidelines/installing-complex/#installing-the-modal-page">Modal</a>)
 ```
 <a id="oxipay-banner-01" href="#oxipay-modal" rel="modal:open" data-toggle="modal" data-target="#oxipay-modal">
     <div class="logo">
-        <img alt="Oxipay" src="http://images.oxipay.com.au/content/images/oxipay.svg" />
+        <img alt="Oxipay" src="//images.oxipay.com.au/content/images/oxipay.svg" />
     </div>
     <div class="text">
         <h3>Pay the easier way.</h3>
@@ -27,17 +27,17 @@ Recommended placement is at the bottom of each page.
 # Price Tags
 Recommended placement is under the price of the item before the add to cart button.
 ## Tag-01
-<p>![Tag 01](http://images.oxipay.com.au/content/images/oxipay-tag-01.png)</p>
+<p>![Tag 01](//images.oxipay.com.au/content/images/oxipay-tag-01.png)</p>
 **Image Download** <br>
-<p><a href="http://images.oxipay.com.au/content/images/oxipay-tag-01.png" download>Download Tag-01</a></p>
+<p><a href="//images.oxipay.com.au/content/images/oxipay-tag-01.png" download>Download Tag-01</a></p>
 **Simple HTML** 
 ```
-<a id="oxipay-tag-01" href="https://oxipay.com.au/works"><img src="http://images.oxipay.com.au/content/images/oxipay-tag-01.png"></a>
+<a id="oxipay-tag-01" href="https://oxipay.com.au/works"><img src="//images.oxipay.com.au/content/images/oxipay-tag-01.png"></a>
 ```
 **Complex HTML** (Requires <a href="/guidelines/installing-complex/#installing-the-css">CSS</a> and <a href="/guidelines/installing-complex/#installing-the-modal-page">Modal</a>)
 ```
 <a id="oxipay-tag-01" href="#oxipay-modal" rel="modal:open" data-toggle="modal" data-target="#oxipay-modal">
-    <p>Pay the easier way with <img alt="Oxipay" src="http://images.oxipay.com.au/content/images/oxipay.svg" /> <span>More info</span></p>
+    <p>Pay the easier way with <img alt="Oxipay" src="//images.oxipay.com.au/content/images/oxipay.svg" /> <span>More info</span></p>
 </a>
 ```
 
