@@ -127,6 +127,6 @@ Files:
 
 3 - On the top right, click on Flush Cache Storage to clear Magento's cache.
 
-![3.png](/img/platforms/magento_1x/2.png)
+![3.png](/img/platforms/magento_1x/3.png)
 
 4 - Now you can proceed with installing the new version of the Oxipay plugin by following the [Installing the Plugin](magento_1x.md#Installing the Plugin) section of this document again.
