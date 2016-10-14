@@ -129,4 +129,4 @@ Files:
 
 ![3.png](/img/platforms/magento_1x/2.png)
 
-4 - Now you can proceed with installing the new version of the Oxipay plugin by following the **Installing the Plugin** instructions in this document again.
+4 - Now you can proceed with installing the new version of the Oxipay plugin by following the [Installing the Plugin](magento_1x.md#Installing the Plugin) section of this document again.
