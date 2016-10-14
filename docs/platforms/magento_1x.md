@@ -121,25 +121,12 @@ Files:
 
 * <code>app\etc\modules\Oxipay_Oxipayments.xml</code>
 
-2 – Click on Plugins on the left sidebar; then click on Installed Plugins.
+2 - Login to **Magento Admin** and then navigate to **System** then **Cache Management**.
 
-3 – Scroll to the bottom, bring Oxipay into focus and then click on the Deactive link.
+![2.png](/img/platforms/magento_1x/2.png)
 
-![21.png](/img/platforms/woocommerce/21.png)
+3 - On the top right, click on Flush Cache Storage to clear Magento's cache.
 
-4 – If successful, the message Plugin deactivated will be displayed at the top of the page.
+![3.png](/img/platforms/magento_1x/2.png)
 
-![22.png](/img/platforms/woocommerce/22.png)
-
-5 – Scroll to the bottom of the page again. This time around, click on the Delete link underneath Oxipay.
-
-![23.png](/img/platforms/woocommerce/23.png)
-
-6 – This will display a browser pop-up asking you to confirm if you want to proceed with deleting Oxipay.
-
-![24.png](/img/platforms/woocommerce/24.png)
-
-7 – This will display the plugin and the message Oxipay was successfully deleted will be displayed at the bottom of the page.
-
-8 – You can now proceed with installing the new version of the plugin using either the manual installation procedure or automatically via WordPress as per the instructions in the Initial Installation section of this document. The URL to use to download the new version of the plugin will be provided to you by Certegy.
- 
+4 - Now you can proceed with installing the new version of the Oxipay plugin by following the **Installing the Plugin** instructions in this document again.
