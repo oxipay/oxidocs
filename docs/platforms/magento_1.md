@@ -1,4 +1,4 @@
-# Setting up Oxipay on a Magento 1.x Store
+# Setting up Oxipay on a Magento 1 Store
 
 This document outlines the steps needed to integrate the Oxipay Payment Gateway into your Magento store.
 
