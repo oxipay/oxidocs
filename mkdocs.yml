@@ -9,9 +9,9 @@ pages:
    - OneStep: platforms/onestep.md
 
 - Developer Resources:
-   - How it works: developer-resources/how-it-works.md
+   - Introduction: developer-resources/Introduction.md
+   - API Reference: developer-resources/api-reference.md
    - Gateway Signing Mechanism: developer-resources/gateway-signing-mechanism.md
-   - API Documentation: developer-resources/api-reference.md
 - Marketing & Advertising:
       - Introduction: guidelines/banner-adverts.md
       - Installing the Simple Way: guidelines/installing-simple.md
