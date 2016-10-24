@@ -1,4 +1,4 @@
-# Setting up Oxipay on a Magento 1 Store
+# Setting up Oxipay on a Magento 2 Store
 
 This document outlines the steps needed to integrate the Oxipay Payment Gateway into your Magento v2 store.
 
@@ -9,7 +9,6 @@ This document outlines the steps needed to integrate the Oxipay Payment Gateway 
   <div class="panel-body">
     At the time of writing this article, Oxipay was developed and tested using Magento Community Edition v2.1.2 <br/>
     Issues might be encountered if using an earlier version or a later version. If you do encounter issues, then please contact us to resolve them as soon as possible.
-    
   </div>
 </div>
 
