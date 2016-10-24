@@ -8,12 +8,10 @@ pages:
    - Magento 2: platforms/magento_2.md
    - OneStep: platforms/onestep.md
 
-- Custom Integration:
-   - How it works: custom-integration/how-it-works.md
-   - Gateway Signing Mechanism: custom-integration/gateway-signing-mechanism.md
-   - API reference:
-      - Request values: custom-integration/api-reference/request-values.md
-      - Response values: custom-integration/api-reference/response-values.md
+- Developer Resources:
+   - How it works: developer-resources/how-it-works.md
+   - Gateway Signing Mechanism: developer-resources/gateway-signing-mechanism.md
+   - API Documentation: developer-resources/api-reference.md
 - Marketing & Advertising:
       - Introduction: guidelines/banner-adverts.md
       - Installing the Simple Way: guidelines/installing-simple.md
