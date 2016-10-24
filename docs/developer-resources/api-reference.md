@@ -78,27 +78,19 @@ x_test                        | A flag that indicates whether the transaction is
 ## <code>PostIndex()</code> Method
 
 
-1    | 2
-----------------------------------           | ----------
-Method's Signature                           | asdfasdf
-Method's Return type                         | asdf
+Modifier and Type                                 | Method Signature
+--------------------                              | -----------------
+<code>public async Task < ActionResult ></code>   | <code>PostIndex()</code>
 
-The method returns an Oxipay specific checkout URL to which the shopping cart can post the transaction to and is an asynchronous method as specified by the method's <code>public async</code> return type.
+The <code>PostIndex()</code> method returns an Oxipay specific checkout URL to which the shopping cart can post the transaction to. It is a public asynchronous method as specified by the method's <code>public async</code> modifier and type.
 
+For the <code>PostIndex()</code> method to return a valid checkout URL, the shopping cart's platform would need to be authenticated successfully based on the calling platform's authentication rules. This involves successfully verifying the signature as well as the merchant number that is being passed and the <code>httpRequest</code> itself.
 
- The shopping cart would need to be authenticated successfully using its signature, otherwise Oxipay will re-direct to a "401", "Signature Invalid".
+Failure to successfully authenticate  the request will result in being re-directed to a <code>401</code> error page with a <code>Signature Invalid</code> message.
 
-The method will initially attempt to verify the payload's signature and will also attempt to authenticate the request based on the merchant number that is being passed as well as the httpRequest. If it is unable to verify the payload's signature or unable to authenticate the request, then it will re-direct to a 401 error page with a *Signature Invalid* error message.
+Also note that Oxipay might re-direct to an error page if the request was authenticated but was not authorised after being posted to the Authorisation API. The error page will include both a code and a description message for that particular failed authorisaiton.
 
-Otherwise it will post to the authorisation API. If there is an error in processing the authentication request, then it will re-direct the user to an error page that includes the code and a descriptive message corresponding to that particular error.
-
-Additionally if the result of the post to the authorisation API is a valid result, then it will append an Oxipay specific transaction id to the URL, otherwise, it will append -1.
-
-Note that the Oxipay transaction id is different to the transaction id that might be referenced in your shopping platform.
-
-If an exception is thrown as a result of a failed authentication reuqest, then based on the result of the failed authentication request, will re-direct the user to a page that includes the code and a message of that particular failed authentication.
-
-Also note that the <code>PostIndex()</code> method is an asynchronous method as specified by the method's <code>public async</code> return type.
+If an exception occurs, then the method will also re-direct to an error page that includes a code and a message for that particular error.
 
 ## <code>GetIndex()</code> Method
 
