@@ -2,7 +2,7 @@
 
 As its name implies, the <code>MapFrom()</code> methods maps a request object that is passed to it from the shopping cart from the <code>IHttpRequest</code> format into the <code>XpAuthRequest</code>.
 
-The <code>IHttpRequest</code> request object that is passed into the <code>MapFrom()</code> method represents the transaction payload that contains the various transaction specific details such as the transaction amount, a customer's biling country and the shop's name (merchant's name as advertised on the internet and other media).
+The <code>IHttpRequest</code> request object that is passed to the <code>MapFrom()</code> method represents the transaction payload that contains the various transaction specific details such as the transaction amount, a customer's biling country and the shop's name (merchant's name as advertised on the internet and other media).
 
 Below is a table that summarises the various information that the translation layer expects to be within the request:
 
@@ -12,14 +12,14 @@ x_currency                    | Currency in which the transaction was processed,
 x_url_complete                | URL that users are re-directed to when a transaciton has processed successfully.
 x_url_callback                | Callback URL that is re-directed after the API method has been called
 x_url_cancel                  | URL that users are re-directed to when they cancel a transaction.
-**Merchant Specific Information**
+**Merchant Specific**
 x_shop_name                   | The merchant's or business' name as advertised on the Internet, TV and other media
 x_account_id                  | The merchant's ID, this is unique to every merchant
 x_reference                   | Rerference for that particular transaction
 x_invoice                     | Transaction's invoice
-**Purchase Order Specific Information**
+**Order Specific**
 x_amount                      | Total amount for that transaction including any shipping costs and taxes such as GST
-**Customer Specific Information**
+**Customer Specific**
 x_customer_first_name         | Customer's first name
 x_customer_last_name          | Customer's last name
 x_customer_email              | Customer's email address
@@ -39,7 +39,7 @@ x_customer_shipping_address2  | Customer's shipping address - line 2
 x_customer_shipping_city      | Customer's shipping city
 x_customer_shipping_state     | Customer's shipping state
 x_customer_shipping_zip       | Customer's shipping zip code
-**Oxipay Mode**
+**Gateway Specific**
 x_test                        | A flag that indicates whether the transaction is to be processed as a live transaction or as a test transaction. No actual dollar amounts are debitted when the test flag is enabled.
 
 
@@ -76,6 +76,17 @@ x_test                        | A flag that indicates whether the transaction is
 # Checkout Controller
 
 ## <code>PostIndex()</code> Method
+
+
+1    | 2
+----------------------------------           | ----------
+Method's Signature                           | asdfasdf
+Method's Return type                         | asdf
+
+The method returns an Oxipay specific checkout URL to which the shopping cart can post the transaction to and is an asynchronous method as specified by the method's <code>public async</code> return type.
+
+
+ The shopping cart would need to be authenticated successfully using its signature, otherwise Oxipay will re-direct to a "401", "Signature Invalid".
 
 The method will initially attempt to verify the payload's signature and will also attempt to authenticate the request based on the merchant number that is being passed as well as the httpRequest. If it is unable to verify the payload's signature or unable to authenticate the request, then it will re-direct to a 401 error page with a *Signature Invalid* error message.
 
