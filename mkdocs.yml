@@ -1,6 +1,8 @@
 site_name: Oxipay Documentation
 pages:
+
 - Home: index.md
+
 - Platforms:
    - Shopify: platforms/shopify.md
    - WooCommerce: platforms/woocommerce.md
@@ -9,14 +11,17 @@ pages:
    - OneStep: platforms/onestep.md
 
 - Developer Resources:
-   - Introduction: developer-resources/Introduction.md
-   - API Reference: developer-resources/api-reference.md
-   - Gateway Signing Mechanism: developer-resources/gateway-signing-mechanism.md
+   - Introduction: developer_resources/introduction.md
+   - Checkout Process: developer_resources/checkout_process.md
+   - API Reference: developer_resources/api_reference.md
+   - Signing Mechanism: developer_resources/signing_mechanism.md
+
 - Marketing & Advertising:
       - Introduction: guidelines/banner-adverts.md
       - Installing the Simple Way: guidelines/installing-simple.md
       - Installing the Complex Way: guidelines/installing-complex.md
       - Banners and Tags list: guidelines/banners.md
+
 theme: flatly
 extra_css: 
 - css/styles.css
