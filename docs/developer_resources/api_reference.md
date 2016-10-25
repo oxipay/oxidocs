@@ -5,19 +5,19 @@ Communicating with Oxipay in order to process a transaction via our payment gate
 There are two Oxipay endpoints that transaction information can be posted to and these are the live (production) payment gateway and the test (sandbox) payment gateway.
 
 ## Oxipay Endpoints
-The Production Oxipay endpoint is:<br> [https://secure.oxipay.com.au/Checkout?platform=Default](https://secure.oxipay.com.au/Checkout?platform=Default)
+The Production Oxipay endpoint is :<br> [https://secure.oxipay.com.au/Checkout?platform=Default](https://secure.oxipay.com.au/Checkout?platform=Default)
 
-The Sandbox Oxipay endpoint is:<br> [https://xpozsecure.certegyezipay.com.au/Checkout?platform=Default](https://xpozsecure.certegyezipay.com.au/Checkout?platform=Default)
+The Sandbox Oxipay endpoint is :<br> [https://xpozsecure.certegyezipay.com.au/Checkout?platform=Default](https://xpozsecure.certegyezipay.com.au/Checkout?platform=Default)
 
 ## Request POST Format
 
-Posting to the Oxipay endpoing, regardless of whether this is done in the live or test environments, should be done in the <code>application/x-www-form-urlencoded</code> format whereby the queyr string will represent the body of the HTTP message that is sent to Oxipay. The various key-value pairs that represent the transaction payload are seperated by the <code>&</code> character whilst the key-value pairs are seperated by the <code>=</code> character. Note that Oxipay adopts the convention of prefixing the various key names with <code>x_</code> and we anticipate that you will adopt a similar convention when integrating Oxipay into your shopping cart.
+Posting to the Oxipay endpoint, regardless of whether this is done in the live or test environments, should be done in the <code>application/x-www-form-urlencoded</code> format whereby the query string will represent the body of the HTTP message that is sent to Oxipay. The various key-value pairs that represent the transaction payload are separated by the <code>&</code> character whilst the key-value pairs are separated by the <code>=</code> character. Note that Oxipay adopts the convention of prefixing the various key names with <code>x_</code> and we anticipate that you will adopt a similar convention when integrating Oxipay into your shopping cart.
 
 Below is an overview of the various key-value combination that can be passed to Oxipay (**Request Values**), a description of what they are as well as an indication of whether they are mandatory or optional.
 
 # Sample POST
 
-Below is a sample request that might be posted to an Oxipay endpoing. Note that the POST is in the <code>application/x-www-form-urlencoded</code> format.
+Below is a sample request that might be posted to an Oxipay endpoint. Note that the POST is in the <code>application/x-www-form-urlencoded</code> format.
 
 
 ```URL
@@ -38,7 +38,7 @@ x_reference=123&x_account_id=1&x_amount=100.00&x_currency=AUD
  Key | Description | Type | Example
 -----|-------------|------|---------
 x_account_id **Required**         | This is the Merchant ID assigned by Oxipay to the merchant | unicode string | 123456
-x_amount **Required**             | Represents the transaction's total amount inc. any taxes and shipping costs | decimal | 99.90
+x_amount **Required**             | Represents the transaction's total amount including. any taxes and shipping costs | decimal | 99.90
 x_currency **Required**           | Currency in which the transaction was processed | iso-4217 | AUD
 x_customer_billing_address1       | Billing address, line 1 | unicode string | 97 Pirie St 
 x_customer_billing_address2       | Billing address, line 2 | unicode string | Level 6 
@@ -85,8 +85,8 @@ Below is an overview of the various response key-value pairs that Oxipay returns
 x_account_id **Required**         | This is the Merchant ID assigned by Oxipay to the merchant | unicode string | 123456
 x_reference **Required**          | A reference that uniquely references the order and assigned by the merchant | ascii string | 19783
 x_currency **Required**           | Currency in which the transaction was processed | iso-4217 | AUD
-x_test **Required**               | Indicates whether the transaciton is to be processed as a live or a test transaction | true/false | true
-x_amount **Required**             | Represents the transaction's total amount inc. any taxes and shipping costs | decimal | 99.90  
+x_test **Required**               | Indicates whether the transaction is to be processed as a live or a test transaction | true/false | true
+x_amount **Required**             | Represents the transaction's total amount including any taxes and shipping costs | decimal | 99.90  
 x_gateway_reference **Required**  | A reference for the authorisation issues by Oxipay that is unique | unique string | 123
 x_timestamp **Required**          | Time at which the transaction is completed, in UTC format YYYY-MM-DDTHH:MM:SSZ | iso-8601 in UTC | 2017-06-24T12:11:43Z
 x_result **Required**             | Values that represent the outcome of a transaction | Valid values are **completed**, **failed** and **pending** | **failed**

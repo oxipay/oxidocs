@@ -6,7 +6,7 @@ As mentioned, Oxipay uses HMAC-SHA256 for purposes of signing and verifying requ
 
 * <code>key</code> is the API key which is only known to Oxipay and the merchant intending to use Oxipay, this is sometimes referred to as the API Key.
 
-* <code>message</code> is the string of all key-value pairs that represent the trasnaction payload, these keys are prefixed with <code>x_</code>, are sorted alphabetically and are concatenated with seperators.
+* <code>message</code> is the string of all key-value pairs that represent the transaction payload, these keys are prefixed with <code>x_</code>, are sorted alphabetically and are concatenated with separators.
 
 The resulting HMAC-SHA256 signature needs to be hex-encoded and passed along with the remainder of the transaction payload as a value of the key <code>x_signature</code>
 
@@ -31,5 +31,5 @@ Below is a PHP code snippet that demonstrates how a signature might be generated
 
 Note that the method expects two parameters <code>$query</code> and <code>$api_key</code> which represent the key-value pairs that represent the transaction payload information as well as the API Key that is only known by Oxipay and the merchant.
 
-The method performs a sorting of the various key-value pairs maintaing the correlation between the various keys and their respective values. It then uses the <code>hash_hmac</code> method to generate a keyed has value using the HMAC method.
+The method performs a sorting of the various key-value pairs maintaining the correlation between the various keys and their respective values. It then uses the <code>hash_hmac</code> method to generate a keyed has value using the HMAC method.
 
