@@ -2,7 +2,7 @@
 
 Below is a chart that summarises the flow of an Oxipay checkout process.
 
-![1.png](/img/api/1.png)
+<img src="/img/api/1.png" alt="Oxipay Checkout Process">
 
 1. The customer places an order on the shopping cart and then provide needed details such as email address, shipping and billing address. They will also choose Oxipay as they payment gateway method.
 
