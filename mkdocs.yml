@@ -14,7 +14,7 @@ pages:
    - Introduction: developer_resources/introduction.md
    - Checkout Process: developer_resources/checkout_process.md
    - API Reference: developer_resources/api_reference.md
-   - Signing Mechanism: developer_resources/signing_mechanism.md
+   - Signature Generation: developer_resources/signature_generation.md
 
 - Marketing & Advertising:
       - Introduction: guidelines/banner-adverts.md
