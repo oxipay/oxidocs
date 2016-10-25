@@ -1,107 +1,61 @@
-## <code>MapFrom()</code> Method
+# API Reference
 
-As its name implies, the <code>MapFrom()</code> methods maps a request object that is passed to it from the shopping cart from the <code>IHttpRequest</code> format into the <code>XpAuthRequest</code>.
+Communicating with Oxipay in order to process a transaction via our payment gateway involves **POST**ing a request to the Oxipay endpoint. This can be viewed as an authorisation request that is performed by the shopping cat in order to process the payment via Oxipay.
 
-The <code>IHttpRequest</code> request object that is passed to the <code>MapFrom()</code> method represents the transaction payload that contains the various transaction specific details such as the transaction amount, a customer's biling country and the shop's name (merchant's name as advertised on the internet and other media).
+Below is an overview of the various key-value combinations that can be passed to Oxipay (**Request Values**), a description of what they are as well as an indication of whether they are mandatory or optional. Please note that Oxipay adopts the convention of pre-fixing the various key names with <code>x_</code>
 
-Below is a table that summarises the various information that the translation layer expects to be within the request:
+## Request Values
 
-Variable                      | Description
--------------------           | -----------
-x_currency                    | Currency in which the transaction was processed, typically AUD.
-x_url_complete                | URL that users are re-directed to when a transaciton has processed successfully.
-x_url_callback                | Callback URL that is re-directed after the API method has been called
-x_url_cancel                  | URL that users are re-directed to when they cancel a transaction.
-**Merchant Specific**
-x_shop_name                   | The merchant's or business' name as advertised on the Internet, TV and other media
-x_account_id                  | The merchant's ID, this is unique to every merchant
-x_reference                   | Rerference for that particular transaction
-x_invoice                     | Transaction's invoice
-**Order Specific**
-x_amount                      | Total amount for that transaction including any shipping costs and taxes such as GST
-**Customer Specific**
-x_customer_first_name         | Customer's first name
-x_customer_last_name          | Customer's last name
-x_customer_email              | Customer's email address
-x_customer_phone              | Customer's phone number (could also be their mobile)
-x_customer_billing_address1   | Customer's billing address - line 1
-x_customer_billing_address2   | Customer's billing address - line 2
-x_customer_billing_city       | Customer's billing city
-x_customer_billing_state      | Customer's billing state
-x_customer_billing_zip        | Customer's billing zip code
-x_customer_billing_address1   | Customer's billing address - line 1
-x_customer_billing_address2   | Customer's billing address - line 2
-x_customer_billing_city       | Customer's billing city
-x_customer_billing_state      | Customer's billing state
-x_customer_billing_zip        | Customer's billing zip code
-x_customer_shipping_address1  | Customer's shipping address - line 1
-x_customer_shipping_address2  | Customer's shipping address - line 2
-x_customer_shipping_city      | Customer's shipping city
-x_customer_shipping_state     | Customer's shipping state
-x_customer_shipping_zip       | Customer's shipping zip code
-**Gateway Specific**
-x_test                        | A flag that indicates whether the transaction is to be processed as a live transaction or as a test transaction. No actual dollar amounts are debitted when the test flag is enabled.
+ Key | Description | Type | Example
+-----|-------------|------|---------
+x_account_id **Required**         | This is the Merchant ID assigned by Oxipay to the merchant | unicode string | 123456
+x_amount **Required**             | Represents the transaction's total amount inc. any taxes and shipping costs | decimal | 99.90
+x_currency **Required**           | Currency in which the transaction was processed | iso-4217 | AUD
+x_customer_billing_address1       | Customer's billing address, line 1 | unicode string | 97 Pirie St 
+x_customer_billing_address2       | Customer's billing address, line 2 | unicode string | Level 6 
+x_customer_billing_city           | Customer's billing city | unicode string | Adelaide 
+x_customer_billing_country        | Customer's billing country | iso-3166-1 alpha-2 | AU 
+x_customer_billing_phone          | Customer's billing phone number, can be mobile or landline | unicode string | 0400 000 000 
+x_customer_billing_state          | Customer's billing state | unicode string | SA 
+x_customer_billing_zip            | Customer's billing zip code | unicode string | 5000 |
+x_customer_email                  | Customer's billing email address | unicode string | dummy@gmail.com 
+x_customer_first_name             | Customer's first name | unicode string | John 
+x_customer_last_name              | Customer's last name | unicode string | Appleseed 
+x_customer_phone                  | Customer's phone number | unicode string | 0400 000 000
+x_customer_shipping_address1      | Customer's shipping address, line 1 | unicode string | 97 Pirie St 
+x_customer_shipping_address2      | Customer's shipping address, line 2 | unicode string | Level 6 
+x_customer_shipping_city          | Customer's shipping city | unicode string | Adelaide 
+x_customer_shipping_country       | Customer's shipping country | unicode string | AU
+x_customer_shipping_first_name    | Customer's first name (Shipping) | unicode string | John
+x_customer_shipping_last_name     | Customer's last name (Shipping) | unicode string | Appleseed
+x_customer_shipping_phone         | Customer's phone number (Shipping) | unicode string | 0400 000 000
+x_customer_shipping_state         | Customer's shipping state | unicode string | SA
+x_customer_shipping_zip           | Customer's shipping zip code | unicode string | 5000
+x_description                     | Item's description as setup in the shopping cart | unicode string | Order #767
+x_invoice                         | Transaction invoice number | unicode string | #767
+x_reference **Required**          | A reference that uniquely references the order and assigned by the merchant | ascii string | 19783
+x_shop_country **Required**       | Country of where the merchant's store is located | iso-3166-1alpha-2 | AU 
+x_shop_name **Required**          | Store name as advertised on the internet, TV and other media | Shop Inc
+x_signature **Required**          | Request payload that is signed/verified using HMAC-SHA256 | hex string, case-insensitive | 
+x_test **Required**               | Indicates whether the transaciton is to be processed as a live or a test transaction | true/false | true  
+x_url_callback **Required**       | Callback notifications are sent asynchronously to this URL | URL | oxipay.com.au/callback 
+x_url_cancel **Required**         | Customers are redirected to this URL if they want to quit their Oxipay transaction and return to the shopping cart store instead | URL | oxipay.com.au/cancel 
+x_url_complete **Required**       | Customers are redirected to this URL if they have successfully processed their transaction using Oxipay | URL | oxipay.com.au/compete 
 
+## Response Values
 
+Below is an overview of the various response values that Oxipay returns when processing a transaction. Note that some of these key-value pairs echo corresponding key-value pairs in the request that Oxipay receives - as is the case with <code>x_currency</code> for instnace.
 
-* An input stream of type <code>Stream</code>
-* A query string that is a name value collection, type <code>NameValueCollection</code>
-
-<table class="table table-striped table-hover ">
-  <thead>
-    <tr>
-      <th>Modifier</th>
-      <th>Method and Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>public</code></td>
-      <td>
-      <code>MapFrom()</code>
-      <br>
-      Maps a request from type <code>IHttpRequest</code> to type <code>XpAuthRequest</code>.
-      </td>
-    </tr>
-    <tr>
-      <td><code>public</code></td>
-      <td><code>Logout</code>
-      <br>
-      Processes a log out request of type <code>LougoutRequest</code>. Returns an <code>Invalid Logout Request</code> if the log out request is null, whitespace or is the default value.</td>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-# Checkout Controller
-
-## <code>PostIndex()</code> Method
+ Key | Description | Type | Example
+-----|-------------|------|---------
+x_account_id **Required**         | This is the Merchant ID assigned by Oxipay to the merchant | unicode string | 123456
+x_reference **Required**          | A reference that uniquely references the order and assigned by the merchant | ascii string | 19783
+x_currency **Required**           | Currency in which the transaction was processed | iso-4217 | AUD
+x_test **Required**               | Indicates whether the transaciton is to be processed as a live or a test transaction | true/false | true  
 
 
-Modifier and Type                                 | Method Signature
---------------------                              | -----------------
-<code>public async Task < ActionResult ></code>   | <code>PostIndex()</code>
 
-The <code>PostIndex()</code> method returns an Oxipay specific checkout URL to which the shopping cart can post the transaction to. It is a public asynchronous method as specified by the method's <code>public async</code> modifier and type.
 
-For the <code>PostIndex()</code> method to return a valid checkout URL, the shopping cart's platform would need to be authenticated successfully based on the calling platform's authentication rules. This involves successfully verifying the signature as well as the merchant number that is being passed and the <code>httpRequest</code> itself.
 
-Failure to successfully authenticate  the request will result in being re-directed to a <code>401</code> error page with a <code>Signature Invalid</code> message.
 
-Also note that Oxipay might re-direct to an error page if the request was authenticated but was not authorised after being posted to the Authorisation API. The error page will include both a code and a description message for that particular failed authorisaiton.
 
-If an exception occurs, then the method will also re-direct to an error page that includes a code and a message for that particular error.
-
-## <code>GetIndex()</code> Method
-
-Returns the current view.
-
-## <code>ProcessInstore()</code> Method
-
-The <code>ProcessInstore()</code> method will use the transaciton ID that is passed to it to return URL for processing an instore transaction - normally created from within the Oxipay merchant portal - as opposed to transactions created from within a shopping cart.
-
-A transaction ID of <code>0</code> will result in an instance of the <code>HttpNotFoundResult</code> class being return with the message <code>Transaction Not Found</code>
-
-The method does a post to the Authorisation API and if the result of the authorisation is an error that it will redirect to a page the includes the code of the error as well as a message relating to it.
-
-Note that the method will throw an exception that redirects to a generic error page.
