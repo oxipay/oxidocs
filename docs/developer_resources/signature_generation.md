@@ -1,15 +1,35 @@
 # Signature Generation
 
-In order to prevent against malicious attacks and session hijacking, Oxipay implements a signing mechanism. This section includes information on the signing and verification methods that Oxipay uses. Oxipay uses HMAC-SHA256 for purposes of signing and verifying requests and responses. In this context:
+In order to prevent against malicious attacks and session hijacking, Oxipay implements a signing mechanism based on HMAC-SHA256. This section includes information on the mechanism you need to implement to sign the transaction payload. 
 
-* A key that is known to both the merchant using the particular shopping cart and Oxipay. This is also known as an API Key.
+As mentioned, Oxipay uses HMAC-SHA256 for purposes of signing and verifying requests and responses whereby the:
 
-* A <code>message</code> which is a string of all key-value pairs that are stored alphabetically and are concatenated with seperators. Please note that we have adopted the convention of prefixing the various keys with <code>x_</code> similar to what is done in Shopify.
+* <code>key</code> is the API key which is only known to Oxipay and the merchant intending to use Oxipay, this is sometimes referred to as the API Key.
+
+* <code>message</code> is the string of all key-value pairs that represent the trasnaction payload, these keys are prefixed with <code>x_</code>, are sorted alphabetically and are concatenated with seperators.
 
 The resulting HMAC-SHA256 signature needs to be hex-encoded and passed along with the remainder of the transaction payload as a value of the key <code>x_signature</code>
 
-# Example
+## PHP Example
 
-Below is a example of what the payload might look like when posted from the shopping cart to the Oxipay payment gateway in URL encoded query string format.
+Below is a PHP code snippet that demonstrates how a signature might be generated in the context of Oxipay:
 
-	x_reference=123456789&x_account_id=1&x_amount=100.00&x_currency=AUD&x_url_callback=sample_callback_url&x_url_complete=sample_complete_url&x_shop_country=AU&x_shop_name=Sample+Shop&x_test=true&x_customer_first_name=first&x_customer_last_name=last&x_customer_email=sample%40email.com&x_customer_billing_country=AU&x_customer_billing_city=Adelaide&x_customer_billing_address1=97+Pirie&x_customer_billing_address2=St&x_customer_billing_state=SA&x_customer_billing_zip=5000&x_invoice=%123456789&x_description=Sample+Store+-+%123456789&x_url_cancel=sample_cancel_url&x_signature=dummysignaturelaskdjfhjnojelkfmlaksdf
+```php
+	function oxipay_sign($query, $api_key )
+	{
+	    $clear_text = '';
+	    ksort($query);
+	    foreach ($query as $key => $value) {
+	        if (substr($key, 0, 2) === "x_") {
+	            $clear_text .= $key . $value;
+	        }
+	    }
+	    $hash = hash_hmac( "sha256", $clear_text, $api_key);
+	    return str_replace('-', '', $hash);
+	}
+```
+
+Note that the method expects two parameters <code>$query</code> and <code>$api_key</code> which represent the key-value pairs that represent the transaction payload information as well as the API Key that is only known by Oxipay and the merchant.
+
+The method performs a sorting of the various key-value pairs maintaing the correlation between the various keys and their respective values. It then uses the <code>hash_hmac</code> method to generate a keyed has value using the HMAC method.
+
