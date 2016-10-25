@@ -2,15 +2,7 @@
 
 This document outlines the steps needed to integrate the Oxipay Payment Gateway into your Magento store.
 
-<div class="panel panel-primary">
-  <div class="panel-heading">
-    <h3 class="panel-title">Note</h3>
-  </div>
-  <div class="panel-body">
-    At the time of writing this article; Oxipay was developed and tested using Magento Community Edition 1.9. <br/>
-    Issues might be encountered if using an earlier version. If you do encounter issues, then please contact us to resolve them as soon as possible.
-  </div>
-</div>
+**NOTE** At the time of writing this article; Oxipay was developed and tested using Magento Community Edition 1.9. Issues might be encountered if using an earlier version. If you do encounter issues, then please contact us to resolve them as soon as possible.
 
 ## Installing the Plugin
 

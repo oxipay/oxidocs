@@ -22,6 +22,4 @@ pages:
       - Installing the Complex Way: guidelines/installing-complex.md
       - Banners and Tags list: guidelines/banners.md
 
-theme: flatly
-extra_css: 
-- css/styles.css
+theme: readthedocs
