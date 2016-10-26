@@ -6,18 +6,11 @@ This document outlines the steps needed to integrate the Oxipay Payment Gateway 
 
 ## Installing the Plugin
 
-<div class="alert alert-info" role="alert">You will need your <b>Merchant ID</b> and an <b>Encryption Key</b> handy before continuing with the installation procdure.</div>
+**NOTE** You will need your <b>Merchant ID</b> and an <b>Encryption Key</b> handy before continuing with the installation procdure.
 
 You can install the Oxipay Plugin manually by copying the Oxipay Magento plugin code that is provided to you into the Magento root folder. 
 
-<div class="panel panel-danger">
-  <div class="panel-heading">
-    <h3 class="panel-title">Important</h3>
-  </div>
-  <div class="panel-body">
-    Performing the steps underneath requires solid knowledge of the Magento platform as well as the computer file systems in general. We recommend that an IT professional or a web developer perform these steps to avoid any unintended damage to the existing Magento installation.
-  </div>
-</div>
+**Important** Performing the steps underneath requires solid knowledge of the Magento platform as well as the computer file systems in general. We recommend that an IT professional or a web developer perform these steps to avoid any unintended damage to the existing Magento installation.
 
 1 - Navigate to the URL below and then click on the Download repository link; this will download a zip file; rename that .zip file to Oxipay.zip
 
@@ -25,14 +18,7 @@ URL: [https://github.com/oxipay/oxipay-magento-1.x/releases](https://github.com/
 
 2 - Unzip the Oxipay.zip folder and then copy the app folder into your Magento store root directory.
 
-<div class="panel panel-danger">
-  <div class="panel-heading">
-    <h3 class="panel-title">Important</h3>
-  </div>
-  <div class="panel-body">
-    Before proceeding with the remainder of the installation procedure, ensure that you have a current back of your Magento store. To create a backup, navigate to System -> Tools -> Backup. This is useful in the event you encounter issues with installing Oxipay.
-  </div>
-</div>
+**Important** Before proceeding with the remainder of the installation procedure, ensure that you have a current back of your Magento store. To create a backup, navigate to System -> Tools -> Backup. This is useful in the event you encounter issues with installing Oxipay.
 
 3 - Copy all files in the unzipped Oxipay folder <code>Oxipay/app</code> into the <code>/app</code> folder in your Magento root folder.
 
@@ -62,45 +48,17 @@ Login into Magento **Admin Panel** and then navigate to **System** > **Cache Man
 
 ![6.png](/img/platforms/magento_1/6.png)
 
-<div class="panel panel-primary">
-  <div class="panel-heading">
-    <h3 class="panel-title">Note</h3>
-  </div>
-  <div class="panel-body">
-    The <b>Merchant Key</b> and <b>API Key</b> have been blacked out in the image above.
-  </div>
-</div>
+**Note** The <b>Merchant Key</b> and <b>API Key</b> have been blacked out in the image above.
 
-<div class="panel panel-danger">
-  <div class="panel-heading">
-    <h3 class="panel-title">Important</h3>
-  </div>
-  <div class="panel-body">
-    Missing fields might indicate that some of the Oxipay files that were downloaded as part of the installation process might have been corrupted inadvertently somewhere in the process.
-  </div>
-</div>
+**Important** Missing fields might indicate that some of the Oxipay files that were downloaded as part of the installation process might have been corrupted inadvertently somewhere in the process.
 
 ##Updates to Oxipay##
 
 Updates to Oxipay might be made in the future to either accommodate newer internet technologies that we deem essential to integrate into our Oxipay plugin or newer versions of Magento 1.x that include security or feature patches. We recommend that you first unintall the existing Oxipay plugin before installing a newer Oxipay version.
 
-<div class="panel panel-primary">
-  <div class="panel-heading">
-    <h3 class="panel-title">Note</h3>
-  </div>
-  <div class="panel-body">
-    Deleting the existing plugin ensures that code and any associated files from the previous version of the plugin do not negatively interfere with the newer version of the plugin.
-  </div>
-</div>
+**Note** Deleting the existing plugin ensures that code and any associated files from the previous version of the plugin do not negatively interfere with the newer version of the plugin.
 
-<div class="panel panel-danger">
-  <div class="panel-heading">
-    <h3 class="panel-title">Important</h3>
-  </div>
-  <div class="panel-body">
-    At the time of writing this article, Oxipay can only be deleted by manually deleting the Oxipay specific folders and files that were integrated into Magento as part of the installation procedure.
-  </div>
-</div>
+**Important** At the time of writing this article, Oxipay can only be deleted by manually deleting the Oxipay specific folders and files that were integrated into Magento as part of the installation procedure.
 
 1 - Open the <code>app</code> folder inside the Magento root folder where you have installed your version of Magento and delete the files and folder paths listed underneath:
 
