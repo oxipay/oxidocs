@@ -1,58 +1,46 @@
 # API Reference
 
-Communicating with Oxipay in order to process a transaction via our payment gateway involves **POST**ing a request to the Oxipay endpoint. This can be viewed as an authorisation request that is performed by the shopping cat in order to process the payment via Oxipay.
+Communicating with Oxipay in order to process a transaction via our payment gateway involves **POST**ing a request to the Oxipay endpoint. This can be viewed as an authorisation request that is performed by the shopping cart in order to process the payment via Oxipay.
 
-There are two Oxipay endpoints that transaction information can be posted to and these are the live (production) payment gateway and the test (sandbox) payment gateway.
+There are two Oxipay endpoints that transaction information can be posted to and they represent the live Oxipay payment gateway and the test (sandbox) gateway.
 
 ## Oxipay Endpoints
-The Production Oxipay endpoint is :<br> [https://secure.oxipay.com.au/Checkout?platform=Default](https://secure.oxipay.com.au/Checkout?platform=Default)
 
-The Sandbox Oxipay endpoint is :<br> [https://xpozsecure.certegyezipay.com.au/Checkout?platform=Default](https://xpozsecure.certegyezipay.com.au/Checkout?platform=Default)
+Posting a request to the live payment gateway with the test flag off will process a real transaction whereby the credit card that was used as part of the checkout process is debited. On the other hand, posting to the test gateway simulates a transaction and is not processed as a real transaction; that is, no real dollar amount is debited from that credit card.
+
+To test Oxipay, you are not only limited to the test (sandbox) URL. You can also use the live payment gateway but enable the <code>x_test</code> flag. Enabling the <code>x_test</code> flag will process the transaction via the live gateway but no real dollar amounts are debited from the credit card.
+
+| Oxipay Environment | URL |
+|--------------------|-----|
+| Production Endpoint | [https://secure.oxipay.com.au/Checkout?platform=Default](https://secure.oxipay.com.au/Checkout?platform=Default) |
+| Sandbox Endpoint | [https://xpozsecure.certegyezipay.com.au/Checkout?platform=Default](https://xpozsecure.certegyezipay.com.au/Checkout?platform=Default) |
 
 ## Request POST Format
 
-Posting to the Oxipay endpoint, regardless of whether this is done in the live or test environments, should be done in the <code>application/x-www-form-urlencoded</code> format whereby the query string will represent the body of the HTTP message that is sent to Oxipay. The various key-value pairs that represent the transaction payload are separated by the <code>&</code> character whilst the key-value pairs are separated by the <code>=</code> character. Note that Oxipay adopts the convention of prefixing the various key names with <code>x_</code> and we anticipate that you will adopt a similar convention when integrating Oxipay into your shopping cart.
+Posting to the Oxipay endpoint, regardless of whether this is done in the live or test environment, should be done using the format <code>application/x-www-form-urlencoded</code>. Essentially you will post a query string that represents the body of the HTTP message that is to be sent to Oxipay. The various key-value pairs that represent the transaction payload are separated by the <code>&</code> character whilst individual keys and pairs are separated by the <code>=</code> character. Note that Oxipay adopts the convention of prefixing the various key names with <code>x_</code> and we anticipate that you will adopt a similar convention when integrating Oxipay into your shopping cart.
 
 Below is an overview of the various key-value combination that can be passed to Oxipay (**Request Values**), a description of what they are as well as an indication of whether they are mandatory or optional.
 
-# Sample POST
-
-Below is a sample request that might be posted to an Oxipay endpoint. Note that the POST is in the <code>application/x-www-form-urlencoded</code> format.
-
-
-```URL
-x_reference=123&x_account_id=1&x_amount=100.00&x_currency=AUD
-&x_url_callback=sample_callback_url&x_url_complete=sample_complete_url
-&x_shop_country=AU&x_shop_name=Sample+Shop&x_test=true
-&x_customer_first_name=first&x_customer_last_name=last
-&x_customer_email=sample%40email.com&x_customer_billing_country=AU
-&x_customer_billing_city=Adelaide&x_customer_billing_address1=97+Pirie
-&x_customer_billing_address2=St&x_customer_billing_state=SA
-&x_customer_billing_zip=5000&x_invoice=%123
-&x_description=Sample+Store+-+%123
-&x_url_cancel=sample_cancel_url&x_signature=dummy_signature
-```
-
-## Request POST key-value pairs
+## Request values
 
  Key | Description | Type | Example
 -----|-------------|------|---------
-x_account_id **Required**         | This is the Merchant ID assigned by Oxipay to the merchant | unicode string | 123456
-x_amount **Required**             | Represents the transaction's total amount including. any taxes and shipping costs | decimal | 99.90
+x_account_id **Required**         | This is a unique Merchant ID that is assigned by Oxipay to individual merchants | unicode string | 123456
+x_amount **Required**             | Represents the transaction's total amount including any taxes and shipping costs | decimal | 99.90
 x_currency **Required**           | Currency in which the transaction was processed | iso-4217 | AUD
-x_customer_billing_address1       | Billing address, line 1 | unicode string | 97 Pirie St 
-x_customer_billing_address2       | Billing address, line 2 | unicode string | Level 6 
+x_customer_billing_address1       | Billing address line 1 | unicode string | 97 Pirie St 
+x_customer_billing_address2       | Billing address line 2 | unicode string | Level 6 
 x_customer_billing_city           | Billing city | unicode string | Adelaide 
 x_customer_billing_country        | Billing country | iso-3166-1 alpha-2 | AU 
-x_customer_billing_phone          | Billing phone number, can be mobile or landline | unicode string | 0400 000 000 
+x_customer_billing_phone          | Billing phone number (expected to be a mobile) | unicode string | 0400 000 000 
 x_customer_billing_state          | Billing state | unicode string | SA 
 x_customer_billing_zip            | Billing zip code | unicode string | 5000 |
 x_customer_email                  | Billing email address | unicode string | dummy@gmail.com 
 x_customer_first_name             | Customer's first name | unicode string | John 
 x_customer_last_name              | Customer's last name | unicode string | Appleseed 
 x_customer_phone                  | Customer's phone number | unicode string | 0400 000 000
-x_customer_shipping_address1      | Shipping address, line 1 | unicode string | 97 Pirie St 
-x_customer_shipping_address2      | Shipping address, line 2 | unicode string | Level 6 
+x_customer_shipping_address1      | Shipping address line 1 | unicode string | 97 Pirie St 
+x_customer_shipping_address2      | Shipping address line 2 | unicode string | Level 6 
 x_customer_shipping_city          | Shipping city | unicode string | Adelaide 
 x_customer_shipping_country       | Shipping country | unicode string | AU
 x_customer_shipping_first_name    | Customer's first name (Shipping) | unicode string | John
@@ -66,14 +54,33 @@ x_reference **Required**          | A reference that uniquely references the ord
 x_shop_country **Required**       | Country of where the merchant's store is located | iso-3166-1alpha-2 | AU 
 x_shop_name **Required**          | Store name as advertised on the internet, TV and other media | Shop Inc
 x_signature **Required**          | Request payload that is signed/verified using HMAC-SHA256 | hex string, case-insensitive | 
-x_test **Required**               | Indicates whether the transaciton is to be processed as a live or a test transaction | true/false | true  
+x_test **Required**               | Indicates whether the transaciton is to be processed using the live or test Oxipay endpoint | true/false | true  
 x_url_callback **Required**       | Callback notifications are sent asynchronously to this URL | URL | shop.com.au/callback 
 x_url_cancel **Required**         | Customers are redirected to this URL if they want to quit their Oxipay transaction and return to the shopping cart store instead | URL | shop.com.au/cancel 
 x_url_complete **Required**       | Customers are redirected to this URL if they have successfully processed their transaction using Oxipay | URL | shop.com.au/compete 
 
+# Sample POST
+
+Below is a sample request that might be posted to an Oxipay endpoint that is in the <code>application/x-www-form-urlencoded</code> format. In this example, please ignore values for individual keys - such as the value for <code>x_signature</code> - since this sample POST is for demonstration purposes only and does not demonstrate a real transaction that can be completed by Oxipay.
+
+<hr>
+<pre style="font-family: monospace; font-size:1.2rem; color: #DC143C">
+x_reference=123&x_account_id=1&x_amount=100.00&x_currency=AUD
+&x_url_callback=sample_callback_url&x_url_complete=sample_complete_url
+&x_shop_country=AU&x_shop_name=Sample+Shop&x_test=true
+&x_customer_first_name=first&x_customer_last_name=last
+&x_customer_email=sample%40email.com&x_customer_billing_country=AU
+&x_customer_billing_city=Adelaide&x_customer_billing_address1=97+Pirie
+&x_customer_billing_address2=St&x_customer_billing_state=SA
+&x_customer_billing_zip=5000&x_invoice=%123
+&x_description=Sample+Store+-+%123
+&x_url_cancel=sample_cancel_url&x_signature=dummy_signature
+</pre>
+<hr>
+
 ## Response POST
 
-Once a transaction has been processed by Oxipay, Oxipay will communicate with the shopping platform using the <code>x_url_callback</code> URL that is specified as part of the request POST. The response is also sent in the <code>application/x-www-form-urlencoded</code> format as an asynchronous POST. Similar to the request POST, the response POST includes key-values pairs that are specific to that transaction and indicate things such as the outcome of that particular transaction whether it has failed or is pending another action for instance.
+Once a transaction has been processed by Oxipay, Oxipay will POST back to the shopping cart on the <code>x_url_callback</code> URL that is specified as part of the request POST. The response is also sent in the <code>application/x-www-form-urlencoded</code> format as an asynchronous POST. Similar to the request POST, the response POST includes key-values pairs that are specific to that transaction and indicate things such as the outcome of that particular transaction if it has failed or is completed successfully for instance.
 
 
 ## Response POST key-value pairs

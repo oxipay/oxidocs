@@ -55,27 +55,27 @@ URL: [https://github.com/oxipay/oxipay-magento-1.x/releases](https://github.com/
 
 4 - Login into the Magento **Admin Panel**, then from the left side menu, click on **System**.
 
-![1.png](/img/platforms/magento_2x/1.png)
+![1.png](/img/platforms/magento_2/1.png)
 
 5 - This will open up the **System** submenu. Click on **Cache Management**.
 
-![2.png](/img/platforms/magento_2x/2.png)
+![2.png](/img/platforms/magento_2/2.png)
 
 6 - From within the **Cache Management** page, click on the **Flush Magento Cache** button in the top right.
 
-![3.png](/img/platforms/magento_2x/3.png)
+![3.png](/img/platforms/magento_2/3.png)
 
 7 - Confirm that Oxipay has been installed on your Magento Store. To do this, click on **System** in the **Admin Panel** then on **Configuration**.
 
-![4.png](/img/platforms/magento_1x/4.png)
+![4.png](/img/platforms/magento_1/4.png)
 
 8 - This will open up the **Configuration** page, scroll to the bottom and then click on **Payment Methods** on the left side menu.
 
-![5.png](/img/platforms/magento_1x/5.png)
+![5.png](/img/platforms/magento_1/5.png)
 
 9 - Confirm that Oxipay Checkout is visible as a Payment Method and once expanded it looks similar to the image below.
 
-![6.png](/img/platforms/magento_1x/6.png)
+![6.png](/img/platforms/magento_1/6.png)
 
 <div class="panel panel-primary">
   <div class="panel-heading">
