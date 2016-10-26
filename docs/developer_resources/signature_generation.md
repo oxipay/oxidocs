@@ -6,7 +6,7 @@ As mentioned, Oxipay uses HMAC-SHA256 for purposes of signing and verifying requ
 
 * The *API Key* serves as the <code>key</code> for HMAC-SHA256. This API key is only known to Oxipay and the merchant. Note that API keys are unique to every merchant and are also recycled on a regular basis.
 
-* The HTTP POST serves as the <code>message</code> and is the string of all key-value pairs that represent the transaction request POST. Note that the keys for the various key-value pairs are prefixed with <code>x_</code>. Also note that you would need to sort the various keys alphabetically and then concatentate them with a seperator. 
+* The HTTP POST serves as the <code>message</code> and is the string of all key-value pairs that represent the transaction request POST. Note that the keys for the various key-value pairs are prefixed with <code>x_</code>. Also note that you would need to sort the various keys alphabetically.
 
 The resulting HMAC-SHA256 signature needs to be hex-encoded and passed along with the remainder of the transaction payload as a value of the key <code>x_signature</code>
 
