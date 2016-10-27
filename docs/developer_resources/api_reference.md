@@ -8,13 +8,15 @@ There are two Oxipay endpoints that transaction information can be posted to and
 
 Posting a request to the live payment gateway with the <code>x_test</code> set to <code>false</code> will process a real transaction. This means the credit card that was used as part of the checkout process will be debited. On the other hand, posting to the test gateway simulates a transaction and is not processed as a real transaction; that is, no real dollar amount will be debited from the specified credit card.
 
-To test Oxipay, you are not only limited to the test (sandbox) URL. You can also use the live payment gateway but enable the <code>x_test</code> flag. Enabling the <code>x_test</code> flag will process the transaction via the live gateway but no real dollar amounts are debited from the credit card.
+To test Oxipay, you can use the test (sandbox) URL or you can use the live payment gateway with the testing flag enabled <code>x_test = true</code>. 
+Test transactions will not incur any debits, and any credit card details will not be stored. 
 
 | Oxipay Environment | URL |
 |--------------------|-----|
 | Production Endpoint | [https://secure.oxipay.com.au/Checkout?platform=Default](https://secure.oxipay.com.au/Checkout?platform=Default) |
 | Sandbox Endpoint | [https://xpozsecure.certegyezipay.com.au/Checkout?platform=Default](https://xpozsecure.certegyezipay.com.au/Checkout?platform=Default) |
 
+<a name="Responses"></a>
 ## Request POST
 
 Posting to the Oxipay endpoint, regardless of whether this is done in the live or test environment, should be done using the format <code>application/x-www-form-urlencoded</code>. Please note that Oxipay adopts the convention of prefixing the various key names with <code>x_</code> .
@@ -67,7 +69,8 @@ x_reference=123&x_account_id=1&x_amount=100.00&x_currency=AUD&x_url_callback=sam
 </div>
 <hr>
 
-## POST and GET Responses
+<a name="Responses"></a>
+## POST and GET responses
 
 Note that that there are two responses from Oxipay. The first response that Oxipay always performs is a server-to-server asynchronous POST to the shopping cart on the endpoint specified in the <code>x_url_callback</code> and in the format <code>application/x-www-form-urlencoded</code>. Similar to the request POST, the response POST includes key-values pairs that are specific to that transaction and indicate things such as the outcome of that particular transaction if it has failed or is completed successfully for instance.
 
