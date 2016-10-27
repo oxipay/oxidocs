@@ -8,7 +8,8 @@ There are two Oxipay endpoints that transaction information can be posted to and
 
 Posting a request to the live payment gateway with the <code>x_test</code> set to <code>false</code> will process a real transaction. This means the credit card that was used as part of the checkout process will be debited. On the other hand, posting to the test gateway simulates a transaction and is not processed as a real transaction; that is, no real dollar amount will be debited from the specified credit card.
 
-To test Oxipay, you can use the test (sandbox) URL or you can use the live payment gateway with the testing flag enabled <code>x_test</code>. Enabling the <code>x_test</code> flag will process the transaction via the live gateway but no real dollar amounts are debited from the credit card.
+To test Oxipay, you can use the test (sandbox) URL or you can use the live payment gateway with the testing flag enabled <code>x_test = true</code>. 
+Test transactions will not incur any debits, and any credit card details will not be stored. 
 
 | Oxipay Environment | URL |
 |--------------------|-----|
