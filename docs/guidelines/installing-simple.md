@@ -14,7 +14,7 @@ We have provided a series of premade images which have multiple ways that you ca
 
 ### Option 1
 
-Download the desired banner or tag from our <a href="/guidelines/banners">banners section</a>. Log into your websites Content managment System (eg: Wordpress) and click on edit to the page that would like the banner to appear on. Then follow the steps below.
+Download the desired banner or tag from our <a href="/guidelines/banners">banners section</a>. Log into your websites Content Managment System (eg: Wordpress) and click on edit to the page that you would like the banner to appear on. Then follow the steps below.
 <br>Step 1: Add the image through the text editor.
 <br>![01-add-media.png](/img/marketing-and-guidlines/01-add-media.png)
 <br>Step 2: Make sure you have the image selected and click on the Insert link option.
@@ -24,7 +24,7 @@ Download the desired banner or tag from our <a href="/guidelines/banners">banner
 
 ### Option 2
 
-Alternativly we have provided a small snippet of html that you can use. This is found under each image in the <a href="/guidelines/banners">banners section</a>. This will automatically load the images from our servers and display it on your site. It will also include a link to our how it works page so your customers can better understand how Oxipay will benefit.
+Alternatively we have provided a small snippet of html that you can use. This is found under each image in the <a href="/guidelines/banners">banners section</a>. This will automatically load the images from our servers and display it on your site. It will also include a link to our "how it works" page so your customers can better understand how Oxipay will benefit.
 The snippet will look something like the following.
 ```
 /** Example HTML **/
