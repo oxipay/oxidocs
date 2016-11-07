@@ -28,7 +28,7 @@ Alternatively we have provided a small snippet of html that you can use. This is
 The snippet will look something like the following.
 ```
 /** Example HTML **/
-<a id="oxipay-banner-01" target="_blank" href="https://oxipay.com.au/works"> <img alt="Oxipay" src="//images.oxipay.com.au/content/image/oxipay-banner-01" /> </a>
+<a id="oxipay-banner-01" target="_blank" href="https://oxipay.com.au/works"><img src="//images.oxipay.com.au/content/images/oxipay-banner-01.png"></a>
 ```
 #### CSS
 There is no CSS styling required if you choose the Simple Way.

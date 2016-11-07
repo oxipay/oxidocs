@@ -71,19 +71,7 @@ If you are using your own custom modal please place the following code inside of
 ```
 <iframe id="oxipay-modal" src="https://oxipay.com.au/externalmodal"></iframe>
 ```
-
-
-<div class="modal fade" id="oxipay-modal" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <iframe id="oxipay-external" src="https://oxipay.com.au/externalmodal/index" style="
-        width: 100%;
-        height: 70vh;
-        border: none;
-      "></iframe>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+<link rel="stylesheet" href="//images.oxipay.com.au/content/styles/oxipay-branding.css" type="text/css">
+<div id="oxipay-modal" style="display:none;">
+<iframe id="oxipay-external" src="https://oxipay.com.au/externalmodal/index"></iframe>
+</div>

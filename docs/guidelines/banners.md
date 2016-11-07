@@ -6,7 +6,7 @@ Recommended placement is at the bottom of each page.
 <p><a href="//images.oxipay.com.au/content/images/oxipay-banner-01.png" download>Download Banner-01</a></p>
 **Simple HTML** 
 ```
-<a id="oxipay-banner-01" href="https://oxipay.com.au/works"><img src="//images.oxipay.com.au/content/images/oxipay-banner-01.png"></a>
+<a id="oxipay-banner-01" target="_blank"  href="https://oxipay.com.au/works"><img src="//images.oxipay.com.au/content/images/oxipay-banner-01.png"></a>
 ```
 **Complex HTML** (Requires <a href="/guidelines/installing-complex/#installing-the-css">CSS</a> and <a href="/guidelines/installing-complex/#installing-the-modal-page">Modal</a>)
 ```
@@ -32,7 +32,7 @@ Recommended placement is under the price of the item before the add to cart butt
 <p><a href="//images.oxipay.com.au/content/images/oxipay-tag-01.png" download>Download Tag-01</a></p>
 **Simple HTML** 
 ```
-<a id="oxipay-tag-01" href="https://oxipay.com.au/works"><img src="//images.oxipay.com.au/content/images/oxipay-tag-01.png"></a>
+<a id="oxipay-tag-01" target="_blank" href="https://oxipay.com.au/works"><img src="//images.oxipay.com.au/content/images/oxipay-tag-01.png"></a>
 ```
 **Complex HTML** (Requires <a href="/guidelines/installing-complex/#installing-the-css">CSS</a> and <a href="/guidelines/installing-complex/#installing-the-modal-page">Modal</a>)
 ```
