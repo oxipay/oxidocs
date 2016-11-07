@@ -41,14 +41,4 @@ Recommended placement is under the price of the item before the add to cart butt
 </a>
 ```
 
-
-<div class="panel panel-primary">
-  <div class="panel-heading">
-    <h3 class="panel-title">Note</h3>
-  </div>
-  <div class="panel-body">
-    Please note that this documentation is still a work in progress
-  </div>
-</div>
-
 <small>*We reserve to right to change any linked image at anytime without prior notice</small>

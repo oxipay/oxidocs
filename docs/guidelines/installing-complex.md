@@ -2,15 +2,6 @@
 # The Complex Way
 (Intermediate HTML/CSS and JQuery Knowledge)
 This method describes the Complex Way to add the banners that are found <a href="/guidelines/banners">here.</a>
-<div class="panel panel-primary">
-  <div class="panel-heading">
-    <h3 class="panel-title">Note</h3>
-  </div>
-  <div class="panel-body">
-    Please note that this documentation is still a work in progress
-  </div>
-</div>
-
 
 If you have some development knowledge or have access to a developer we recommend that you choose this way. 
 Choose one or more of the following banners and place the HTML listed in the your preferred spot on your website.

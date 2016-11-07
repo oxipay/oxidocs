@@ -1,0 +1,17 @@
+.panel {
+    background-color: #eee;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #d8d8d8;
+    margin-bottom: 15px;
+}
+.panel-danger h3 {
+    color: #b92020;
+}
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #e68821;
+    
+}
+.wy-side-nav-search input[type=text] {
+    border-color:  #c1731c;
+}
