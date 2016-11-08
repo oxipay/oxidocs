@@ -25,4 +25,3 @@ pages:
 
 theme: readthedocs
 extra_css: [css/jquery.modal.min.css, css/custom.css]
-extra_js: [js/jquery.modal.js]
