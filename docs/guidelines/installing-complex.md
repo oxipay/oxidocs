@@ -11,7 +11,7 @@ To use our custom CSS please add the following link to your ```<head>``` tag in 
 ##Installing the Banners and Tags
 <strong>Step 1:</strong> Choose the Banner or Tag that you want to install from our list <a href="/guidelines/banners">here</a>. 
 <br><strong>Step 2:</strong> Place the HTML snippet in the desired place you'd like it to appear on your website. Depending on how your website is made this may vary.
-<br><br>Shopify uses can find their HTML by logging into their admin panel and clicking Online Store > Themes > Click on the "..." > Then Edit HTML/CSS
+<br><br>Shopify uses can follow this guide to modify their HTML/CSS [Shopify Guide to modify you site's theme](https://help.shopify.com/themes/customization#view-the-edit-html-css-page) 
 <br><br>We recommened placing the Banner in your base layout html so it will appear on all the pages in your website and placing the tag under the price variable on your products single page. 
 <br><br><strong>Step 3:</strong> Save and if you have installed the CSS correctly you should see a working Banner or Tag on the pages you edited on your website. If they are not displaying correctly please check to see if the CSS is being loaded.
 <br><strong>Step 4:</strong> Install one of the below Modals.
