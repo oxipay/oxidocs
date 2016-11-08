@@ -1,6 +1,6 @@
-# The Simple Way
-(Some HTML/CSS Knowledge)
-This method describes the Simple Way to add the banners that are found <a href="/guidelines/banners">here.</a>
+# The Basic Way
+(Minimal Website knowledge)
+This method describes the Basic Way to add the banners that are found <a href="/guidelines/banners">here.</a>
 
 For Merchants who are not experienced web developers or do not have access to one, we have created a simple and easy process so that they can display oxipay branding on their websites.
 We have provided a series of premade images which have multiple ways that you can display them on your websites.

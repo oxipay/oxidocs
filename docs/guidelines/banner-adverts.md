@@ -15,8 +15,8 @@ For ease of use we have created two ways* for you to display Oxipay branding on 
 
 ##Contents
 <ul>
-    <li><a href="/guidelines/installing-simple"><h4>Installing the Simple Way (Some HTML/CSS Knowledge)</h4></a></li>
-    <li><a href="/guidelines/installing-complex"><h4>Installing the Complex Way (Intermediate HTML/CSS and Javascript Knowledge)</h4></a></li>
+    <li><a href="/guidelines/installing-simple"><h4>Installing the Basic Way (Minimal Website Knowledge)</h4></a></li>
+    <li><a href="/guidelines/installing-complex"><h4>Installing the Developer Way (Intermediate HTML/CSS and Javascript Knowledge)</h4></a></li>
     <li><a href="/guidelines/banners"><h4>List of available Banners</h4></a></li>
     <li><a href="/guidelines/banners/#price-tags"><h4>List of available Tags</h4></a></li>
     
