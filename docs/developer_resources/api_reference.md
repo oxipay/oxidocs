@@ -27,7 +27,7 @@ Below is an overview of the various key-value pairs that can be passed to Oxipay
 
  Key | Description | Type | Example
 -----|-------------|------|---------
-x_merchant_id **Required**         | This is a unique Merchant ID that is assigned by Oxipay to individual merchants | unicode string | 123456
+x_account_id **Required**         | This is a unique Merchant ID that is assigned by Oxipay to individual merchants | unicode string | 123456
 x_amount **Required**             | Represents the transaction's total amount including any taxes and shipping costs | decimal | 99.90
 x_customer_billing_address1       | Billing address line 1 | unicode string | 97 Pirie St 
 x_customer_billing_address2       | Billing address line 2 | unicode string | Level 6 
