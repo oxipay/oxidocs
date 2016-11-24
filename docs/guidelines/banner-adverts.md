@@ -1,26 +1,17 @@
 # Adding an Oxipay Banner
 
 Placing an Oxipay Banner on your website is a good way to introduce Oxipay to your users and drive more sales through your store. So we have created this documentation to give you a selection of banners to choose from and display on your websites. 
-For ease of use we have created two ways* for you to display Oxipay branding on your website. The first way was created to require minimal HTML knowledge and the second way requires intermediate HTML/CSS and JQuery knowledge.
 
+ 
+##Installing the Banners and Tags
+<strong>Step 1:</strong> Choose the Banner or Tag that you want to install from our <a href="/guidelines/banners">Banners and Tags list</a>. 
+<br><strong>Step 2:</strong> Place the ```<script>``` tag in the desired place you'd like it to appear on your website. Depending on how your website is made this may vary.
+<br><br>Shopify uses can follow this guide to modify their layouts [Customizing themes](https://help.shopify.com/themes/customization#view-the-edit-html-css-page) 
+<br><br>We recommened placing the Banner in your base layout html page so it will appear on all pages in your website. The tag should be placed under the price variable on your products single page. 
+<br><br><strong>Step 3:</strong> Save and you should see a working Banner or Tag on the pages you edited.
 
-<div class="panel panel-primary">
-  <div class="panel-heading">
-    <h3 class="panel-title">Note</h3>
-  </div>
-  <div class="panel-body">
-   While we do provide two methods to display Oxipay on your website, we do highly recommend that you choose the second approach if possible. This approach is designed to give the user a better experience, keep them within the constrains of your website and ultimately drive more sales through your website.
-  </div>
-</div>
-
-##Contents
-<ul>
-    <li><a href="/guidelines/installing-simple"><h4>Installing the Basic Way (Minimal Website Knowledge)</h4></a></li>
-    <li><a href="/guidelines/installing-complex"><h4>Installing the Developer Way (Intermediate HTML/CSS and Javascript Knowledge)</h4></a></li>
-    <li><a href="/guidelines/banners"><h4>List of available Banners</h4></a></li>
-    <li><a href="/guidelines/banners/#price-tags"><h4>List of available Tags</h4></a></li>
-    
-</ul>
+### Working Example:
+<script id="oxipay-banner" src="https://oxipay.com.au/widgets/register-interest-large.js"></script>
 
 <small>We strive to write good documentation for our merchants. If there is a way we can improve our documentation, please let us know through <a href="mailto:support@oxipay.com.au?Subject=Oxipay Documentation">support@oxipay.com.au</a></small>
 <br>

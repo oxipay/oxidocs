@@ -19,8 +19,6 @@ pages:
 
 - Marketing & Advertising:
       - Introduction: guidelines/banner-adverts.md
-      - Installing the Basic Way: guidelines/installing-simple.md
-      - Installing the Developer Way: guidelines/installing-complex.md
       - Banners and Tags list: guidelines/banners.md
 
 theme: readthedocs
