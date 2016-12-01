@@ -1,17 +1,25 @@
-### Banner #1
-Large banner that opens 'Register-Interest' page
-<script id="oxipay-banner" src="https://oxipay.com.au/widgets/register-interest-large.js"></script>
-**Script**
+### Register-interest large
+<script id="registerInterestLarge" src="https://oxipay.com.au/widgets/register-interest-large.js"></script>
 ```
 <script id="oxipay-banner" src="https://oxipay.com.au/widgets/register-interest-large.js"></script>
 ```
 <br/>
-### Banner #2
-Small banner that opens 'Register-Interest' page
-<script id="oxipay-banner" src="https://oxipay.com.au/widgets/register-interest-small.js"></script>
-**Script**
+### Register-interest small
+<script id="registerInterestSmall" src="https://oxipay.com.au/widgets/register-interest-small.js"></script>
 ```
 <script id="oxipay-banner" src="https://oxipay.com.au/widgets/register-interest-small.js"></script>
+```
+<br/>
+### More-info large
+<script id="moreInfoLarge" src="https://oxipay.com.au/widgets/more-info-large.js"></script>
+```
+<script id="oxipay-banner" src="https://oxipay.com.au/widgets/more-info-large.js"></script>
+```
+<br/>
+### More-info small
+<script id="moreInfoSmall" src="https://oxipay.com.au/widgets/more-info-small.js"></script>
+```
+<script id="oxipay-banner" src="https://oxipay.com.au/widgets/more-info-small.js"></script>
 ```
 <br/>
 <small>*We reserve to right to change any linked image at anytime without prior notice</small>

@@ -15,3 +15,19 @@
 .wy-side-nav-search input[type=text] {
     border-color:  #c1731c;
 }
+
+#oxipay-tag-01 img {
+   height: 20px !important;
+}
+
+#oxipay-banner-01 img {
+   height: 100% !important;
+}
+
+#oxipay-banner-01 p {
+    font-size: 14px !important;
+}
+
+#oxipay-banner-01 h3 {
+    margin: 0px 0px 10px 0px !important;
+}
