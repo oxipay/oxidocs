@@ -14,7 +14,7 @@ Test transactions will not incur any debits, and any credit card details will no
 | Oxipay Environment | URL |
 |--------------------|-----|
 | Production Endpoint | [https://secure.oxipay.com.au/Checkout?platform=Default](https://secure.oxipay.com.au/Checkout?platform=Default) |
-| Sandbox Endpoint | [https://xpozsecure.certegyezipay.com.au/Checkout?platform=Default](https://xpozsecure.certegyezipay.com.au/Checkout?platform=Default) |
+| Sandbox Endpoint | [https://securesandbox.oxipay.com.au/Checkout?platform=Default](https://xpozsecure.certegyezipay.com.au/Checkout?platform=Default) |
 
 <a name="Responses"></a>
 ## Request POST
