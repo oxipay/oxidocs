@@ -15,7 +15,7 @@ Please note that Oxipay makes use of Shopify’s API architecture to enable the 
 
 #Integrating Oxipay#
 
-<div class="alert alert-info" role="alert">You will need your <b>Merchant ID</b> and an <b>Encryption Key</b> handy before continuing with the installation procdure.</div>
+<div class="alert alert-info" role="alert">You will need your <b>Merchant ID</b> and an <b>Encryption Key</b> handy before continuing with the installation procdure.</div><br/>
 
 1 – First log into the admin area of your Shopify store, then click on the Settings item at the bottom left.
 
@@ -36,38 +36,38 @@ Please note that Oxipay makes use of Shopify’s API architecture to enable the 
 
 3 – From within the Alternative Payments section; open up the ‘Select additional payment method’ drop-down menu and select Oxipay.
 
+![3.png](/img/platforms/shopify/3.png)
+
 <div class="panel panel-primary">
   <div class="panel-heading">
     <h3 class="panel-title">Note</h3>
   </div>
   <div class="panel-body">
-    The Oxipay option might or might not be visible. If you cannot see Oxipay, proceed to the next step (Step 7). Otherwise, if you can see Oxipay, you can skip to Step 10.
+    The Oxipay option might or might not be visible. If you cannot see Oxipay, proceed to the next step. Otherwise, if you can see Oxipay, you can skip to Step 8.
   </div>
 </div>
 
-4 – If Oxipay is not visible as an option from the drop-down menu, navigate to the following URL to manually add Oxipay as a payment gateway option:
- 
-https://www.shopify.com/login?redirect=authorize_gateway%2F1031227
+4 – If Oxipay is not visible as a payment option from the drop-down menu, please contact <a href="mailto:support@oxipay.com.au?Subject=Gateway Authorisation">support@oxipay.com.au</a> to request gateway authorisation. You should get a response within 1-2 business days containing a link that will enable Oxipay as a payment gateway option within your web-store:
 
-5 – You will be prompted to type in your store address as well as email and password combination.
-
-![3.png](/img/platforms/shopify/3.png)
-
-6 – This will present a screen prompting to add Oxipay as a payment gateway on your store. Click on Add payment gateway.
+5 – Once you click on the link; you will be prompted to type in your store address as well as your email-address/username and password as shown below:
 
 ![4.png](/img/platforms/shopify/4.png)
 
-7 – If successful, you will be presented with a pop-up at the bottom of your screen indicating that Oxipay was successfully added to the Alternative payments section.
+6 – Once you've Logged in; You will be presented with a screen prompting to add Oxipay as a payment gateway. Click on Add payment gateway.
 
 ![5.png](/img/platforms/shopify/5.png)
 
-8 – Scroll to the Alternative payments section, open up the Select additional payment method drop-down menu and then select Oxipay.
+7 – If successful, you will be presented with a pop-up at the bottom of your screen indicating that Oxipay was successfully added to the Alternative payments section.
 
 ![6.png](/img/platforms/shopify/6.png)
 
-9 – This will open up an area where you can type in your Merchant Number and Encryption Key as provided to you by Certegy, you can also specify the credit cards that you would like to accept on your Shopify store. Then click on Activate.
+8 – Scroll to the Alternative payments section, open up the Select additional payment method drop-down menu and then select Oxipay.
 
 ![7.png](/img/platforms/shopify/7.png)
+
+9 – This will open up an area where you can type in your Merchant Number and Encryption Key as provided to you by Certegy, you can also specify the credit cards that you would like to accept on your Shopify store. Then click on Activate.
+
+![8.png](/img/platforms/shopify/8.png)
 
 <div class="panel panel-primary">
   <div class="panel-heading">
@@ -78,9 +78,14 @@ https://www.shopify.com/login?redirect=authorize_gateway%2F1031227
   </div>
 </div>
 
-10 – This will open up the Oxipay gateway settings area where you can type in your Merchant Number and Encryption Key as supplied to you by Certegy.
-
-Important You will not be able to process payments via Oxipay until you input your Merchant Number and Encryption Key. You will also need to update your Encryption Key if it is recycled via the Merchant Portal.
+<div class="panel panel-danger">
+  <div class="panel-heading">
+    <h3 class="panel-title">Important</h3>
+  </div>
+  <div class="panel-body">
+    You will not be able to process payments via Oxipay until you input your Merchant Number and Encryption Key. You will also need to update your Encryption Key if it is recycled via the Merchant Portal.
+  </div>
+</div>
 
 Below is a description of some of the other settings that might appear on the Oxipay gateway settings area.
 
