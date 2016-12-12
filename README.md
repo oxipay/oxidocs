@@ -19,14 +19,19 @@ The oxidocs repository has all the documentation in markdown format. There is al
 
 To update the documentation the following steps need to be done.
 
-* To make the instructions easy; we've added some useful configurations in the local .gitconfig. To get this in your git include path, run the following:
-
-        git config --local include.path ../.gitconfig
-* clone this repository and initialise the submodule:
+* clone the repository and cd into it:
 
         git clone git@github.com:oxipay/oxidocs.git
         cd oxidocs
+
+* To make the instructions easy; we've added some useful configurations in the local .gitconfig. To get this in your git include path, run the following:
+
+        git config --local include.path ../.gitconfig
+
+* Initialise the submodule:
+
         git sync-build
+
 * Make your changes to the documentation
 * Build the documentation:
 
