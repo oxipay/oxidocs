@@ -1,21 +1,18 @@
 # Setting up Oxipay on a Shopify Store
 
 This document outlines the steps needed to integrate the Oxipay Payment Gateway into your Shopify store. The Oxipay Payment Gateway enables customers of your store to purchase items using their credit cards on an interest free payment plan.
+<br/>
 
-Please note that Oxipay makes use of Shopify’s API architecture to enable the processing payments via the Oxipay Payment Gateway. This API architecture significantly simplifies the configuration process and eliminates the need to install additional plugins or third party software packages.
+#Integrating Oxipay#
 
 <div class="panel panel-primary">
   <div class="panel-heading">
     <h3 class="panel-title">Note</h3>
   </div>
   <div class="panel-body">
-    Beware of sites or email messages that prompt you to install a plugin or a software package to enable Oxipay as a payment gateway on your Shopify site. Oxipay can be configured without the need for plugins or additional software.
+    You will need your <b>Merchant ID</b> and a corresponding <b>Encryption Key</b> before continuing with the installation. If you don't have either of these bits of information; please contact <a href="mailto:support@oxipay.com.au?Subject=Merchant ID">support@oxipay.com.au</a>.
   </div>
 </div>
-
-#Integrating Oxipay#
-
-<div class="alert alert-info" role="alert">You will need your <b>Merchant ID</b> and an <b>Encryption Key</b> handy before continuing with the installation procdure.</div><br/>
 
 1 – First log into the admin area of your Shopify store, then click on the Settings item at the bottom left.
 
@@ -133,6 +130,7 @@ Below is a description of some of the other settings that might appear on the Ox
     At the time of writing this document, Oxipay has been configured to only accepts Visa and/or MasterCard credit cards. Please contact us to discuss your options in processing Oxipay transaction using other credit card types.
   </div>
 </div>
+<br/>
  
 ##Oxipay Updates##
 Updates to Oxipay might be made in the future to either accommodate newer internet technologies that we deem essential to integrate into our Oxipay Payment Gateway or to accommodate new or deprecated functionality within the Shopify API.
