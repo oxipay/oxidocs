@@ -9,6 +9,8 @@ pages:
    - Magento 1: platforms/magento_1.md
    - Magento 2: platforms/magento_2.md
    - OneStep: platforms/onestep.md
+   - PrestaShop: platforms/prestashop.md
+   - CubeCart: platforms/cubecart.md
 
 - Developer Resources:
    - Introduction: developer_resources/introduction.md
