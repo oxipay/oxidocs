@@ -12,59 +12,71 @@ This document outlines the steps needed to install Oxipay on your CubeCart Store
   You will need a <b>Merchant ID</b> and <b>API Key</b> before continuing with the installation procedure.
 </div>
 
-The plugin can be installed automatically via CubeCart's Admin Control Panel. This section details how to upload the plugin, and install and configure its various parameters for it to work properly.
+The plugin can be installed via CubeCart's Admin Control Panel, either manually or automatically using a Token. This section details how to upload the plugin, and install and configure its various parameters for it to work properly.
 
 <div class="panel">
   If you have trouble accessing your CubeCart's Admin Control Panel, please consult CubeCart's official support documentation or your IT department to resolve the issue.
 </div>
 
-### Automatic Installation
+### Automatic Installation using Token
 
-**1** - Navigate to the following URL and select the **lightning bolt** button ![autoinstall1.png](/img/platforms/CubeCart/autoinstall1.png) , next to your required Oxipay plugin version, to reveal the **Auto Install/Upgrade Token**. Copy the **Token**.
+**1** - Navigate to the following URL.
 
 [https://www.cubecart.com/extensions/payment-gateways/oxipay](https://www.cubecart.com/extensions/payment-gateways/oxipay)
 
+**2** - Select the **lightning bolt** button, next to your required Oxipay plugin version, to reveal the **Auto Install/Upgrade Token**
+
+![autoinstall1.png](/img/platforms/CubeCart/autoinstall1.png)
+
+**3** - Copy the **Token** from within the pop-up.
+
 ![autoinstall2.png](/img/platforms/CubeCart/autoinstall2.png)
 
-**2** - Log into the CubeCart Admin Control Panel using a **Username** and **Password** combination that has already been configured as an Administrator.
+**4** - Log into the CubeCart Admin Control Panel using a **Username** and **Password** combination that has already been configured as an Administrator.
 
 ![autoinstall3.png](/img/platforms/CubeCart/autoinstall3.png)
 
-**3** - Once logged in, you will be presented with your Store's dashboard. From the side menu that appears to the left, scroll to the **Extensions** section and select **Manage Extensions**.
-
-**4** - Copy the **Auto Install/Upgrade Token** into the Token field on the **Manage Extensions** page and select the **Go** button.
+**5** - Once logged in, you will be presented with your Store's dashboard. From the side menu that appears to the left, scroll to the **Extensions** section and select **Manage Extensions**.
 
 ![autoinstall4.png](/img/platforms/CubeCart/autoinstall4.png)
 
-**5** - If the module has been installed correctly, the module will appear in the list of **Available Extensions**.
+**6** - Copy the **Auto Install/Upgrade Token** into the Token field on the **Manage Extensions** page and select the **Go** button.
 
 ![autoinstall5.png](/img/platforms/CubeCart/autoinstall5.png)
 
+**7** - If the module has been installed correctly, the module will appear in the list of **Available Extensions**.
+
 ![autoinstall6.png](/img/platforms/CubeCart/autoinstall6.png)
 
-**6** - If the automatic installation is not successful, you will be presented with a message at the top of the page similar to the screenshot below. If this continues to be a problem, please refer to the [Manual Installation](#manual-installation) procedure.
+<div class="panel">
+If the automatic installation is not successful, you will be presented with a message at the top of the page similar to the screenshot below. If this continues to be a problem, please refer to the <a href="#manual-installation">Manual Installation</a> procedure.
+</div>
 
 ![autoinstall7.png](/img/platforms/CubeCart/autoinstall7.png)
 
 ### Manual Installation
 
-**1** - Navigate to the following URL and select the **download** button ![manualinstall1.png](/img/platforms/CubeCart/manualinstall1.png) , next to your required Oxipay plugin version, to download the Oxipay plugin ZIP file.
+**1** - Navigate to the following URL.
 
 [https://www.cubecart.com/extensions/payment-gateways/oxipay](https://www.cubecart.com/extensions/payment-gateways/oxipay)
 
-**2** - Extract the ZIP file and copy the contents to the **modules/gateway** folder of your Store.
+**2** - Select the **download** button , next to your required Oxipay plugin version, to download the Oxipay plugin ZIP file.
 
-**3** - Ensure the folders/files have adequate read/write permissions set.
+![manualinstall1.png](/img/platforms/CubeCart/manualinstall1.png)
 
-**4** - Log into the CubeCart Admin Control Panel using a **Username** and **Password** combination that has already been configured as an Administrator.
+**3** - Extract the ZIP file and copy the contents to the **modules/gateway** folder of your server’s/site directory.
+
+**4** - Ensure the folders/files have adequate read/write permissions set.
+
+**5** - Log into the CubeCart Admin Control Panel using a **Username** and **Password** combination that has already been configured as an Administrator.
 
 ![manualinstall2.png](/img/platforms/CubeCart/manualinstall2.png)
 
-**5** - Once logged in, you will be presented with your Store's dashboard. From the side menu that appears to the left, scroll to the **Extensions** section and select **Manage Extensions**.
-
-**6** - If the module has been installed correctly, the module will appear in the list of **Available Extensions**.
+**6** - Once logged in, you will be presented with your Store's dashboard. From the side menu that appears to the left, scroll to the **Extensions** section and select **Manage Extensions**.
 
 ![manualinstall3.png](/img/platforms/CubeCart/manualinstall3.png)
+
+**7** - If the module has been installed correctly, the module will appear in the list of **Available Extensions**.
 
 ![manualinstall4.png](/img/platforms/CubeCart/manualinstall4.png)
 
@@ -82,7 +94,7 @@ The plugin can be installed automatically via CubeCart's Admin Control Panel. Th
 
 ![config1.png](/img/platforms/CubeCart/config1.png)
 <div class="panel">
-  We have intentionally masked the Merchant ID, API Key, and Gateway URLs in this support document. Please contact us and we will advise you of the settings to use.
+  We have intentionally masked the <b>Merchant ID</b> and <b>API Key</b> in this support document. Please contact us and we will advise you of the settings to use.
 </div>
 
 <hr>
@@ -117,8 +129,6 @@ The plugin can be installed automatically via CubeCart's Admin Control Panel. Th
 
 **4** - Once you have finished making the necessary configuration changes, click the **Save** button.
 
-![config3.png](/img/platforms/CubeCart/config3.png)
-
 **5** - **Australia** will be automatically set as an **Enabled Region** in the **Allowed Zones** tab. This must match the Country set in the CubeCart Store Settings.
 
 ![config2.png](/img/platforms/CubeCart/config2.png)
@@ -128,27 +138,64 @@ The plugin can be installed automatically via CubeCart's Admin Control Panel. Th
 
 ##Upgrading Oxipay
 
-To perform an automatic upgrade, simply follow the steps in the [Automatic Installation](#automatic-installation) section of this document.
-If you enabled the option to **Backup if already exists**, a backup of the previous plugin version will be created.
+###Automatic Upgrade
 
-Importantly, when you perform an auto upgrade, all the module settings are retained.
+<div class="panel">
+Importantly, when you perform an automatic upgrade, all the module settings are retained.
+That is, you do not need to type in your <b>Merchant ID</b> and <b>API Key</b> again.
+</div>
 
-![upgrade1.png](/img/platforms/CubeCart/upgrade1.png)
+**1** - Navigate to the following URL.
+
+[https://www.cubecart.com/extensions/payment-gateways/oxipay](https://www.cubecart.com/extensions/payment-gateways/oxipay)
+
+**2** - Select the **lightning bolt** button, next to your required Oxipay plugin version, to reveal the **Auto Install/Upgrade Token**
+
+![autoinstall1.png](/img/platforms/CubeCart/autoinstall1.png)
+
+**3** - Copy the **Token** from within the pop-up.
+
+![autoinstall2.png](/img/platforms/CubeCart/autoinstall2.png)
+
+**4** - Log into the CubeCart Admin Control Panel using a **Username** and **Password** combination that has already been configured as an Administrator.
+
+![autoinstall3.png](/img/platforms/CubeCart/autoinstall3.png)
+
+**5** - Once logged in, you will be presented with your Store's dashboard. From the side menu that appears to the left, scroll to the **Extensions** section and select **Manage Extensions**.
+
+![autoinstall4.png](/img/platforms/CubeCart/autoinstall4.png)
+
+**6** - Copy the **Auto Install/Upgrade Token** into the Token field on the **Manage Extensions** page.
+
+![autoinstall5.png](/img/platforms/CubeCart/autoinstall5.png)
+
+**7** - If you enable the option to **Backup if already exists**, a backup of the previous plugin version will be created.
+
+**8** - Select the **Go** button to complete the upgrade.
 
 <hr>
 
-Prior to manually upgrading, you will first need to un-install the previous version. To un-install the plugin you need to:
+###Manual Upgrade
+
+<div class="panel">
+Prior to manually upgrading, you will first need to un-install the previous version.
+</div>
+
+
+##Un-installing Oxipay
 
 **1** - Log into the CubeCart Admin Control Panel using a **Username** and **Password** combination that has already been configured as an Administrator.
 
-![upgrade2.png](/img/platforms/CubeCart/upgrade2.png)
+![uninstall1.png](/img/platforms/CubeCart/uninstall1.png)
 
 **2** - Once logged in, you will be presented with your Store's dashboard. From the side menu that appears to the left, scroll to the **Extensions** section and select **Manage Extensions**.
 
-**3** - In the list of **Available Extensions**, select the **delete** button ![upgrade3.png](/img/platforms/CubeCart/upgrade3.png) associated with the **Oxipay** extension.
+![uninstall2.png](/img/platforms/CubeCart/uninstall2.png)
+
+**3** - In the list of **Available Extensions**, select the **delete** button associated with the **Oxipay** extension.
 
 **4** - If the module has been un-installed correctly, the module will no longer appear in the list of **Available Extensions**.
 
-![upgrade4.png](/img/platforms/CubeCart/upgrade4.png)
+![uninstall3.png](/img/platforms/CubeCart/uninstall3.png)
 
 **5** - You can now download the new version of the Oxipay CubeCart plugin and install it as per the instructions in the [Installing Oxipay](#installing-oxipay) section of this document.
