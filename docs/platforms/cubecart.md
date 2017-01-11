@@ -1,6 +1,6 @@
 # Setting up Oxipay on a CubeCart Store
 
-This document outlines the steps needed to install Oxipay on your CubeCart Store. Oxipay is a payment gateway that enables customers on your Stores to purchase items using their credit cards on an interest free payment plan.
+This document outlines the steps needed to install Oxipay on your CubeCart Store.
 
 <div class="panel">
   At the time of writing this article, Oxipay was developed and tested against CubeCart version <code>6.1.1</code>, although the plugin should be compatible with other CubeCart versions. If you encounter any issues, please contact us to resolve them as soon as possible.
@@ -9,13 +9,13 @@ This document outlines the steps needed to install Oxipay on your CubeCart Store
 ## Installing Oxipay
 
 <div class="panel">
-  You will need a <b>Merchant ID</b> and <b>API Key</b> before continuing with the installation procedure.
+  You will need a <b>Merchant ID</b> and <b>API Key</b> before continuing with the installation procedure. They are required to uniquely identify the Merchant and provide a secure link. If you don't have either of these, please contact <a href="mailto:support@oxipay.com.au">support@oxipay.com.au</a>
 </div>
 
 The plugin can be installed via CubeCart's Admin Control Panel, either manually or automatically using a Token. This section details how to upload the plugin, and install and configure its various parameters for it to work properly.
 
 <div class="panel">
-  If you have trouble accessing your CubeCart's Admin Control Panel, please consult CubeCart's official support documentation or your IT department to resolve the issue.
+  If you have trouble accessing your CubeCart's Admin Control Panel, please consult CubeCart's official <a href="https://support.cubecart.com/Knowledgebase/List">knowledgebase</a> and <a href="https://forums.cubecart.com/">forums</a>, or your IT department to resolve the issue.
 </div>
 
 ### Automatic Installation using Token
@@ -32,7 +32,7 @@ The plugin can be installed via CubeCart's Admin Control Panel, either manually 
 
 ![autoinstall2.png](/img/platforms/CubeCart/autoinstall2.png)
 
-**4** - Log into the CubeCart Admin Control Panel using a **Username** and **Password** combination that has already been configured as an Administrator.
+**4** - Log into the CubeCart Admin Control Panel as an Administrator.
 
 ![autoinstall3.png](/img/platforms/CubeCart/autoinstall3.png)
 
@@ -68,7 +68,7 @@ If the automatic installation is not successful, you will be presented with a me
 
 **4** - Ensure the folders/files have adequate read/write permissions set.
 
-**5** - Log into the CubeCart Admin Control Panel using a **Username** and **Password** combination that has already been configured as an Administrator.
+**5** - Log into the CubeCart Admin Control Panel as an Administrator.
 
 ![manualinstall2.png](/img/platforms/CubeCart/manualinstall2.png)
 
@@ -86,7 +86,7 @@ If the automatic installation is not successful, you will be presented with a me
   This section describes the <b>Module Settings</b> available once you have installed the Oxipay plugin. This includes the Oxipay endpoints to communicate with, as well as whether or not to enable Test Mode.  
 </div>
   
-**1** - Log into the CubeCart Admin Control Panel using a **Username** and **Password** combination that has already been configured as an Administrator.
+**1** - Log into the CubeCart Admin Control Panel as an Administrator.
 
 **2** - Once logged in, you will be presented with your Store's dashboard. From the side menu that appears to the left, scroll to the **Extensions** section and select **Manage Extensions**.
 
@@ -114,10 +114,10 @@ If the automatic installation is not successful, you will be presented with a me
 * **Merchant ID** This is the Oxipay Merchant ID that you are provided with as part of your on-boarding when signing-up for Oxipay.
 <hr>
 
-* **API Key** The API Key or the Encryption key is a case-sensitive alpha-numeric sequence that is used to authenticate payment requests originating from your Store. It is similar to passwords that you use to login into the various online portals, such as email. It is vital that you protect it and don't provide it to unauthorised individuals. We might also recycle your API and provide you with a new one, if unauthorised individuals get hold of it or if it has been compromised.
+* **API Key** The API Key or the Encryption key is a case-sensitive alpha-numeric sequence that is used to authenticate payment requests originating from your Store. It is vital that you protect it and don't provide it to unauthorised individuals.
 <hr>
 
-* **Test Mode** Indicates whether to process payments over the live Oxipay Gateway URL resulting in real transactions, or to process it over the Oxipay Sandbox Gateway URL which will produce simulated (test) transactions with no real dollar amounts being debited. By default it should be set to **No** unless we are attempting to diagnose issues on your Store to do with Oxipay.
+* **Test Mode** Indicates whether to process payments over the live Oxipay Gateway URL resulting in real transactions, or to process it over the Oxipay Sandbox Gateway URL which will produce simulated (test) transactions with no real dollar amounts being debited. By default it should be set to **No** unless we are attempting to diagnose issues on your store to do with Oxipay, or you're testing integrating the plugin with your online CubeCart store.
 <hr>
 
 * **Test Gateway URL** This specifies the test Oxipay end-point that the plugin would need to communicate with when **Test Mode** is enabled. This is mainly used for troubleshooting purposes, particularly if we want to simulate test transactions on your CubeCart Store without having real dollar amounts debited from Credit Cards.
@@ -157,7 +157,7 @@ That is, you do not need to type in your <b>Merchant ID</b> and <b>API Key</b> a
 
 ![autoinstall2.png](/img/platforms/CubeCart/autoinstall2.png)
 
-**4** - Log into the CubeCart Admin Control Panel using a **Username** and **Password** combination that has already been configured as an Administrator.
+**4** - Log into the CubeCart Admin Control Panel as an Administrator.
 
 ![autoinstall3.png](/img/platforms/CubeCart/autoinstall3.png)
 
@@ -184,7 +184,7 @@ Prior to manually upgrading, you will first need to un-install the previous vers
 
 ##Un-installing Oxipay
 
-**1** - Log into the CubeCart Admin Control Panel using a **Username** and **Password** combination that has already been configured as an Administrator.
+**1** - Log into the CubeCart Admin Control Panel as an Administrator.
 
 ![uninstall1.png](/img/platforms/CubeCart/uninstall1.png)
 

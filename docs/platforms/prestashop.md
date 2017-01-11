@@ -1,6 +1,6 @@
 # Setting up Oxipay on a PrestaShop Store
 
-This document outlines the steps needed to install Oxipay on your PrestaShop store. Oxipay is a payment gateway that enables customers on your stores to purchase items using their credit cards on an interest free payment plan.
+This document outlines the steps needed to install Oxipay on your PrestaShop store.
 
 <div class="panel">
   At the time of writing this article, Oxipay was developed and tested against PrestaShop version <code>1.6.1.9</code>. Please note, however, that the plugin should still be compatible with  PrestaShop versions <code>1.6.X</code> and <code>1.7.X</code>.
@@ -9,13 +9,13 @@ This document outlines the steps needed to install Oxipay on your PrestaShop sto
 ## Installing Oxipay
 
 <div class="panel">
-  You will need your <b>Merchant ID</b> and an <b>Encryption Key</b> handy before continuing with the installation procedure.
+  You will need your <b>Merchant ID</b> and an <b>Encryption Key</b> handy before continuing with the installation procedure. They are required to uniquely identify the Merchant and provide a secure link. If you don't have either of these, please contact <a href="mailto:support@oxipay.com.au">support@oxipay.com.au</a>
 </div>
 
 The plugin can be installed automatically via PrestaShop's admin panel. This section details how to upload the plugin, and install and configure its various parameters for it to work properly.
 
 <div class="panel">
-  Installation of the plugin requires you to be able to access the store's admin area. If you have trouble accessing your PrestaShop's admin area, please consult PrestaShop's official support documentation or your IT department to resolve the issue.
+  Installation of the plugin requires you to be able to access the store's admin area. If you have trouble accessing your PrestaShop's admin area, please consult <a href="http://doc.prestashop.com/dashboard.action">PrestaShop's official support documentation</a> or your IT department to resolve the issue.
 </div>
 
 ### Installation Procedure
@@ -25,10 +25,10 @@ The plugin can be installed automatically via PrestaShop's admin panel. This sec
 [https://github.com/oxipay/oxipay-prestashop/releases](https://github.com/oxipay/oxipay-prestashop/releases)
 
 <div class="panel">
-  <b>oxipay-prestashop</b> is a private GitHub repository. If you don't have access, please contact <a href="mailto:support@oxipay.com.au?Subject=Merchant ID">support@oxipay.com.au</a> to get access or to receive the plugin via email.
+  <b>oxipay-prestashop</b> is a private GitHub repository. If you don't have access, please contact <a href="mailto:support@oxipay.com.au">support@oxipay.com.au</a> to get access or to receive the plugin via email.
 </div>
 
-**2** - Log into your PrestaShop's admin area using an **Email address** and a **Password** combination that has already been configured as an admin.
+**2** - Log into your PrestaShop's admin area.
 
 ![1.png](/img/platforms/prestashop/1.png)
 
@@ -92,7 +92,7 @@ The plugin can be installed automatically via PrestaShop's admin panel. This sec
 ## Configuring Oxipay
 
 <div class="panel">
-  This section assumes that you have just finished installing the Oxipay plugin and are still on the <b>Oxipay Configuration</b> page that you were automatically re-directed to after installation. Otherwise, you can bring up this page by using the <b>Configure</b> option - see the <b>Quick Config Actions</b> section below.
+  This section assumes that you have just finished installing the Oxipay plugin and are still on the <b>Oxipay Configuration</b> page that you were automatically re-directed to after installation. Otherwise, you can bring up this page by using the <b>Configure</b> option - see the <a href="#quick-config-actions">Quick Config Actions</a> section below.
 </div>
 
 This section details the various parameters that you would need to configure for you to be able to process payments via the Oxipay payment gateway. This includes things such as the plugin's logo, Oxipay endpoints to communicate with, as well as whether or not to enable Test Mode.
@@ -143,12 +143,12 @@ This section details the various parameters that you would need to configure for
 ![config6.png](/img/platforms/prestashop/config6.png)
 <hr>
 
-* **API Key** The API Key or the Encryption key is a case-sensitive alpha-numeric sequence that is used to authenticate payment requests originating from your store. It is similar to passwords that you use to login into the various online portals, such as email. It is vital that you protect it and don't provide it to unauthorised individuals. We might also recycle your API and provide you with a new one, if unauthorised individuals get hold of it or if it has been compromised.
+* **API Key** The API Key or the Encryption key is a case-sensitive alpha-numeric sequence that is used to authenticate payment requests originating from your store. It is vital that you protect it and don't provide it to unauthorised individuals.
 
 ![config7.png](/img/platforms/prestashop/config7.png)
 <hr>
 
-* **Test Mode** Indicates whether to process payments over the live Oxipay Gateway URL resulting in real transactions, or to process it over the Oxipay Sandbox Gateway URL which will produce simulated (test) transactions with no real dollar amounts being debited. By default it should be set to **No** unless we are attempting to diagnose issues on your store to do with Oxipay.
+* **Test Mode** Indicates whether to process payments over the live Oxipay Gateway URL resulting in real transactions, or to process it over the Oxipay Sandbox Gateway URL which will produce simulated (test) transactions with no real dollar amounts being debited. By default it should be set to **No** unless we are attempting to diagnose issues on your store to do with Oxipay, or you're testing integrating the plugin with your online PrestaShop store.
 
 ![config8.png](/img/platforms/prestashop/config8.png)
 <hr>
