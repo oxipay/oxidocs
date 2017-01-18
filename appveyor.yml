@@ -19,3 +19,12 @@ on_success:
    - git add --all
    - git commit -m "auto-generated message from appveyor build"
    - git push
+notifications:
+  - provider: Email
+    to:
+      - devadmin@certegy.com.au
+      - ryan.bartsch@certegy.com.au
+  - provider: Slack
+    auth_token:
+      secure: QWE2vFI2LUFAu+jx4lXHihtpPFoVi+ru0mHSC/BvsyXYcRvgh7Tc8zEEaKkj1n5V09+Ti39CvVooS3Y8VTn7PYC6lef2OrQQ+ivqkJL+lZI=
+    channel: '#alerts'
