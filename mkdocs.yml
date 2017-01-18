@@ -1,8 +1,6 @@
 site_name: Oxipay Documentation
 pages:
-
 - Home: index.md
-
 - Platforms:
    - Shopify: platforms/shopify.md
    - WooCommerce: platforms/woocommerce.md
@@ -11,18 +9,16 @@ pages:
    - OneStep: platforms/onestep.md
    - PrestaShop: platforms/prestashop.md
    - CubeCart: platforms/cubecart.md
-
 - Developer Resources:
    - Introduction: developer_resources/introduction.md
    - Checkout Process: developer_resources/checkout_process.md
    - API Reference: developer_resources/api_reference.md
    - Sample cURL Script: developer_resources/sample_curl.md
    - Signature Generation: developer_resources/signature_generation.md
-
 - Marketing & Advertising Guidelines:
       - Introduction: guidelines/introduction.md
       - Installation: guidelines/installation.md
       - Widget list: guidelines/widgets.md
-
 theme: readthedocs
 extra_css: [css/jquery.modal.min.css, css/custom.css]
+extra_javascript: [js/jquery.modal.js]
