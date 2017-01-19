@@ -1,4 +1,4 @@
 [submodule "site"]
 	path = site
-	url = git@github.com:oxipay/oxipay.github.io.git
-   branch = master
+	url = https://github.com/oxipay/oxipay.github.io.git
+  branch = master
