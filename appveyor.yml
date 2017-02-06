@@ -23,6 +23,7 @@ on_success:
   - git sync-build
   - cmd: mkdocs build
   - ps: cd site
+  - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
   - git add --all
   - git commit -m "auto-generated message from appveyor build"
   - git push
