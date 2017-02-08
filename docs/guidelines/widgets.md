@@ -1,27 +1,50 @@
 ### Register-interest large
-<script id="registerInterestLarge" src="https://oxipay.com.au/widgets/register-interest-large.js"></script>
+<script id="registerInterestLarge" src="http://images.oxipay.com.au/content/scripts/register-interest-large.js"></script>
 ```
-<script id="oxipay-banner" src="https://oxipay.com.au/widgets/register-interest-large.js"></script>
+<script id="oxipay-banner" src="http://images.oxipay.com.au/content/scripts/register-interest-large.js"></script>
 ```
 <br/>
 ### Register-interest small
-<script id="registerInterestSmall" src="https://oxipay.com.au/widgets/register-interest-small.js"></script>
+<script id="registerInterestSmall" src="http://images.oxipay.com.au/content/scripts/register-interest-small.js"></script>
 ```
-<script id="oxipay-banner" src="https://oxipay.com.au/widgets/register-interest-small.js"></script>
+<script id="oxipay-banner" src="http://images.oxipay.com.au/content/scripts/register-interest-small.js"></script>
 ```
 <br/>
 ### More-info large
-<script id="moreInfoLarge" src="https://oxipay.com.au/widgets/more-info-large.js"></script>
+<script id="moreInfoLarge" src="http://images.oxipay.com.au/content/scripts/more-info-large.js"></script>
 ```
-<script id="oxipay-banner" src="https://oxipay.com.au/widgets/more-info-large.js"></script>
+<script id="oxipay-banner" src="http://images.oxipay.com.au/content/scripts/more-info-large.js"></script>
 ```
 <br/>
 ### More-info small
-<script id="moreInfoSmall" src="https://oxipay.com.au/widgets/more-info-small.js"></script>
+<script id="moreInfoSmall" src="http://images.oxipay.com.au/content/scripts/more-info-small.js"></script>
 ```
-<script id="oxipay-banner" src="https://oxipay.com.au/widgets/more-info-small.js"></script>
+<script id="oxipay-banner" src="http://images.oxipay.com.au/content/scripts/more-info-small.js"></script>
 ```
-<br/>
+<br>
+
+### Price-info widget
+<script id="oxipay-banner" src=" http://images.oxipay.com.au/content/scripts/price-info.js?productPrice={{current_variant.price | divided_by: 100.00}}"></script>
+```
+<script id="oxipay-banner" src=" http://images.oxipay.com.au/content/scripts/price-info.js?productPrice=PlaceYourProductPrice></script>
+```
+
+<br/><br/>
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Installation based on Platforms</h3>
+  </div>
+  <div class="panel-body">
+<ul>
+  <li><a href="../../price-info/shopify">Shopify specific instructions</a></li>
+  <li><a href="../../price-info/woocommerce">WooCommerce specific instructions</a></li>
+</ul>
+  </div>
+</div>
+
+<br/><br/>
+
 <small>*We reserve to right to change any linked image at anytime without prior notice</small>
 <br/><br/>
 <small>We strive to write good documentation for our merchants. If there is a way we can improve our documentation, please let us know through <a href="mailto:support@oxipay.com.au?Subject=Oxipay Documentation">support@oxipay.com.au</a></small>
