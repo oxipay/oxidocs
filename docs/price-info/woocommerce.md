@@ -10,10 +10,10 @@ YourWordpressFolder\wp-content\plugins\woocommerce\templates\single-product
 ```
 <strong>Step 3:</strong> Place the ```<script>``` tag in the below "Price tag".<br>
 ```
-<script id="oxipay-banner" src="http://images.oxipay.com.au/content/scripts/price-info.js?productPrice=<?php echo $product->get_display_price() ?>"></script>
+<script id="oxipay-banner" src="https://widgets.oxipay.com.au/content/scripts/price-info.js?productPrice=<?php echo $product->get_display_price() ?>"></script>
 ```
 <strong>Step 4:</strong> Save and you should see a working widget on your website.
-<script id="oxipay-banner" src="http://images.oxipay.com.au/content/scripts/price-info.js?productPrice=0"></script>
+<script id="oxipay-banner" src="https://widgets.oxipay.com.au/content/scripts/price-info.js?productPrice=0"></script>
 <br>
 <div class="alert alert-danger">
   <strong>Note:</strong> If you are using a custom template for WooCommerce, "Price.php" will be located in "yourtheme/woocommerce/single-product/price.php."
