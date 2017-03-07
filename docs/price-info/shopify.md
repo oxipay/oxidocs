@@ -13,10 +13,10 @@ For adding Price-info Widget to your Website, follow the instruction<br>
 ```
 <script id="oxipay-banner" src=" https://widgets.oxipay.com.au/content/scripts/price-info.js?productPrice={{current_variant.price | divided_by: 100.00}}"></script>
 ```
-<strong>Step 6:</strong> Save and you should see a working widget on your website.
+<strong>Step 6:</strong> Save and you should see a working widget on your website.<br><br>
 <script id="oxipay-banner" src=" https://widgets.oxipay.com.au/content/scripts/price-info.js?productPrice={{current_variant.price | divided_by: 100.00}}"></script>
 
-<small>*We reserve to right to change any linked image at anytime without prior notice</small>
+<small>*We reserve the right to change any linked image at anytime without prior notice</small>
 <br/><br/>
 <small>We strive to write good documentation for our merchants. If there is a way we can improve our documentation, please let us know through <a href="mailto:support@oxipay.com.au?Subject=Oxipay Documentation">support@oxipay.com.au</a></small>
 <br>

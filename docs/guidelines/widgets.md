@@ -24,7 +24,7 @@
 <br>
 
 ### Price-info widget
-<script id="oxipay-banner" src=" https://widgets.oxipay.com.au/content/scripts/price-info.js?productPrice={{current_variant.price | divided_by: 100.00}}"></script>
+<script id="oxipay-price-info" src=" https://widgets.oxipay.com.au/content/scripts/price-info.js?productPrice=0"></script><br>
 ```
 <script id="oxipay-banner" src=" https://widgets.oxipay.com.au/content/scripts/price-info.js?productPrice=PlaceYourProductPrice></script>
 ```
@@ -45,7 +45,7 @@
 
 <br/><br/>
 
-<small>*We reserve to right to change any linked image at anytime without prior notice</small>
+<small>*We reserve the right to change any linked image at anytime without prior notice</small>
 <br/><br/>
 <small>We strive to write good documentation for our merchants. If there is a way we can improve our documentation, please let us know through <a href="mailto:support@oxipay.com.au?Subject=Oxipay Documentation">support@oxipay.com.au</a></small>
 <br>

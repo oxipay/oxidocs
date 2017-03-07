@@ -12,7 +12,7 @@ YourWordpressFolder\wp-content\plugins\woocommerce\templates\single-product
 ```
 <script id="oxipay-banner" src="https://widgets.oxipay.com.au/content/scripts/price-info.js?productPrice=<?php echo $product->get_display_price() ?>"></script>
 ```
-<strong>Step 4:</strong> Save and you should see a working widget on your website.
+<strong>Step 4:</strong> Save and you should see a working widget on your website.<br><br>
 <script id="oxipay-banner" src="https://widgets.oxipay.com.au/content/scripts/price-info.js?productPrice=0"></script>
 <br>
 <div class="alert alert-danger">
@@ -20,7 +20,7 @@ YourWordpressFolder\wp-content\plugins\woocommerce\templates\single-product
 </div>
 <br>
 
-<small>**We reserve to right to change any linked image at anytime without prior notice</small>
+<small>**We reserve the right to change any linked image at anytime without prior notice</small>
 <br/><br/>
 <small>We strive to write good documentation for our merchants. If there is a way we can improve our documentation, please let us know through <a href="mailto:support@oxipay.com.au?Subject=Oxipay Documentation">support@oxipay.com.au</a></small>
 <br>
