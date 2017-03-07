@@ -61,3 +61,12 @@
 #oxipay-img {
     top: 30px !important;
 }
+
+#oxipay-tag-02{
+  font-size: 12px;
+  margin-bottom: -40px !important;
+}
+
+#oxipay-tag-02 > p{
+  margin-bottom: 10px !important;
+}
