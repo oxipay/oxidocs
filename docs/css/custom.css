@@ -10,7 +10,7 @@
 }
 .wy-side-nav-search, .wy-nav-top {
     background-color: #e68821;
-    
+
 }
 .wy-side-nav-search input[type=text] {
     border-color:  #c1731c;
@@ -30,4 +30,49 @@
 
 #oxipay-banner-01 h3 {
     margin: 0px 0px 10px 0px !important;
+}
+
+
+
+
+.fade.in {
+    opacity: 1;
+}
+.alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+.alert-dismissable, .alert-dismissible {
+    padding-right: 35px;
+}
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.fade {
+    opacity: 0;
+    -webkit-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+}
+#oxipay-img {
+    top: 30px !important;
+}
+
+#oxipay-tag-02{
+  font-size: 12px;
+  margin-bottom: -40px !important;
+}
+
+#oxipay-tag-02 > p{
+  margin-bottom: 10px !important;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+     /* IE10+ CSS styles go here */
+     #oxipay-img{
+     top: 0px !important;
+     }
 }
