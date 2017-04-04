@@ -4,18 +4,21 @@
 <script id="oxipay-banner" src="https://widgets.oxipay.com.au/content/scripts/register-interest-large.js"></script>
 ```
 <br/>
+
 ### Register-interest small
 <script id="registerInterestSmall" src="https://widgets.oxipay.com.au/content/scripts/register-interest-small.js"></script>
 ```
 <script id="oxipay-banner" src="https://widgets.oxipay.com.au/content/scripts/register-interest-small.js"></script>
 ```
 <br/>
+
 ### More-info large
 <script id="moreInfoLarge" src="https://widgets.oxipay.com.au/content/scripts/more-info-large.js"></script>
 ```
 <script id="oxipay-banner" src="https://widgets.oxipay.com.au/content/scripts/more-info-large.js"></script>
 ```
 <br/>
+
 ### More-info small
 <script id="moreInfoSmall" src="https://widgets.oxipay.com.au/content/scripts/more-info-small.js"></script>
 ```
