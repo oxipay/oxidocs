@@ -9,12 +9,12 @@ There are two Oxipay endpoints that transaction information can be posted to and
 Posting a request to the live payment gateway with the <code>x_test</code> set to <code>false</code> will process a real transaction. This means the credit card that was used as part of the checkout process will be debited. On the other hand, posting to the test gateway simulates a transaction and is not processed as a real transaction; that is, no real dollar amount will be debited from the specified credit card.
 
 To test Oxipay, you can use the test (sandbox) URL or you can use the live payment gateway with the testing flag enabled <code>x_test = true</code>. 
-Test transactions will not incur any debits, and any credit card details will not be stored. 
+Test transactions will not incur any debits, and any credit card details will not be stored.
 
 | Oxipay Environment | URL |
 |--------------------|-----|
 | Production Endpoint | [https://secure.oxipay.com.au/Checkout?platform=Default](https://secure.oxipay.com.au/Checkout?platform=Default) |
-| Sandbox Endpoint | [https://securesandbox.oxipay.com.au/Checkout?platform=Default](https://xpozsecure.certegyezipay.com.au/Checkout?platform=Default) |
+| Sandbox Endpoint | [https://securesandbox.oxipay.com.au/Checkout?platform=Default](https://securesandbox.oxipay.com.au/Checkout?platform=Default) |
 
 <a name="Responses"></a>
 ## Request POST
@@ -29,19 +29,19 @@ Below is an overview of the various key-value pairs that can be passed to Oxipay
 -----|-------------|------|---------
 x_account_id **Required**         | This is a unique Merchant ID that is assigned by Oxipay to individual merchants | unicode string | 123456
 x_amount **Required**             | Represents the transaction's total amount including any taxes and shipping costs | decimal | 99.90
-x_customer_billing_address1       | Billing address line 1 | unicode string | 97 Pirie St 
-x_customer_billing_address2       | Billing address line 2 | unicode string | Level 6 
-x_customer_billing_city           | Billing city | unicode string | Adelaide 
-x_customer_billing_country        | Billing country | iso-3166-1 alpha-2 | AU 
-x_customer_billing_state          | Billing state | unicode string | SA 
+x_customer_billing_address1       | Billing address line 1 | unicode string | 97 Pirie St
+x_customer_billing_address2       | Billing address line 2 | unicode string | Level 6
+x_customer_billing_city           | Billing city | unicode string | Adelaide
+x_customer_billing_country        | Billing country | iso-3166-1 alpha-2 | AU
+x_customer_billing_state          | Billing state | unicode string | SA
 x_customer_billing_postcode       | Billing postcode | unicode string | 5000 |
-x_customer_email                  | Billing email address | unicode string | dummy@gmail.com 
-x_customer_first_name             | Customer's first name | unicode string | John 
-x_customer_last_name              | Customer's last name | unicode string | Appleseed 
+x_customer_email                  | Billing email address | unicode string | dummy@gmail.com
+x_customer_first_name             | Customer's first name | unicode string | John
+x_customer_last_name              | Customer's last name | unicode string | Appleseed
 x_customer_phone                  | Customer's phone number | unicode string | 0400 000 000
-x_customer_shipping_address1      | Shipping address line 1 | unicode string | 97 Pirie St 
-x_customer_shipping_address2      | Shipping address line 2 | unicode string | Level 6 
-x_customer_shipping_city          | Shipping city | unicode string | Adelaide 
+x_customer_shipping_address1      | Shipping address line 1 | unicode string | 97 Pirie St
+x_customer_shipping_address2      | Shipping address line 2 | unicode string | Level 6
+x_customer_shipping_city          | Shipping city | unicode string | Adelaide
 x_customer_shipping_country       | Shipping country | unicode string | AU
 x_customer_shipping_first_name    | Customer's first name (Shipping) | unicode string | John
 x_customer_shipping_last_name     | Customer's last name (Shipping) | unicode string | Appleseed
@@ -50,13 +50,13 @@ x_customer_shipping_state         | Shipping state | unicode string | SA
 x_customer_shipping_postcode      | Shipping postcode | unicode string | 5000
 x_description                     | Item's description as setup in the shopping cart | unicode string | Order #767
 x_reference **Required**          | A reference that uniquely references the order and assigned by the merchant. This is unique to the shopping cart. | ascii string | 19783
-x_shop_country **Required**       | Country of where the merchant's store is located | iso-3166-1alpha-2 | AU 
+x_shop_country **Required**       | Country of where the merchant's store is located | iso-3166-1alpha-2 | AU
 x_shop_name **Required**          | Store name as advertised on the internet, TV and other media | Shop Inc
 x_signature **Required**          | Request payload that is signed/verified using HMAC-SHA256 | hex string, case-insensitive | See [Signature Generation]()
 x_test **Required**               | Indicates whether the transaction is to be processed using the live or test Oxipay endpoint | true/false | true  
-x_url_callback **Required**       | Callback notifications are sent asynchronously to this URL | URL | shop.com.au/callback 
-x_url_cancel **Required**         | Customers are redirected to this URL if they want to quit their Oxipay transaction and return to the shopping cart store instead | URL | shop.com.au/cancel 
-x_url_complete **Required**       | Customers are redirected to this URL if they have successfully processed their transaction using Oxipay | URL | shop.com.au/compete 
+x_url_callback **Required**       | Callback notifications are sent asynchronously to this URL | URL | shop.com.au/callback
+x_url_cancel **Required**         | Customers are redirected to this URL if they want to quit their Oxipay transaction and return to the shopping cart store instead | URL | shop.com.au/cancel
+x_url_complete **Required**       | Customers are redirected to this URL if they have successfully processed their transaction using Oxipay | URL | shop.com.au/compete
 
 # Sample POST
 
@@ -89,6 +89,3 @@ x_amount **Required**             | Represents the transaction's total amount in
 x_gateway_reference **Required**  | A reference for the authorisation issues by Oxipay that is unique | unique string | 123
 x_timestamp **Required**          | Time at which the transaction is completed, in UTC format YYYY-MM-DDTHH:MM:SSZ | iso-8601 in UTC | 2017-06-24T12:11:43Z
 x_result **Required**             | Values that represent the outcome of a transaction | Valid values are **completed**, **failed** and **pending** | **failed**
-
-
-
