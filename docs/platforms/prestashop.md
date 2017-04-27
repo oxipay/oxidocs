@@ -63,7 +63,7 @@ The plugin can be installed automatically via PrestaShop's admin panel. This sec
 
 ![6.png](/img/platforms/prestashop/6.png)
 
-**9** - To confirm that the plugin was successfully uploaded to PrestaShop, scroll downwards and bring the **Modules List** panel into focus. In the search field in the top left hand corner of the panel, type in **oxipay** as per the screenshot below. This will filter all modules out but will leave the **Oxipay Prestashop** module in focus.
+**9** - To confirm that the plugin was successfully uploaded to PrestaShop, scroll downwards and bring the **Modules List** panel into focus. In the search field in the top left hand corner of the panel, type in **oxipay** as per the screenshot below. This will filter all modules out but will leave the **Oxipay PrestaShop** module in focus.
 
 ![7.png](/img/platforms/prestashop/7.png)
 

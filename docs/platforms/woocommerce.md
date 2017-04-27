@@ -230,7 +230,7 @@ Updates to Oxipay might be made in the future to either accommodate newer intern
 
 2 – Click on **Plugins** on the left sidebar; then click on **Installed Plugins**.
 
-3 – Scroll to the bottom, bring Oxipay into focus and then click on the **Deactive** link associated with it.
+3 – Scroll to the bottom, bring Oxipay into focus and then click on the **Deactivate** link associated with it.
 
 ![21.png](/img/platforms/woocommerce/21.png)
 

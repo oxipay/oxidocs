@@ -32,8 +32,25 @@
     margin: 0px 0px 10px 0px !important;
 }
 
+.wy-menu-vertical .subnav .caption-text {
+    padding: 0.4045em 2.427em;
+}
 
+.wy-menu-vertical .toctree-l1 > ul.subnav > li.current {
+    /*background: transparent;*/
+}
 
+.wy-menu-vertical li ul.subnav ul.subnav {
+    padding-left: 0;
+}
+
+.wy-menu-vertical li ul.subnav ul.subnav a{
+    padding-left: 3.25em;
+}
+
+.wy-menu-vertical li ul.subnav ul.subnav ul.subnav {
+    padding-left: 1em;
+}
 
 .fade.in {
     opacity: 1;
