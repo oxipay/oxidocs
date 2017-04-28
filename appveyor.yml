@@ -27,10 +27,15 @@ on_success:
   - git add --all
   - git commit -m "auto-generated message from appveyor build"
   - git push
+  - ps: cd ..
+  - git add --all
+  - git commit -m "[skip ci] updating submodule link to oxipay.github.io"
+  - git push
 notifications:
   - provider: Email
     to:
       - ryan.bartsch@certegy.com.au
+      - devadmin@oxipay.com.au
   - provider: Slack
     auth_token:
       secure: QWE2vFI2LUFAu+jx4lXHihtpPFoVi+ru0mHSC/BvsyXYcRvgh7Tc8zEEaKkj1n5V09+Ti39CvVooS3Y8VTn7PYC6lef2OrQQ+ivqkJL+lZI=
