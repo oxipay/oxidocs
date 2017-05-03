@@ -1,4 +1,4 @@
-<h2>Setup on Shopify</h2>
+<h1>Setup on Shopify</h1>
 
 To setup and configure Oxipay on your Shopify store, please use the instructions below
 <br/>
