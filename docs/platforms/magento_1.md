@@ -1,4 +1,4 @@
-<h2>Setup on WooCommerce</h2>
+<h1>Setup on WooCommerce</h1>
 
 You can install Oxipay on your site by manually copying plugin files across into your store's webserver. Use the same instructions to upgrade your existing plugin to a newer release.
 
