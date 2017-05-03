@@ -1,6 +1,16 @@
-# Setup on WooCommerce
+<h2>Setup on WooCommerce</h2>
 
-Oxipay can be installed Automatically by uploading the plugin or manually by copying plugin files into the webserver.
+You can install Oxipay automatically by uploading the plugin or manually by copying plugin files. Use the same instructions to upgrade your existing plugin to a newer release.
+
+## Supported Tech Stacks
+
+The plugin has been developed and tested against the following Magento tech stacks:
+
+<table style="font-size:1.1rem">
+    <tr><td>Magento Platform</td><td>Operating System</td><td>MySQL</td><td>PHP Version</td><td>Web Server</td><tr>
+    <tr><td>Magento 1.9.1.0 (CE)</td><td>Ubuntu 16.04 LTS</td><td>14.14</td><td>5.6.30</td><td>Apache 2.4.18</td><tr>
+    <tr><td>Magento 1.4.2.0 (CE)</td><td>Ubuntu 14.04</td><td>14.14</td><td>5.5.9</td><td>Apache 2.4.7</td><tr>
+</table>
 
 ## Automatic Installation
 
@@ -29,20 +39,20 @@ Oxipay can be installed Automatically by uploading the plugin or manually by cop
 ## Manual Installation
 
 <div class="panel">
-  We recommend an IT professional or a Web Developer perform installation using the procedure below as they require solid knowledge of the WordPress and WooCommerce platforms.
+  We recommend manual installation be performed by an IT professional or a Web Developer.
 </div>
 
 1 - Download the plugin from [github.com/oxipay/oxipay-woocommerce/releases](https://github.com/oxipay/oxipay-woocommerce/releases).
 
-2 - Unzip it then copy the un-zipped folder into your WordPress server at the following path: [wordpress-folder]/wp-content/plugins
+2 - Unzip it then copy the files into your WordPress server at the following path: [wordpress-folder]/wp-content/plugins
 
-## Configuring Oxipay
+<h2>Oxipay Settings</h2>
 
-1 - Open WooCommerce's Settings page, then click on **Checkout** then **Oxipay**.
+Open WooCommerce's **Settings** page, click on **Checkout** then on **Oxipay**.
 
 ![11.png](/img/platforms/woocommerce/11.png)
 
-Below is a description of the various Oxipay settings.
+Below is a description of the various settings you will find there.
 
 **Enabled**: Enables or disables Oxipay
 
@@ -57,7 +67,3 @@ Below is a description of the various Oxipay settings.
 **Merchant ID**: Identifies your business and provided as part of your onboarding.
 
 **API Key**: Code used to verify that payment requests from your site are valid. 
-
-##Updating Plugin##
-
-You can update your WooCommerce Oxipay plugin to a newer version by following the installation instructions outlined above.
