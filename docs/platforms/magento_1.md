@@ -1,4 +1,4 @@
-<h1>Setup on WooCommerce</h1>
+<h1>Setup on Magento 1</h1>
 
 You can install Oxipay on your site by manually copying plugin files across into your store's webserver. Use the same instructions to upgrade your existing plugin to a newer release.
 
@@ -6,10 +6,10 @@ You can install Oxipay on your site by manually copying plugin files across into
 
 Oxipay has been developed and tested against the following Magento tech stacks:
 
-<table style="font-size:1.1rem">
-    <tr><td>Magento Platform</td><td>Operating System</td><td>MySQL</td><td>PHP Version</td><td>Web Server</td><tr>
-    <tr><td>Magento 1.9.1.0 (CE)</td><td>Ubuntu 16.04 LTS</td><td>14.14</td><td>5.6.30</td><td>Apache 2.4.18</td><tr>
-    <tr><td>Magento 1.4.2.0 (CE)</td><td>Ubuntu 14.04</td><td>14.14</td><td>5.5.9</td><td>Apache 2.4.7</td><tr>
+<table>
+    <tr><td>Magento Version</td><td>Operating System</td><td>SQL</td><td>PHP Version</td><td>Web Server</td><tr>
+    <tr><td>Magento 1.9.1.0 (CE)</td><td>Ubuntu 16.04 LTS</td><td></td><td>5.6.30</td><td>Apache 2.4.18</td><tr>
+    <tr><td>Magento 1.4.2.0 (CE)</td><td>Ubuntu 14.04</td><td></td><td>5.5.9</td><td>Apache 2.4.7</td><tr>
 </table>
 
 ## Plugin Installation
