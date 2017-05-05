@@ -2,16 +2,6 @@
 
 You can install Oxipay automatically by uploading the plugin or manually by copying plugin files. Use the same instructions to upgrade your existing plugin to a newer release.
 
-## Supported Tech Stacks
-
-Oxipay has been developed and tested against the following Magento tech stacks:
-
-<table>
-    <tr><td>Magento Platform</td><td>Operating System</td><td>MySQL</td><td>PHP Version</td><td>Web Server</td><tr>
-    <tr><td>Magento 1.9.1.0 (CE)</td><td>Ubuntu 16.04 LTS</td><td>14.14</td><td>5.6.30</td><td>Apache 2.4.18</td><tr>
-    <tr><td>Magento 1.4.2.0 (CE)</td><td>Ubuntu 14.04</td><td>14.14</td><td>5.5.9</td><td>Apache 2.4.7</td><tr>
-</table>
-
 ## Automatic Installation
 
 <div class="panel">
