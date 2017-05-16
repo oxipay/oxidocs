@@ -1,14 +1,15 @@
 <h1>Setup on Magento 2</h1>
 
-You can install Oxipay on your site by manually copying plugin files across into your store's webserver. Use the same instructions to upgrade your existing plugin to a newer release.
+You can install Oxipay plugin by manually copying plugin files across into your store's webserver. <br>
+Use the same instructions to upgrade your existing plugin to a newer release.
 
 ## Supported Tech Stacks
 
-Oxipay has been developed and tested against the following Magento tech stacks:
+Oxipay has been tested against the following tech stacks:
 
 <table>
-    <tr><td>Magento Version</td><td>Operating System</td><td>SQL</td><td>PHP Version</td><td>Web Server</td><tr>
-    <tr><td>Magento 2.1.5</td><td>Red Hat/Fedora</td><td></td><td>MariaDB 10.0.24</td><td>nginx 1.10.2</td><tr>
+    <tr><td><b>Magento Version</b></td><td><b>Operating System</b></td><td><b>SQL</b></td><td><b>PHP Version</b></td><td><b>Web Server</b></td><tr>
+    <tr><td>Magento 2.1.5</td><td>Ubuntu 14.04.5 LTS</td><td>MySQL 5.7.17</td><td>7.0.16</td><td>Apache 2.4.25</td><tr>
 </table>
 
 # Plugin Installation
@@ -19,26 +20,19 @@ Oxipay has been developed and tested against the following Magento tech stacks:
 
 1 - Download the Oxipay plugin from [github.com/oxipay/oxipay-magento-2.x/releases](https://github.com/oxipay/oxipay-magento-2.x/releases).
 
-2 - Unzip it then copy the inner `Oxipay` folder into the `MAGENTO_DIR/app/code` directory.
+2 - Unzip it then copy the inner `Oxipay` folder into the `MAGENTO_DIR/app/code` directory on your webserver. If the <code>code</code> folder doesn't exist, then create it manually.
 
-<div class="panel">
-  If the <code>code</code> folder doesn't exist in the <code>app</code> directory, you will need to create it manually.
-</div>
+3 - Change directory into `MAGENTO_DIR/bin` to make the `magento` utility available.
 
-3 - Change directory into `MAGENTO_DIR/bin`. This will make the `magento` utility available.
-
-4 - Run the following command to enable existing plugins including Oxipay
+4 - Run `magento setup:upgrade`. This will auto-enable Oxipay as part of `setup:upgrade`. You should see `Module 'Oxipay_OxipayPaymentGateway'` in the output of the command.
 <br>
-`magento setup:upgrade`
 
 <div class="panel">
-  Depending on your Magento 2 tech stack, you might have to use the <code>php</code> prefix: <code>php magento setup:upgrade</code>
+  Depending on your tech stack, you might have to use the <code>php</code> prefix (<code>php magento setup:upgrade</code>) when running the various <code>magento</code> commands.
 </div>
 
-5 - You should see `Module 'Oxipay_OxipayPaymentGateway'` in the output of the command.
+5 - Flush Magento's Cache by navigating to **Settings** -> **Cache Management** -> **Flush Magento Cache**. Alternatively, you can run <code>MAGENTO_DIR/bin/magento cache:flush</code> from the command line.
 
-6 - Flush the Magento Cache by navigating to **Settings** -> **Cache Management** -> **Flush Magento Cache**.
+6 - Run `setup:static-conent:deploy` to avoid generated HTML referring to javascript/css that haven't been added to the list of compiled/minified assets which can break your store's front-end/admin panel.
 
-7 - You should now be able to see the Oxipay plugin setting page by navigating to **Stores** -> **Configuration** -> **Sales** -> **Payment Methods** similar to screen below:
-
-![4.png](/img/platforms/magento_2/4.png)
+7 - To view Oxipay's settings page, navigate to **Stores** -> **Configuration** -> **Sales** -> **Payment Methods**.
