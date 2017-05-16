@@ -22,7 +22,11 @@ The plugin can be installed automatically via PrestaShop's admin panel. This sec
 
 **1** - Navigate to the following URL and select the zip file to download the Oxipay plugin.
 
-[https://github.com/oxipay/oxipay-prestashop/releases](https://github.com/oxipay/oxipay-prestashop/releases)
+For PrestaShop 1.6  
+[https://github.com/oxipay/oxipay-prestashop-1.6/releases](https://github.com/oxipay/oxipay-prestashop-1.6/releases)
+
+For PrestaShop 1.7  
+[https://github.com/oxipay/oxipay-prestashop-1.7/releases](https://github.com/oxipay/oxipay-prestashop-1.7/releases)
 
 <div class="panel">
   <b>oxipay-prestashop</b> is a private GitHub repository. If you don't have access, please contact <a href="mailto:support@oxipay.com.au">support@oxipay.com.au</a> to get access or to receive the plugin via email.
