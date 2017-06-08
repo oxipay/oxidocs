@@ -2,7 +2,7 @@
 
 You can install Oxipay automatically by uploading the plugin or manually by copying plugin files. Use the same instructions to upgrade your existing plugin to a newer release.
 
-## Automatic Installation
+## Plugin Installation
 
 <div class="panel">
   You will need your <b>Merchant ID</b> and an <b>Encryption Key</b> handy before continuing with the installation.
@@ -26,23 +26,13 @@ You can install Oxipay automatically by uploading the plugin or manually by copy
 
 ![23.png](/img/platforms/woocommerce/23.png)
 
-## Manual Installation
-
-<div class="panel">
-  We recommend manual installation be performed by an IT professional or a Web Developer.
-</div>
-
-1 - Download the plugin from [github.com/oxipay/oxipay-woocommerce/releases](https://github.com/oxipay/oxipay-woocommerce/releases).
-
-2 - Unzip it then copy the files into your WordPress server at the following path: [wordpress-folder]/wp-content/plugins
-
-<h2>Oxipay Settings</h2>
+## Configuration
 
 Open WooCommerce's **Settings** page, click on **Checkout** then on **Oxipay**.
 
 ![11.png](/img/platforms/woocommerce/11.png)
 
-Below is a description of the various settings you will find there.
+Below is a description of the various settings you will find in the Oxipay settings page.
 
 **Enabled**: Enables or disables Oxipay
 
