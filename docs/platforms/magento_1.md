@@ -1,16 +1,17 @@
 <h1>Setup on Magento 1</h1>
 
-You can install Oxipay on your site by manually copying plugin files across into your store's webserver. Use the same instructions to upgrade your existing plugin to a newer release.
+You can install Oxipay plugin by manually copying plugin files across into your store's webserver. <br>
+Use the same instructions to upgrade your existing plugin to a newer release.
 
 ## Supported Tech Stacks
 
 Oxipay has been developed and tested against the following Magento tech stacks:
 
-<table>
-    <tr><td>Magento Version</td><td>Operating System</td><td>SQL</td><td>PHP Version</td><td>Web Server</td><tr>
-    <tr><td>Magento 1.9.1.0 (CE)</td><td>Ubuntu 16.04 LTS</td><td>5.5.55</td><td>5.6.30</td><td>Apache 2.4.18</td><tr>
-    <tr><td>Magento 1.4.2.0 (CE)</td><td>Ubuntu 14.04 LTS</td><td>5.5.54</td><td>5.5.9</td><td>Apache 2.4.7</td><tr>
-</table>
+| Magento Version      | Operating System | SQL    | PHP Version | Web Server    |
+|----------------------|------------------|--------|-------------|---------------|
+| Magento 1.9.1.0 (CE) | Ubuntu 16.04 LTS | 5.5.55 | 5.6.30      | Apache 2.4.18 |
+| Magento 1.4.2.0 (CE) | Ubuntu 14.04 LTS | 5.5.54 | 5.5.9       | Apache 2.4.7  |
+
 
 ## Plugin Installation
 
@@ -28,21 +29,23 @@ Oxipay has been developed and tested against the following Magento tech stacks:
 - /app/design/frontend/base/default/template 
 - /app/etc/modules/Oxipay_Oxipayments.xml
 
-5 - Login into Magento's **Admin Panel**, click on **System** then select **Cache Management**.
+4 - Login into Magento's **Admin Panel**, click on **System** then select **Cache Management**.
 
-4 - On the **Cache Management** page, click on **Flush Magento Cache**.
+5 - On the **Cache Management** page, click on **Flush Magento Cache**.
 
 ![3.png](/img/platforms/magento_1/3.png)
 
-5 - Navigating to **System** > **Configuration**.
+## Configuration
 
-6 - On **Configuration** page, scroll downwards then click on **Payment Methods** on left side menu.
+1 - Navigating to **System** > **Configuration**.
+
+2 - On **Configuration** page, scroll downwards then click on **Payment Methods** on left side menu.
 
 ![5.png](/img/platforms/magento_1/5.png)
 
-7 - Confirm  **Oxipay Checkout** is visible and once expanded looks similar to the image below.
+3 - Confirm  **Oxipay Checkout** is visible and once expanded looks similar to the image below.
 
-<div class="panel">
+<xdiv class="panel">
   The <b>Merchant Number</b> and <b>API Key</b> have been blacked out in the image.
 </div>
 

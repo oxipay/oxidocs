@@ -7,12 +7,12 @@ Use the same instructions to upgrade your existing plugin to a newer release.
 
 Oxipay has been tested against the following tech stacks:
 
-<table>
-    <tr><td><b>Magento Version</b></td><td><b>Operating System</b></td><td><b>SQL</b></td><td><b>PHP Version</b></td><td><b>Web Server</b></td><tr>
-    <tr><td>Magento 2.1.5</td><td>Ubuntu 14.04.5 LTS</td><td>MySQL 5.7.17</td><td>7.0.16</td><td>Apache 2.4.25</td><tr>
-</table>
+|Magento Version| Operating System  | SQL         | PHP Version | Web Server  |
+|---------------|-------------------|-------------|-------------|-------------|
+|Magento 2.1.5  |Ubuntu 14.04.5 LTS |MySQL 5.7.17 |7.0.16       |Apache 2.4.25|
 
-# Plugin Installation
+
+## Plugin Installation
 
 <div class="panel">
   You will need your <b>Merchant Number</b> and an <b>Encryption Key</b> handy before continuing with the installation.
