@@ -73,17 +73,25 @@ Oxipay is not compatible with PrestaShop 1.7 at the moment.
 
 Immediately after installing the Oxipay plugin, you would be automatically re-directed to the plugin settings page. Otherwise, you can bring up this page by going to the Modules and Services page, finding the oxipay listing, and clicking the **Configure** button next to it.
 
-1 - **Title** This configures the plugin title that gets displayed to the end user during checkout. By default it is configured to **Oxipay**. 
+1 - **Title**: This configures the plugin title that gets displayed to the end user during checkout. By default it is configured to **Oxipay**. 
 
-2 - **Logo** This controls the Oxipay Logo that gets displayed.
+2 - **Logo**: This controls the Oxipay Logo that gets displayed.
 
-3 - **Description** This configures the plugin description text that gets displayed to the end user as part of the checkout process. By default, it is configured to **Breathe easy with Oxipay, an interest-free instalment payment plan**.
+3 - **Description**: This configures the plugin description text that gets displayed to the end user as part of the checkout process. By default, it is configured to **Breathe easy with Oxipay, an interest-free instalment payment plan**.
 
-4 - **Oxipay Gateway URL** This specifies the Oxipay gateway that the plugin would need to communicate with for it to be able to process payments via Oxipay.
+4 - **Oxipay Gateway URL**: This specifies the Oxipay gateway that the plugin would need to communicate with for it to be able to process payments via Oxipay.
 
-5 - **Merchant ID** This is the Oxipay Merchant ID that you are provided with as part of your on-boarding when signing-up for Oxipay.
+| Oxipay Environment | URL  |
+|--------------------|------|
+| Production Gateway | https://secure.oxipay.com.au/Checkout?platform=Default |
+| Sandbox Gateway    | https://securesandbox.oxipay.com.au/Checkout?platform=Default |
 
-6 - **API Key** The API Key or the Encryption key is a case-sensitive alpha-numeric sequence that is used to authenticate payment requests originating from your store. It is vital that you protect it and don't provide it to unauthorised individuals.
+5 - **Merchant ID**: This is the Oxipay Merchant ID that you are provided with as part of your on-boarding when signing-up for Oxipay.
+
+6 - **API Key**: The API Key or the Encryption key is a case-sensitive alpha-numeric sequence that is used to authenticate payment requests originating from your store. It is vital that you protect it and don't provide it to unauthorised individuals.
+<div class="panel">
+  The Oxipay Platform Integration Team will provide you with your API key over the phone.
+</div>
 
 Once you have finished making the necessary configuration changes or updates, click the **Save** button on the bottom left.
 

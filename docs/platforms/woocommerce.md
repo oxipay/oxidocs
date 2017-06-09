@@ -42,8 +42,16 @@ Below is a description of the various settings you will find in the Oxipay setti
 
 **Shop Name**: Your online store's name as displayed on the Internet or TV.
 
-**Oxipay Gateway URL**: URL that your site communicates with to process payments over Oxipay.
+**Oxipay Gateway URL**: The Oxipay gateway that the plugin would need to communicate with for it to process payments via Oxipay.
 
-**Merchant ID**: Identifies your business and provided as part of your onboarding.
+| Oxipay Environment | URL  |
+|--------------------|------|
+| Production Gateway | https://secure.oxipay.com.au/Checkout?platform=WooCommerce |
+| Sandbox Gateway    | https://securesandbox.oxipay.com.au/Checkout?platform=WooCommerce |
+
+**Merchant ID**: Identifies your business and is provided as part of your onboarding.
 
 **API Key**: Code used to verify that payment requests from your site are valid. 
+<div class="panel">
+  The Oxipay Platform Integration Team will provide you with your API key over the phone.
+</div>
