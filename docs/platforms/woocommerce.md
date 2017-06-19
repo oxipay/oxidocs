@@ -2,7 +2,7 @@
 
 You can install Oxipay automatically by uploading the plugin or manually by copying plugin files. Use the same instructions to upgrade your existing plugin to a newer release.
 
-## Automatic Installation
+## Plugin Installation
 
 <div class="panel">
   You will need your <b>Merchant ID</b> and an <b>Encryption Key</b> handy before continuing with the installation.
@@ -26,23 +26,13 @@ You can install Oxipay automatically by uploading the plugin or manually by copy
 
 ![23.png](/img/platforms/woocommerce/23.png)
 
-## Manual Installation
-
-<div class="panel">
-  We recommend manual installation be performed by an IT professional or a Web Developer.
-</div>
-
-1 - Download the plugin from [github.com/oxipay/oxipay-woocommerce/releases](https://github.com/oxipay/oxipay-woocommerce/releases).
-
-2 - Unzip it then copy the files into your WordPress server at the following path: [wordpress-folder]/wp-content/plugins
-
-<h2>Oxipay Settings</h2>
+## Configuration
 
 Open WooCommerce's **Settings** page, click on **Checkout** then on **Oxipay**.
 
 ![11.png](/img/platforms/woocommerce/11.png)
 
-Below is a description of the various settings you will find there.
+Below is a description of the various settings you will find in the Oxipay settings page.
 
 **Enabled**: Enables or disables Oxipay
 
@@ -52,8 +42,16 @@ Below is a description of the various settings you will find there.
 
 **Shop Name**: Your online store's name as displayed on the Internet or TV.
 
-**Oxipay Gateway URL**: URL that your site communicates with to process payments over Oxipay.
+**Oxipay Gateway URL**: The Oxipay gateway that the plugin would need to communicate with for it to process payments via Oxipay.
 
-**Merchant ID**: Identifies your business and provided as part of your onboarding.
+| Oxipay Environment | URL  |
+|--------------------|------|
+| Production Gateway | https://secure.oxipay.com.au/Checkout?platform=WooCommerce |
+| Sandbox Gateway    | https://securesandbox.oxipay.com.au/Checkout?platform=WooCommerce |
+
+**Merchant ID**: Identifies your business and is provided as part of your onboarding.
 
 **API Key**: Code used to verify that payment requests from your site are valid. 
+<div class="panel">
+  The Oxipay Platform Integration Team will provide you with your API key over the phone.
+</div>

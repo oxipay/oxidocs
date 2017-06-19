@@ -8,7 +8,7 @@ YourWordpressFolder\wp-content\plugins\woocommerce\templates\single-product
 ```
 <p class="price"><?php echo $product->get_price_html(); ?></p>
 ```
-<strong>Step 3:</strong> Place the ```<script>``` tag in the below "Price tag".<br>
+<strong>Step 3:</strong> Place the following ```<script>``` tag below the "Price tag".<br>
 ```
 <script id="oxipay-banner" src="https://widgets.oxipay.com.au/content/scripts/price-info.js?productPrice=<?php echo $product->get_display_price() ?>"></script>
 ```
