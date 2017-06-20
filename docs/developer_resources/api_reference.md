@@ -49,7 +49,7 @@ x_customer_shipping_phone         | Customer's phone number (Shipping) | unicode
 x_customer_shipping_state         | Shipping state | unicode string | SA
 x_customer_shipping_postcode      | Shipping postcode | unicode string | 5000
 x_description                     | Item's description as setup in the shopping cart | unicode string | Order #767
-x_reference **Required**          | A reference that uniquely references the order and assigned by the merchant. This is unique to the shopping cart. | ascii string | 19783
+x_reference **Required**          | A reference that uniquely references the order and assigned by the merchant. This is unique to the shopping cart. | ascii string (max length 36 bytes) | 19783
 x_shop_country **Required**       | Country of where the merchant's store is located | iso-3166-1alpha-2 | AU
 x_shop_name **Required**          | Store name as advertised on the internet, TV and other media | Shop Inc
 x_signature **Required**          | Request payload that is signed/verified using HMAC-SHA256 | hex string, case-insensitive | See [Signature Generation]()
