@@ -25,8 +25,9 @@ Oxipay has been developed and tested against the following Magento tech stacks:
 
 3 - Unzip it, then copy the following plugin files and folders into the corresponding folder on the `app` folder on the Magento root directory.
 
-- /app/code/community/Oxipay<br>  
-- /app/design/frontend/base/default/template 
+- /app/code/community/Oxipay
+- /app/design/frontend/base/default/template/oxipayments
+- /app/design/adminhtml/base/default/template/oxipayments
 - /app/etc/modules/Oxipay_Oxipayments.xml
 
 4 - Login into Magento's **Admin Panel**, click on **System** then select **Cache Management**.
