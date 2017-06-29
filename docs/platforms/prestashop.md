@@ -25,6 +25,7 @@ The plugin can be installed automatically via PrestaShop's admin panel. This sec
   Installation of the plugin requires you to be able to access the store's admin area. If you have trouble accessing your PrestaShop's admin area.
 </div>
 
+<div id="installing-oxipay"></div>
 ### Installation Procedure
 
 **1** - Navigate to the following URL and select the zip file to download the Oxipay plugin.
