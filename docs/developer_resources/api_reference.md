@@ -29,7 +29,7 @@ Below is an overview of the various key-value pairs that can be passed to Oxipay
 -----|-------------|------|---------
 x_account_id **Required**         | This is a unique Merchant ID that is assigned by Oxipay to individual merchants | unicode string | 123456
 x_amount **Required**             | Represents the transaction's total amount including any taxes and shipping costs | decimal | 99.90
-x_currency                        | Currency of the transaction | ISO-4217 | AUD
+x_currency **Required**           | Currency of the transaction | ISO-4217 | AUD
 x_customer_billing_address1       | Billing address line 1 | unicode string | 97 Pirie St
 x_customer_billing_address2       | Billing address line 2 | unicode string | Level 6
 x_customer_billing_city           | Billing city | unicode string | Adelaide
@@ -73,7 +73,7 @@ x_reference=123&x_account_id=1&x_amount=100.00&x_currency=AUD&x_url_callback=sam
 <a name="Responses"></a>
 ## POST and GET responses
 
-Note that that there are two responses from Oxipay. 
+There are two responses from Oxipay.
 
 The first response that Oxipay always performs is a server-to-server asynchronous POST to the shopping cart on the endpoint specified in the <code>x_url_callback</code> and in the format <code>application/x-www-form-urlencoded</code>. Similar to the request POST, the response POST includes key-values pairs that are specific to that transaction and indicate things such as the outcome of that particular transaction if it has failed or is completed successfully for instance.
 
@@ -87,7 +87,7 @@ Below is an overview of the various response key-value pairs that Oxipay returns
 -----|-------------|------|---------
 x_account_id **Required**         | This is the Merchant ID assigned by Oxipay to the merchant | unicode string | 123456
 x_reference **Required**          | A reference that uniquely references the order and assigned by the merchant | ascii string | 19783
-x_currency                        | Currency of the transaction | ISO-4217 | AUD
+x_currency **Required**           | Currency of the transaction | ISO-4217 | AUD
 x_test **Required**               | Indicates whether the transaction is to be processed as a live or a test transaction | True/False | False
 x_amount **Required**             | Represents the transaction's total amount including any taxes and shipping costs | decimal | 99.90  
 x_gateway_reference **Required**  | A reference for the authorisation issues by Oxipay that is unique | unique string | 123
