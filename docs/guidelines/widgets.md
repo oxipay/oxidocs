@@ -27,9 +27,9 @@
 <br>
 
 ### Price-info widget
-<script id="oxipay-price-info" src=" https://widgets.oxipay.com.au/content/scripts/price-info.js?productPrice=0"></script>
+<script id="oxipay-price-info" src="https://widgets.oxipay.com.au/content/scripts/price-info.js?productPrice=0"></script>
 ```
-<script id="oxipay-banner" src=" https://widgets.oxipay.com.au/content/scripts/price-info.js?productPrice=PlaceYourProductPrice></script>
+<script id="oxipay-banner" src="https://widgets.oxipay.com.au/content/scripts/price-info.js?productPrice=PlaceYourProductPrice"></script>
 ```
 
 <br/><br/>
