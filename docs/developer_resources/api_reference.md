@@ -85,11 +85,11 @@ Below is an overview of the various response key-value pairs that Oxipay returns
 
  Key | Description | Type | Example
 -----|-------------|------|---------
-x_account_id **Required**         | This is the Merchant ID assigned by Oxipay to the merchant | unicode string | 123456
-x_reference **Required**          | A reference that uniquely references the order and assigned by the merchant | ascii string | 19783
-x_currency **Required**           | Currency of the transaction | ISO-4217 | AUD
-x_test **Required**               | Indicates whether the transaction is to be processed as a live or a test transaction | True/False | False
-x_amount **Required**             | Represents the transaction's total amount including any taxes and shipping costs | decimal | 99.90  
-x_gateway_reference **Required**  | A reference for the authorisation issues by Oxipay that is unique | unique string | 123
-x_timestamp **Required**          | Time at which the transaction is completed, in UTC format YYYY-MM-DDTHH:MM:SSZ | iso-8601 in UTC | 2017-06-24T12:11:43Z
-x_result **Required**             | Values that represent the outcome of a transaction | Valid values are **completed**, **failed** and **pending** | **failed**
+x_account_id              | This is the Merchant ID assigned by Oxipay to the merchant | unicode string | 123456
+x_reference               | A reference that uniquely references the order and assigned by the merchant | ascii string | 19783
+x_currency                | Currency of the transaction | ISO-4217 | AUD
+x_test                    | Indicates whether the transaction is to be processed as a live or a test transaction | True/False | False
+x_amount                  | Represents the transaction's total amount including any taxes and shipping costs | decimal | 99.90  
+x_gateway_reference       | A reference for the authorisation issues by Oxipay that is unique | unique string | 123
+x_timestamp               | Time at which the transaction is completed, in UTC format YYYY-MM-DDTHH:MM:SSZ | iso-8601 in UTC | 2017-06-24T12:11:43Z
+x_result                  | Values that represent the outcome of a transaction | Valid values are **completed**, **failed** and **pending** | **failed**
