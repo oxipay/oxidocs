@@ -93,3 +93,31 @@
      top: 0px !important;
      }
 }
+
+
+/* Rebrand CSS */
+
+.wy-nav-side {
+    background: #515565;
+}
+
+.wy-menu-vertical a:hover {
+  color: #fff;
+  background-color: #515565;
+}
+
+.wy-nav-content {
+    background: #edeeef;
+}
+
+.wy-nav-content-wrap {
+  background-color: #ffffff;
+}
+
+.rst-versions, .rst-current-version {
+  background: #1a1c28 !important;
+}
+
+.wy-side-nav-search {
+  background: #fa8b23 !important;
+}
