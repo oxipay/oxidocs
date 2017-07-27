@@ -22,6 +22,7 @@ pages:
         - Generic Installation: guidelines/installation.md
         - Shopify Specific: price-info/shopify.md
         - WooCommerce Specific: price-info/woocommerce.md
+        - Magento 1 Specific: price-info/magento_1.md 
 theme: readthedocs
 extra_css: [css/jquery.modal.min.css, css/custom.css]
 extra_javascript: [js/jquery.modal.js]
