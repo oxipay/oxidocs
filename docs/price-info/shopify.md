@@ -11,10 +11,10 @@ For adding Price-info Widget to your Website, follow the instruction<br>
 ![theme-editor.png](/img/price-info/left-sections.png)<br><br>
 <strong>Step 5:</strong> Place the ```<script>``` tag in the desired place you'd like it to appear on your website. This should be added before ```Add to Cart ``` button tag.<br>
 ```
-<script id="oxipay-banner" src="https://widgets.oxipay.com.au/content/scripts/price-info.js?productPrice={{product.selected_or_first_available_variant.price | divided_by: 100.00}}"></script>
+<script id="oxipay-price-info" src="https://widgets.oxipay.com.au/content/scripts/price-info.js?productPrice={{product.selected_or_first_available_variant.price | divided_by: 100.00}}"></script>
 ```
 <strong>Step 6:</strong> Save and you should see a working widget on your website.<br><br>
-<script id="oxipay-banner" src="https://widgets.oxipay.com.au/content/scripts/price-info.js?productPrice={{product.selected_or_first_available_variant.price | divided_by: 100.00}}"></script>
+<script id="oxipay-price-info" src="https://widgets.oxipay.com.au/content/scripts/price-info.js?productPrice={{product.selected_or_first_available_variant.price | divided_by: 100.00}}"></script>
 
 <small>*We reserve the right to change any linked image at anytime without prior notice</small>
 <br/><br/>
