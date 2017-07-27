@@ -9,7 +9,7 @@ To setup and configure Oxipay on your Shopify store, please use the instructions
   You will need your <b>Merchant ID</b> and an <b>Encryption Key</b> handy before continuing with the installation.
 </div>
 
-1 – Email <a href="mailto:pit@oxipay.com.au?Subject=Shopify/Oxipay Gateway URL">pit@oxipay.com.au</a> for a copy of the **Oxipay Gateway Authorisation** URL. 
+1 – Email <a href="mailto:pit@oxipay.com.au?Subject=Oxipay URL Request (Shopify)&body=Hi, %0D%0A%0D%0AMy Merchant ID is: %0D%0A%0D%0AI would like to setup Oxipay on my Shopify site. %0D%0A%0D%0AThanks,%0D%0A%0D%0A">pit@oxipay.com.au</a> for a copy of the **Oxipay Gateway Authorisation** URL. Please include your Merchant ID in the email.
 
 2 - Clicking the link to be taken to your store's setting page to add Oxipay.
 
