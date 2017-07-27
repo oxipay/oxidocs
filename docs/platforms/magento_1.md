@@ -47,7 +47,7 @@ Oxipay has been developed and tested against the following Magento tech stacks:
 3 - Confirm  **Oxipay Checkout** is visible and once expanded looks similar to the image below.
 
 <xdiv class="panel">
-  The <b>Merchant Number</b> and <b>API Key</b> have been blacked out in the image.
+  Some fields have been blurred out in the image.
 </div>
 
 ![6.png](/img/platforms/magento_1/6.png)
