@@ -20,9 +20,3 @@ YourWordpressFolder\wp-content\plugins\woocommerce\templates\single-product
 </div>
 <br>
 
-<small>**We reserve the right to change any linked image at anytime without prior notice</small>
-<br/><br/>
-<small>We strive to write good documentation for our merchants. If there is a way we can improve our documentation, please let us know through <a href="mailto:support@oxipay.com.au?Subject=Oxipay Documentation">support@oxipay.com.au</a></small>
-<br>
-<br>
-<small>Version 1.10</small>
