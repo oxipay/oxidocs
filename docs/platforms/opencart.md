@@ -85,7 +85,7 @@ API Key | Code used to verify that payment requests from your site are valid
 
 Setting | Description
 --- | ---
-Order Status Completed | Status orders will be set to when payment is marked as completed.<br><br>We recommend setting this to 'Processed'.
+Order Status Completed | Status orders will be set to when payment is marked as completed.<br><br>We recommend setting this to 'Completed'.
 Order Status Pending | Status orders will be set to when payment is marked as pending.<br><br>We recommend setting this to 'Processing'.
 Order Status Failed | Status orders will be set to when payment is marked as failed.<br><br>We recommend setting this to 'Failed'.
 Geo Zone | Select the Geo Zone this payment will be visible in.
