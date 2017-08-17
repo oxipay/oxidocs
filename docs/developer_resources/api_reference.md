@@ -55,9 +55,9 @@ x_shop_country **Required**       | Country of where the merchant's store is loc
 x_shop_name **Required**          | Store name as advertised on the internet, TV and other media | Shop Inc
 x_signature **Required**          | Request payload that is signed/verified using HMAC-SHA256 | hex string, case-insensitive | See [Signature Generation](./signature_generation/)
 x_test **Required**               | Indicates whether the transaction is to be processed using the live or test Oxipay endpoint | true/false | true  
-x_url_callback **Required**       | Callback notifications are sent asynchronously to this URL | URL | shop.com.au/callback
-x_url_cancel **Required**         | Customers are redirected to this URL if they want to quit their Oxipay transaction and return to the shopping cart store instead | URL | shop.com.au/cancel
-x_url_complete **Required**       | Customers are redirected to this URL if they have successfully processed their transaction using Oxipay | URL | shop.com.au/compete
+x_url_callback **Required**       | Callback notifications are sent asynchronously to this URL | URL | http://shop.com.au/callback
+x_url_cancel **Required**         | Customers are redirected to this URL if they want to quit their Oxipay transaction and return to the shopping cart store instead | URL | http://shop.com.au/cancel
+x_url_complete **Required**       | Customers are redirected to this URL if they have successfully processed their transaction using Oxipay | URL | http://shop.com.au/compete
 
 # Sample POST
 
