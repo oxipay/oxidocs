@@ -24,5 +24,18 @@ pages:
         - WooCommerce Specific: price-info/woocommerce.md
         - Magento 1 Specific: price-info/magento_1.md 
 theme: readthedocs
+theme_dir: custom_theme
 extra_css: [css/jquery.modal.min.css, css/custom.css]
 extra_javascript: [js/jquery.modal.js]
+extra:
+    domain: oxipay.com.au
+    domain_postfix: .com.au
+    currency_abbr: AUD
+    country_abbr: AU
+    address_city: Adelaide
+    address_street_1: 97 Pirie St
+    address_street_2: Level 6
+    address_phone_number: 0400 000 000
+    address_state_abbr: SA
+    address_post_code: 5000
+    country: Australia

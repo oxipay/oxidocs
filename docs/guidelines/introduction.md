@@ -9,7 +9,7 @@ Placing Oxipay widgets on your website is a great way to introduce Oxipay to you
   </div>
 </div>
 
-<small>We strive to write good documentation for our merchants. If there is a way we can improve our documentation, please let us know through <a href="mailto:support@oxipay.com.au?Subject=Oxipay Documentation">support@oxipay.com.au</a></small>
+<small>We strive to write good documentation for our merchants. If there is a way we can improve our documentation, please let us know through <a href="mailto:support@%domain%?Subject=Oxipay Documentation">support@%domain%</a></small>
 <br>
 <br>
 <small>Version 1.10</small>

@@ -46,8 +46,8 @@ Below is a description of the various settings you will find in the Oxipay setti
 
 | Oxipay Environment | URL  |
 |--------------------|------|
-| Production Gateway | https://secure.oxipay.com.au/Checkout?platform=WooCommerce |
-| Sandbox Gateway    | https://securesandbox.oxipay.com.au/Checkout?platform=WooCommerce |
+| Production Gateway | https://secure.%domain%/Checkout?platform=WooCommerce |
+| Sandbox Gateway    | https://securesandbox.%domain%/Checkout?platform=WooCommerce |
 
 **Merchant ID**: Identifies your business and is provided as part of your onboarding.
 

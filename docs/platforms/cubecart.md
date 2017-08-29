@@ -9,7 +9,7 @@ This document outlines the steps needed to install Oxipay on your CubeCart Store
 ## Installing Oxipay
 
 <div class="panel">
-  You will need a <b>Merchant ID</b> and <b>API Key</b> before continuing with the installation procedure. They are required to uniquely identify the Merchant and provide a secure link. If you don't have either of these, please contact <a href="mailto:support@oxipay.com.au">support@oxipay.com.au</a>
+  You will need a <b>Merchant ID</b> and <b>API Key</b> before continuing with the installation procedure. They are required to uniquely identify the Merchant and provide a secure link. If you don't have either of these, please contact <a href="mailto:support@%domain%">support@%domain%</a>
 </div>
 
 The plugin can be installed via CubeCart's Admin Control Panel, either manually or automatically using a Token. This section details how to upload the plugin, and install and configure its various parameters for it to work properly.
@@ -129,7 +129,7 @@ If the automatic installation is not successful, you will be presented with a me
 
 **4** - Once you have finished making the necessary configuration changes, click the **Save** button.
 
-**5** - **Australia** will be automatically set as an **Enabled Region** in the **Allowed Zones** tab. This must match the Country set in the CubeCart Store Settings.
+**5** - **%country%** will be automatically set as an **Enabled Region** in the **Allowed Zones** tab. This must match the Country set in the CubeCart Store Settings.
 
 ![config-2.png](/img/platforms/cubecart/config-2.png)
 <hr>

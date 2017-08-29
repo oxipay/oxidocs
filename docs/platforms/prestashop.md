@@ -84,8 +84,8 @@ Immediately after installing the Oxipay plugin, you would be automatically re-di
 
 | Oxipay Environment | URL  |
 |--------------------|------|
-| Production Gateway | https://secure.oxipay.com.au/Checkout?platform=Default |
-| Sandbox Gateway    | https://securesandbox.oxipay.com.au/Checkout?platform=Default |
+| Production Gateway | https://secure.%domain%/Checkout?platform=Default |
+| Sandbox Gateway    | https://securesandbox.%domain%/Checkout?platform=Default |
 
 5 - **Merchant ID**: This is the Oxipay Merchant ID that you are provided with as part of your on-boarding when signing-up for Oxipay.
 
