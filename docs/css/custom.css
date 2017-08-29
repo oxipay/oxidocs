@@ -1,15 +1,42 @@
 
 /* --------------------------- */
-/*  Oxipay Rebranding Changes  */
+/*  EPCart Theme			   */
 /* --------------------------- */
 
+
 .wy-nav-side {
-    background: #1a1c28;
+    background: #275875;
+}
+
+.wy-menu-vertical a {
+  color: #F5F5F5 !important;
+}
+
+
+.wy-menu-vertical li.current a {
+	color: gray !important;
+}
+
+.wy-menu-vertical li.current > a {
+	color: #404040 !important;
+	background: #fcfcfc !important;
+}
+
+.wy-nav-content {
+	background: #FFFFFF !important;
+}
+
+.wy-nav-content-wrap {
+	background: #E0E0E0 !important;
 }
 
 .wy-menu-vertical a:hover {
-  color: #fff;
-  background-color: #515565;
+  color: #fff !important;
+  background-color: #4EB0E6;
+}
+
+.wy-menu-vertical span {
+  color: #A9A9A9 !important;
 }
 
 .wy-nav-content-wrap {
@@ -21,11 +48,15 @@
 }
 
 .rst-versions, .rst-current-version {
-  background: #31333f !important;
+  background: #183749 !important;
 }
 
 .wy-side-nav-search {
-  background: #fa8b23 !important;
+  background: #4EB0E6 !important;
+}
+
+.wy-side-nav-search input {
+  border-color: #4EB0E6 !important;
 }
 
 .wy-side-nav-search img {
@@ -34,7 +65,7 @@
 
 
 /* --------------------------- */
-/*  Oxipay Rebranding Changes  */
+/*  EPCart Theme			   */
 /* --------------------------- */
 
 .panel {
