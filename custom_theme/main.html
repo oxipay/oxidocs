@@ -1,11 +1,5 @@
 {% extends "base.html" %}
-
 {% block content %}
-
-{% set page_content = {'1': page.content} %}
-{% for key, value in config.extra.items() %}
-    {% if page_content.update({'1': page_content['1']|replace("%"+key+"%", value)}) %} {%endif%}
-{% endfor %}
+{% set page_content = {'1': page.content} %} {% for key, value in config.extra.items() %} {% if page_content.update({'1': page_content['1']|replace("%"+key+"%", value)}) %} {%endif%}{% endfor %}
 {{page_content['1']}}
-
 {% endblock %}
