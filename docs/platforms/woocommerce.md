@@ -1,57 +1,68 @@
 <h1>Setup on WooCommerce</h1>
 
-You can install Oxipay automatically by uploading the plugin or manually by copying plugin files. Use the same instructions to upgrade your existing plugin to a newer release.
-
-## Plugin Installation
-
 <div class="panel">
-  You will need your <b>Merchant ID</b> and an <b>Encryption Key</b> handy before continuing with the installation.
+  You will need your <b>Merchant ID</b> and an <b>Encryption Key</b> for the installation.
 </div>
 
-1 - Download the plugin from [github.com/oxipay/oxipay-woocommerce/releases](https://github.com/oxipay/oxipay-woocommerce/releases).
+1 - Log into the WordPress admin area, then click on **Plugins** on the sidebar.
 
-2 - Log into **WordPress Admin** then click on **Plugins** on the left menu.
+![1.png](/img/platforms/woocommerce/1.png)
 
-3 - This will take you to the **Plugins** page; click on **Add New** on the top left.
+2 - Click on **Add New** on the top left.
 
-4 - This will take you to the **Add Plugins** page; click on **Upload Plugin** on the top left.
+![2.png](/img/platforms/woocommerce/2.png)
 
-5 - Click **Choose File** on the form that appears, select the Oxipay plugin and then click **Install Now**.
+3 - In the top left, type Oxipay in the **Search plugins...** search box then hit Enter.
 
-6 - This will begin the installation. Once complate, click on **Activate Plugin**.
+![3.png](/img/platforms/woocommerce/3.png)
 
-7 - This will take you to the **Plugins** page with a **Plugin activated** message at the top.
+4 - From the search results, click on **Install Now** next to **Oxipay Payment Gateway for WooCommerce**.
 
-8 - Examine installed plugins and confirm Oxipay is installed and activated.
+![29.png](/img/platforms/woocommerce/29.png)
 
-![23.png](/img/platforms/woocommerce/23.png)
+5 - Still on the same page and once installation is successful, you should see the **Network Activate** button. Click on it.
 
-## Configuration
+![30.png](/img/platforms/woocommerce/30.png)
 
-Open WooCommerce's **Settings** page, click on **Checkout** then on **Oxipay**.
+6 - This will re-direct you to **Plugins** page, confirm that Oxipay is installed and activated.
 
-![11.png](/img/platforms/woocommerce/11.png)
+![31.png](/img/platforms/woocommerce/31.png)
 
-Below is a description of the various settings you will find in the Oxipay settings page.
+## Configuring Plugin
+
+1 - From the side-bar, click on **WooCommerce** then on **Settings**.
+
+![32.png](/img/platforms/woocommerce/32.png)
+
+2 - From the top bar, click on **Checkout** then on **Oxipay**.
+
+![33.png](/img/platforms/woocommerce/33.png)
+
+
+Below is a screenshot of the various Oxipay settings available and what they are for.
+
+![34.png](/img/platforms/woocommerce/34.png)
 
 **Enabled**: Enables or disables Oxipay
 
-**Title**: Title for Oxipay that is displayed on checkout screen.
+**Price Widget**: Displays an Oxipay price widget on each of your store's product pages.
 
-**Description**: Description for Oxipay that is displayed on checkout screen.
+**Shop Name**: Your store name that will be displayed in WooCommerce email receipts to customers
 
-**Shop Name**: Your online store's name as displayed on the Internet or TV.
+**Oxipay Region**: Region were your store is located as per your merchant agreement.
 
-**Oxipay Gateway URL**: The Oxipay gateway that the plugin would need to communicate with for it to process payments via Oxipay.
+**Test Mode**: For troubleshooting of issues or testing of Oxipay's user experience.
 
-| Oxipay Environment | URL  |
-|--------------------|------|
-| Production Gateway | https://secure.%domain%/Checkout?platform=WooCommerce |
-| Sandbox Gateway    | https://securesandbox.%domain%/Checkout?platform=WooCommerce |
+**Modal Checkout**: Completes transaction on your store for a more seamless experience.
 
-**Merchant ID**: Identifies your business and is provided as part of your onboarding.
+**Merchant ID**: Provided to you as part of your welcome pack.
 
-**API Key**: Code used to verify that payment requests from your site are valid. 
+**API Key**: Provided to you by Platform Integration Team; used to verify orders from your store.
+
+**Minimum Order Total**: Orders below that will not have Oxipay as a payment option.
+
+**Maximum Order Total**: Orders above that will not have Oxipay as a payment option.
+
 <div class="panel">
-  The Oxipay Platform Integration Team will provide you with your API key over the phone.
+  Leaving both - Minimum and Maximum Order Totals - blank will enable Oxipay on all products.
 </div>
