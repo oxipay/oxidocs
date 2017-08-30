@@ -1,0 +1,41 @@
+site_name: Oxipay Documentation
+pages:
+- Home: index.md
+- Platforms:
+   - Shopify: platforms/shopify.md
+   - WooCommerce: platforms/woocommerce.md
+   - Magento 1: platforms/magento_1.md
+   - Magento 2: platforms/magento_2.md
+   - PrestaShop: platforms/prestashop.md
+   - CubeCart: platforms/cubecart.md
+- Developer Resources:
+   - Introduction: developer_resources/introduction.md
+   - Checkout Process: developer_resources/checkout_process.md
+   - API Reference: developer_resources/api_reference.md
+   - Sample cURL Script: developer_resources/sample_curl.md
+   - Signature Generation: developer_resources/signature_generation.md
+   - Test Credit Card Numbers: developer_resources/test_credit_card_numbers.md
+- Widgets:
+    - Introduction: guidelines/introduction.md
+    - List of widgets: guidelines/widgets.md
+    - Installation:
+        - Generic Installation: guidelines/installation.md
+        - Shopify Specific: price-info/shopify.md
+        - WooCommerce Specific: price-info/woocommerce.md
+        - Magento 1 Specific: price-info/magento_1.md 
+theme: readthedocs
+theme_dir: custom_theme
+extra_css: [css/jquery.modal.min.css, css/custom.css]
+extra_javascript: [js/jquery.modal.js]
+extra:
+    domain: oxipay.co.nz
+    domain_postfix: .co.nz
+    currency_abbr: NZD
+    country_abbr: NZ
+    address_city: Auckland
+    address_street_1: 120 Albert Street
+    address_street_2: Level 14
+    address_phone_number: 0800 444 827
+    address_state_abbr: Auckland
+    address_post_code: 1010
+    country: New Zealand
