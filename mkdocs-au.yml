@@ -8,6 +8,7 @@ pages:
    - Magento 2: platforms/magento_2.md
    - PrestaShop: platforms/prestashop.md
    - CubeCart: platforms/cubecart.md
+   - OpenCart: platforms/opencart.md
 - Developer Resources:
    - Introduction: developer_resources/introduction.md
    - Checkout Process: developer_resources/checkout_process.md
