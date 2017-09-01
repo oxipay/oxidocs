@@ -8,7 +8,7 @@ You can install EPCarts automatically by uploading the plugin or manually by cop
   You will need your <b>Merchant ID</b> and an <b>Encryption Key</b> handy before continuing with the installation.
 </div>
 
-1 - Download the plugin from [github.com/EPCarts/EPCarts-woocommerce/releases](https://github.com/EPCarts/EPCarts-woocommerce/releases).
+1 - Download the plugin from [github.com/epcarts/epcarts-woocommerce/releases](https://github.com/epcarts/epcarts-woocommerce/releases).
 
 2 - Log into **WordPress Admin** then click on **Plugins** on the left menu.
 

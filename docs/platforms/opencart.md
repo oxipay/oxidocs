@@ -14,7 +14,7 @@ Supported OpenCart Versions:
 
 _Note: The Extension Installer requires FTP settings to be already configured with-in OpenCart. If this is not already done we recommend following the Manual Installation steps below._
 
-1 - Download the EPCarts extension from [github.com/EPCarts/EPCarts-opencart/releases](https://github.com/EPCarts/EPCarts-opencart/releases).
+1 - Download the EPCarts extension from [github.com/epcarts/epcarts-opencart/releases](https://github.com/epcarts/epcarts-opencart/releases).
 
 2 - Log into your **OpenCart Admin**; From the left menu select **Extensions** and then **Extension Installer** submenu item below.
 
@@ -26,7 +26,7 @@ _Next: Continue onto Complete The Install instructions below._
 
 ## Manual Installation
 
-1 - Download the EPCarts extension from [github.com/EPCarts/EPCarts-opencart/releases](https://github.com/EPCarts/EPCarts-opencart/releases).
+1 - Download the EPCarts extension from [github.com/epcarts/epcarts-opencart/releases](https://github.com/epcarts/epcarts-opencart/releases).
 
 2 - Unzip it and copy the contents of the `uploads` folder into OpenCarts root folder. For a new install no files should be overwriten, with an upgrade only previous EPCarts files should be overwritten.
 

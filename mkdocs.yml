@@ -29,7 +29,7 @@ theme_dir: custom_theme
 extra_css: [css/jquery.modal.min.css, css/custom.css]
 extra_javascript: [js/jquery.modal.js]
 extra:
-    domain: oxipay.com.au
+    domain: certegyezipay.com.au
     domain_postfix: .com.au
     currency_abbr: AUD
     country_abbr: AU

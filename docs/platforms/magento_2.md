@@ -18,7 +18,7 @@ EPCarts has been tested against the following tech stacks:
   You will need your <b>Merchant Number</b> and an <b>Encryption Key</b> handy before continuing with the installation.
 </div>
 
-1 - Download the EPCarts plugin from [github.com/EPCarts/EPCarts-magento-2.x/releases](https://github.com/EPCarts/EPCarts-magento-2.x/releases).
+1 - Download the EPCarts plugin from [github.com/epcarts/epcrts-magento-2.x/releases](https://github.com/epcarts/epcarts-magento-2.x/releases).
 
 2 - Unzip it then copy the inner `EPCarts` folder into the `MAGENTO_DIR/app/code` directory on your webserver. If the <code>code</code> folder doesn't exist, then create it manually.
 

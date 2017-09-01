@@ -21,14 +21,14 @@ EPCarts has been developed and tested against the following Magento tech stacks:
 
 1 - You can create a backup of your store by navigating to **System** -> **Tools** -> **Backup**.
 
-2 - Download the EPCarts plugin from [github.com/EPCarts/EPCarts-magento-1.x/releases](https://github.com/EPCarts/EPCarts-magento-1.x/releases).
+2 - Download the EPCarts plugin from [github.com/epcarts/epcarts-magento-1.x/releases](https://github.com/epcarts/epcarts-magento-1.x/releases).
 
 3 - Unzip it, then copy the following plugin files and folders into the corresponding folder on the `app` folder on the Magento root directory.
 
-- /app/code/community/EPCarts
-- /app/design/frontend/base/default/template/EPCartsments
-- /app/design/adminhtml/base/default/template/EPCartsments
-- /app/etc/modules/EPCarts_EPCartsments.xml
+- /app/code/community/epcarts
+- /app/design/frontend/base/default/template/epcartpaymnents
+- /app/design/adminhtml/base/default/template/epcartpaymnents
+- /app/etc/modules/epcarts_epcartpaymnents.xml
 
 4 - Login into Magento's **Admin Panel**, click on **System** then select **Cache Management**.
 
