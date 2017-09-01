@@ -1,6 +1,6 @@
 # Sample cURL Script
 
-Below is a sample cURL script that you can use to test the Oxipay test (sandbox) endpoint.
+Below is a sample cURL script that you can use to test the EPCarts test (sandbox) endpoint.
 
 <hr>
 <div style="font-family: monospace; font-size:1.2rem; color: #DC143C; word-wrap: break-word !important;">

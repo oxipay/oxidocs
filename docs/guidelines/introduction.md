@@ -1,4 +1,4 @@
-Placing Oxipay widgets on your website is a great way to introduce Oxipay to your users and drive more sales through your online store. The following documentation will guide you through the process of getting Oxipay widgets displayed on your website.
+Placing EPCarts widgets on your website is a great way to introduce EPCarts to your users and drive more sales through your online store. The following documentation will guide you through the process of getting EPCarts widgets displayed on your website.
 
 <div class="panel panel-primary">
   <div class="panel-heading">
@@ -9,7 +9,7 @@ Placing Oxipay widgets on your website is a great way to introduce Oxipay to you
   </div>
 </div>
 
-<small>We strive to write good documentation for our merchants. If there is a way we can improve our documentation, please let us know through <a href="mailto:support@%domain%?Subject=Oxipay Documentation">support@%domain%</a></small>
+<small>We strive to write good documentation for our merchants. If there is a way we can improve our documentation, please let us know through <a href="mailto:support@%domain%?Subject=EPCarts Documentation">support@%domain%</a></small>
 <br>
 <br>
 <small>Version 1.10</small>

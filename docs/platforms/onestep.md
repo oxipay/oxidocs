@@ -1,3 +1,3 @@
-# Setting up Oxipay on a OneStep Store
+# Setting up EPCarts on a OneStep Store
 
 TODO

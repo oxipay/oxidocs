@@ -1,11 +1,11 @@
 <h1>Setup on Magento 1</h1>
 
-You can install Oxipay plugin by manually copying plugin files across into your store's webserver. <br>
+You can install EPCarts plugin by manually copying plugin files across into your store's webserver. <br>
 Use the same instructions to upgrade your existing plugin to a newer release.
 
 ## Supported Tech Stacks
 
-Oxipay has been developed and tested against the following Magento tech stacks:
+EPCarts has been developed and tested against the following Magento tech stacks:
 
 | Magento Version      | Operating System | SQL    | PHP Version | Web Server    |
 |----------------------|------------------|--------|-------------|---------------|
@@ -21,14 +21,14 @@ Oxipay has been developed and tested against the following Magento tech stacks:
 
 1 - You can create a backup of your store by navigating to **System** -> **Tools** -> **Backup**.
 
-2 - Download the Oxipay plugin from [github.com/oxipay/oxipay-magento-1.x/releases](https://github.com/oxipay/oxipay-magento-1.x/releases).
+2 - Download the EPCarts plugin from [github.com/EPCarts/EPCarts-magento-1.x/releases](https://github.com/EPCarts/EPCarts-magento-1.x/releases).
 
 3 - Unzip it, then copy the following plugin files and folders into the corresponding folder on the `app` folder on the Magento root directory.
 
-- /app/code/community/Oxipay
-- /app/design/frontend/base/default/template/oxipayments
-- /app/design/adminhtml/base/default/template/oxipayments
-- /app/etc/modules/Oxipay_Oxipayments.xml
+- /app/code/community/EPCarts
+- /app/design/frontend/base/default/template/EPCartsments
+- /app/design/adminhtml/base/default/template/EPCartsments
+- /app/etc/modules/EPCarts_EPCartsments.xml
 
 4 - Login into Magento's **Admin Panel**, click on **System** then select **Cache Management**.
 
@@ -44,7 +44,7 @@ Oxipay has been developed and tested against the following Magento tech stacks:
 
 ![5.png](/img/platforms/magento_1/5.png)
 
-3 - Confirm  **Oxipay Checkout** is visible and once expanded looks similar to the image below.
+3 - Confirm  **EPCarts Checkout** is visible and once expanded looks similar to the image below.
 
 <xdiv class="panel">
   Some fields have been blurred out in the image.
