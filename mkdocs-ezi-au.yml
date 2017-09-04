@@ -1,4 +1,5 @@
 site_name: EPCarts Documentation
+site_dir: 'ezipay-au'
 pages:
 - Home: index.md
 - Platforms:
