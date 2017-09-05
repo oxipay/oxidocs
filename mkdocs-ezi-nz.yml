@@ -30,7 +30,7 @@ theme_dir: custom_theme
 extra_css: [css/jquery.modal.min.css, css/custom.css]
 extra_javascript: [js/jquery.modal.js]
 extra:
-    domain: oxipay.co.nz
+    domain: certegyezipay.co.nz
     domain_postfix: .co.nz
     currency_abbr: NZD
     country_abbr: NZ
