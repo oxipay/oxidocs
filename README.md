@@ -24,6 +24,8 @@ To update the documentation the following steps need to be done.
         git clone git@github.com:oxipay/oxidocs.git
         cd oxidocs
 
+* Docs for Oxipay is in branch "oxidocs"; Docs for EPCart is in branch "ezidocs"
+
 * You'll need to create a branch for your changes as master is protected.
 
         git checkout -b new-thing
@@ -33,4 +35,4 @@ To update the documentation the following steps need to be done.
         mkdocs serve
 * Commit your changes and push your branch back up to GitHub.
 * Submit a PR.
-* When the PR is merged into the master branch, the Appveyor build will automatically push the generated content up to the associated GitHub pages repo - [oxipay.github.io](https://github.com/oxipay/oxipay.github.io)
+* When the PR is merged into the "oxidocs" branch or the "ezidocs" branch, the Appveyor build will automatically push the generated content up to the associated AWS S3 bucket.
