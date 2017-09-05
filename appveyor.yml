@@ -6,8 +6,8 @@ install:
   - cmd: pip install mkdocs
   
 build_script:
-  - cmd: mkdocs build --config-file mkdocs-ezi-au.yml
-  - cmd: mkdocs build --config-file mkdocs-ezi-nz.yml
+  - cmd: mkdocs build --config-file mkdocs-au.yml
+  - cmd: mkdocs build --config-file mkdocs-nz.yml
 
 artifacts:
   - path: ezipay-au
