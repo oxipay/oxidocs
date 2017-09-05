@@ -9,11 +9,11 @@ build_script:
   - cmd: mkdocs build --config-file mkdocs-ezi-nz.yml
 
 artifacts:
-  - path: eziipay-au
-    name: eziipay-au
+  - path: ezipay-au
+    name: ezipay-au
     type: zip
-  - path: eziipay-nz
-    name: eziipay-nz
+  - path: ezipay-nz
+    name: ezipay-nz
     type: zip
 
 deploy:
