@@ -39,7 +39,7 @@ deploy:
 notifications:
   - provider: Email
     to:
-      - ryan.bartsch@certegy.com.au
+      - pit@certegy.com.au
       - devadmin@oxipay.com.au
   - provider: Slack
     auth_token:
