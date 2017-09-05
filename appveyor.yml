@@ -1,7 +1,7 @@
 branches:
   only:
-    - oxipay
-    - ezipay
+    - oxidocs
+    - ezidocs
 install:
   - cmd: pip install mkdocs
   
