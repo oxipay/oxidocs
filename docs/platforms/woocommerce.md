@@ -12,11 +12,11 @@
 
 ![2.png](/img/platforms/woocommerce/2.png)
 
-3 - In the top left, type EPCarts in the **Search plugins...** search box then hit Enter.
+3 - In the top left, type %product_name% in the **Search plugins...** search box then hit Enter.
 
 ![3.png](/img/platforms/woocommerce/3.png)
 
-4 - From the search results, click on **Install Now** next to **EPCarts Payment Gateway for WooCommerce**.
+4 - From the search results, click on **Install Now** next to **%product_name% Payment Gateway for WooCommerce**.
 
 ![29.png](/img/platforms/woocommerce/29.png)
 
@@ -24,7 +24,7 @@
 
 ![30.png](/img/platforms/woocommerce/30.png)
 
-6 - This will re-direct you to **Plugins** page, confirm that EPCarts is installed and activated.
+6 - This will re-direct you to **Plugins** page, confirm that %product_name% is installed and activated.
 
 ![31.png](/img/platforms/woocommerce/31.png)
 
@@ -34,24 +34,24 @@
 
 ![32.png](/img/platforms/woocommerce/32.png)
 
-2 - From the top bar, click on **Checkout** then on **EPCarts**.
+2 - From the top bar, click on **Checkout** then on **%product_name%**.
 
 ![33.png](/img/platforms/woocommerce/33.png)
 
 
-Below is a screenshot of the various EPCarts settings available and what they are for.
+Below is a screenshot of the various %product_name% settings available and what they are for.
 
 ![34.png](/img/platforms/woocommerce/34.png)
 
-**Enabled**: Enables or disables EPCarts
+**Enabled**: Enables or disables %product_name%
 
-**Price Widget**: Displays an EPCarts price widget on each of your store's product pages.
+**Price Widget**: Displays an %product_name% price widget on each of your store's product pages.
 
 **Shop Name**: Your store name that will be displayed in WooCommerce email receipts to customers
 
-**EPCarts Region**: Region were your store is located as per your merchant agreement.
+**%product_name% Region**: Region were your store is located as per your merchant agreement.
 
-**Test Mode**: For troubleshooting of issues or testing of EPCarts' user experience.
+**Test Mode**: For troubleshooting of issues or testing of %product_name%' user experience.
 
 **Modal Checkout**: Completes transaction on your store for a more seamless experience.
 
@@ -59,10 +59,10 @@ Below is a screenshot of the various EPCarts settings available and what they ar
 
 **API Key**: Provided to you by Platform Integration Team; used to verify orders from your store.
 
-**Minimum Order Total**: Orders below that will not have EPCarts as a payment option.
+**Minimum Order Total**: Orders below that will not have %product_name% as a payment option.
 
-**Maximum Order Total**: Orders above that will not have EPCarts as a payment option.
+**Maximum Order Total**: Orders above that will not have %product_name% as a payment option.
 
 <div class="panel">
-  Leaving both - Minimum and Maximum Order Totals - blank will enable EPCarts on all products.
+  Leaving both - Minimum and Maximum Order Totals - blank will enable %product_name% on all products.
 </div>

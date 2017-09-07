@@ -1,15 +1,15 @@
-site_name: EPCarts Documentation
+site_name: Certegy Ezi-Pay Documentation
 site_dir: 'ezipay-nz'
 pages:
 - Home: index.md
 - Platforms:
    - Shopify: platforms/shopify.md
    - WooCommerce: platforms/woocommerce.md
-   - Magento 1: platforms/magento_1.md
-   - Magento 2: platforms/magento_2.md
-   - PrestaShop: platforms/prestashop.md
-   - CubeCart: platforms/cubecart.md
-   - OpenCart: platforms/opencart.md
+#    - Magento 1: platforms/magento_1.md
+#    - Magento 2: platforms/magento_2.md
+#    - PrestaShop: platforms/prestashop.md
+#    - CubeCart: platforms/cubecart.md
+#    - OpenCart: platforms/opencart.md
 - Developer Resources:
    - Introduction: developer_resources/introduction.md
    - Checkout Process: developer_resources/checkout_process.md
@@ -30,6 +30,8 @@ theme_dir: custom_theme
 extra_css: [css/jquery.modal.min.css, css/custom.css]
 extra_javascript: [js/jquery.modal.js]
 extra:
+    product_name: Certegy Ezi-Pay
+    class_name: certegy_ezipay
     domain: certegyezipay.co.nz
     domain_postfix: .co.nz
     currency_abbr: NZD

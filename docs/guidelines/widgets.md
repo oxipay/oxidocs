@@ -1,21 +1,21 @@
 ### More-info large
 <script id="moreInfoLarge" src="https://widgets.%domain%/content/scripts/more-info-large.js"></script>
 ```
-<script id="EPCarts-banner" src="https://widgets.%domain%/content/scripts/more-info-large.js"></script>
+<script id="%class_name%-banner" src="https://widgets.%domain%/content/scripts/more-info-large.js"></script>
 ```
 <br/>
 
 ### More-info small
 <script id="moreInfoSmall" src="https://widgets.%domain%/content/scripts/more-info-small.js"></script>
 ```
-<script id="EPCarts-banner" src="https://widgets.%domain%/content/scripts/more-info-small.js"></script>
+<script id="%class_name%-banner" src="https://widgets.%domain%/content/scripts/more-info-small.js"></script>
 ```
 <br>
 
 ### Price-info widget
-<script id="EPCarts-price-info" src="https://widgets.%domain%/content/scripts/price-info.js?productPrice=0"></script>
+<script id="%class_name%-price-info" src="https://widgets.%domain%/content/scripts/price-info.js?productPrice=0"></script>
 ```
-<script id="EPCarts-price-info" src="https://widgets.%domain%/content/scripts/price-info.js?productPrice=PLACE_YOUR_PRODUCT_PRICE"></script>
+<script id="%class_name%-price-info" src="https://widgets.%domain%/content/scripts/price-info.js?productPrice=PLACE_YOUR_PRODUCT_PRICE"></script>
 ```
 
 <br/><br/>
@@ -36,7 +36,7 @@
 
 <small>*We reserve the right to change any linked image at anytime without prior notice</small>
 <br/><br/>
-<small>We strive to write good documentation for our merchants. If there is a way we can improve our documentation, please let us know through <a href="mailto:support@%domain%?Subject=EPCarts Documentation">support@%domain%</a></small>
+<small>We strive to write good documentation for our merchants. If there is a way we can improve our documentation, please let us know through <a href="mailto:support@%domain%?Subject=%product_name% Documentation">support@%domain%</a></small>
 <br>
 <br>
 <small>Version 1.10</small>

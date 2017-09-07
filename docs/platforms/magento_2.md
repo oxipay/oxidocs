@@ -1,11 +1,11 @@
 <h1>Setup on Magento 2</h1>
 
-You can install EPCarts plugin by manually copying plugin files across into your store's webserver. <br>
+You can install %product_name% plugin by manually copying plugin files across into your store's webserver. <br>
 Use the same instructions to upgrade your existing plugin to a newer release.
 
 ## Supported Tech Stacks
 
-EPCarts has been tested against the following tech stacks:
+%product_name% has been tested against the following tech stacks:
 
 |Magento Version| Operating System  | SQL         | PHP Version | Web Server  |
 |---------------|-------------------|-------------|-------------|-------------|
@@ -18,13 +18,13 @@ EPCarts has been tested against the following tech stacks:
   You will need your <b>Merchant Number</b> and an <b>Encryption Key</b> handy before continuing with the installation.
 </div>
 
-1 - Download the EPCarts plugin from [github.com/epcarts/epcrts-magento-2.x/releases](https://github.com/epcarts/epcarts-magento-2.x/releases).
+1 - Download the %product_name% plugin from [github.com/%class_name%/epcrts-magento-2.x/releases](https://github.com/%class_name%/%class_name%-magento-2.x/releases).
 
-2 - Unzip it then copy the inner `EPCarts` folder into the `MAGENTO_DIR/app/code` directory on your webserver. If the <code>code</code> folder doesn't exist, then create it manually.
+2 - Unzip it then copy the inner `%product_name%` folder into the `MAGENTO_DIR/app/code` directory on your webserver. If the <code>code</code> folder doesn't exist, then create it manually.
 
 3 - Change directory into `MAGENTO_DIR/bin` to make the `magento` utility available.
 
-4 - Run `magento setup:upgrade`. This will auto-enable EPCarts as part of `setup:upgrade`. You should see `Module 'EPCarts_EPCartsPaymentGateway'` in the output of the command.
+4 - Run `magento setup:upgrade`. This will auto-enable %product_name% as part of `setup:upgrade`. You should see `Module '%product_name%_PaymentGateway'` in the output of the command.
 <br>
 
 <div class="panel">
@@ -35,4 +35,4 @@ EPCarts has been tested against the following tech stacks:
 
 6 - Run `setup:static-conent:deploy` to avoid generated HTML referring to javascript/css that haven't been added to the list of compiled/minified assets which can break your store's front-end/admin panel.
 
-7 - To view EPCarts's settings page, navigate to **Stores** -> **Configuration** -> **Sales** -> **Payment Methods**.
+7 - To view %product_name%'s settings page, navigate to **Stores** -> **Configuration** -> **Sales** -> **Payment Methods**.

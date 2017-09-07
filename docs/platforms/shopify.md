@@ -1,17 +1,17 @@
 <h1>Setup on Shopify</h1>
 
-To setup and configure EPCarts on your Shopify store, please use the instructions below
+To setup and configure %product_name% on your Shopify store, please use the instructions below
 <br/>
 
-##Integrating EPCarts##
+##Integrating Certegy Ezi-Pay##
 
 <div class="panel">
   You will need your <b>Merchant ID</b> and an <b>Encryption Key</b> handy before continuing with the installation.
 </div>
 
-1 – Email <a href="mailto:pit@%domain%?Subject=EPCarts URL Request (Shopify)&body=Hi, %0D%0A%0D%0AMy Merchant ID is: %0D%0A%0D%0AI would like to setup EPCarts on my Shopify site. %0D%0A%0D%0AThanks,%0D%0A%0D%0A">pit@%domain%</a> for a copy of the **EPCarts Gateway Authorisation** URL. Please include your Merchant ID in the email.
+1 – Email <a href="mailto:pit@%domain%?Subject=%product_name% URL Request (Shopify)&body=Hi, %0D%0A%0D%0AMy Merchant ID is: %0D%0A%0D%0AI would like to setup %product_name% on my Shopify site. %0D%0A%0D%0AThanks,%0D%0A%0D%0A">pit@%domain%</a> for a copy of the **%product_name% Gateway Authorisation** URL. Please include your Merchant ID in the email.
 
-2 - Clicking the link to be taken to your store's setting page to add EPCarts.
+2 - Clicking the link to be taken to your store's setting page to add %product_name%.
 
 3 - Once logged in, you will see the prompt below. Click **Add payment gateway**.
 
@@ -21,11 +21,11 @@ To setup and configure EPCarts on your Shopify store, please use the instruction
 
 ![6.png](/img/platforms/shopify/6.png)
 
-5 - Bring the **Alternative Payments** section into focus, expand the **Select additional payment method** drop-down and click **EPCarts**.
+5 - Bring the **Alternative Payments** section into focus, expand the **Select additional payment method** drop-down and click **%product_name%**.
 
 ![7.png](/img/platforms/shopify/7.png)
 
-6 - Key in you **Merchant Number** and **Encryption Key** then click on **Save**. You can also specify the credit cards you want to allow with EPCarts.
+6 - Key in you **Merchant Number** and **Encryption Key** then click on **Save**. You can also specify the credit cards you want to allow with %product_name%.
 
 ![8.png](/img/platforms/shopify/8.png)
 
@@ -34,5 +34,5 @@ To setup and configure EPCarts on your Shopify store, please use the instruction
 </div>
 
 <div class="panel">
-  Use <b>Test Mode</b> to test EPCarts or diagnose issue; transactions are similated and credit cards are not debited.
+  Use <b>Test Mode</b> to test %product_name% or diagnose issue; transactions are similated and credit cards are not debited.
 </div>

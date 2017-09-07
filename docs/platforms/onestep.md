@@ -1,3 +1,3 @@
-# Setting up EPCarts on a OneStep Store
+# Setting up %product_name% on a OneStep Store
 
 TODO

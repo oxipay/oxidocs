@@ -1,4 +1,4 @@
-Placing EPCarts widgets on your website is a great way to introduce EPCarts to your users and drive more sales through your online store. The following documentation will guide you through the process of getting EPCarts widgets displayed on your website.
+Placing %product_name% widgets on your website is a great way to introduce %product_name% to your users and drive more sales through your online store. The following documentation will guide you through the process of getting %product_name% widgets displayed on your website.
 
 <div class="panel panel-primary">
   <div class="panel-heading">
@@ -9,7 +9,7 @@ Placing EPCarts widgets on your website is a great way to introduce EPCarts to y
   </div>
 </div>
 
-<small>We strive to write good documentation for our merchants. If there is a way we can improve our documentation, please let us know through <a href="mailto:support@%domain%?Subject=EPCarts Documentation">support@%domain%</a></small>
+<small>We strive to write good documentation for our merchants. If there is a way we can improve our documentation, please let us know through <a href="mailto:support@%domain%?Subject=%product_name% Documentation">support@%domain%</a></small>
 <br>
 <br>
 <small>Version 1.10</small>

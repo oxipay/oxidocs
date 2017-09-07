@@ -1,11 +1,11 @@
 <h1>Setup on Magento 1</h1>
 
-You can install EPCarts plugin by manually copying plugin files across into your store's webserver. <br>
+You can install %product_name% plugin by manually copying plugin files across into your store's webserver. <br>
 Use the same instructions to upgrade your existing plugin to a newer release.
 
 ## Supported Tech Stacks
 
-EPCarts has been developed and tested against the following Magento tech stacks:
+%product_name% has been developed and tested against the following Magento tech stacks:
 
 | Magento Version      | Operating System | SQL    | PHP Version | Web Server    |
 |----------------------|------------------|--------|-------------|---------------|
@@ -21,14 +21,14 @@ EPCarts has been developed and tested against the following Magento tech stacks:
 
 1 - You can create a backup of your store by navigating to **System** -> **Tools** -> **Backup**.
 
-2 - Download the EPCarts plugin from [github.com/epcarts/epcarts-magento-1.x/releases](https://github.com/epcarts/epcarts-magento-1.x/releases).
+2 - Download the %product_name% plugin from [github.com/%class_name%/%class_name%-magento-1.x/releases](https://github.com/%class_name%/%class_name%-magento-1.x/releases).
 
 3 - Unzip it, then copy the following plugin files and folders into the corresponding folder on the `app` folder on the Magento root directory.
 
-- /app/code/community/epcarts
+- /app/code/community/%class_name%
 - /app/design/frontend/base/default/template/epcartpaymnents
 - /app/design/adminhtml/base/default/template/epcartpaymnents
-- /app/etc/modules/epcarts_epcartpaymnents.xml
+- /app/etc/modules/%class_name%_paymnents.xml
 
 4 - Login into Magento's **Admin Panel**, click on **System** then select **Cache Management**.
 
@@ -44,7 +44,7 @@ EPCarts has been developed and tested against the following Magento tech stacks:
 
 ![5.png](/img/platforms/magento_1/5.png)
 
-3 - Confirm  **EPCarts Checkout** is visible and once expanded looks similar to the image below.
+3 - Confirm  **%product_name% Checkout** is visible and once expanded looks similar to the image below.
 
 <xdiv class="panel">
   Some fields have been blurred out in the image.

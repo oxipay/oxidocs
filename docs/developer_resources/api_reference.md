@@ -1,17 +1,17 @@
 # API Reference
 
-Communicating with EPCarts in order to process a transaction via our payment gateway involves **POST**ing a request to the EPCarts endpoint. This can be viewed as an authorisation request that is performed by the shopping cart in order to process the payment via EPCarts.
+Communicating with %product_name% in order to process a transaction via our payment gateway involves **POST**ing a request to the %product_name% endpoint. This can be viewed as an authorisation request that is performed by the shopping cart in order to process the payment via %product_name%.
 
-There are two EPCarts endpoints that transaction information can be posted to and they represent the live EPCarts payment gateway and the test (sandbox) gateway.
+There are two %product_name% endpoints that transaction information can be posted to and they represent the live %product_name% payment gateway and the test (sandbox) gateway.
 
-## EPCarts Endpoints
+## Certegy Ezi-Pay Endpoints
 
 Posting a request to the live payment gateway with the <code>x_test</code> set to <code>false</code> will process a real transaction. This means the credit card that was used as part of the checkout process will be debited. On the other hand, posting to the test gateway simulates a transaction and is not processed as a real transaction; that is, no real dollar amount will be debited from the specified credit card.
 
-To test EPCarts, you can use the test (sandbox) URL or you can use the live payment gateway with the testing flag enabled <code>x_test = true</code>. 
+To test %product_name%, you can use the test (sandbox) URL or you can use the live payment gateway with the testing flag enabled <code>x_test = true</code>. 
 Test transactions will not incur any debits, and any credit card details will not be stored.
 
-| EPCarts Environment | URL |
+| %product_name% Environment | URL |
 |--------------------|-----|
 | Production Endpoint | [https://secure.%domain%/Checkout?platform=Default](https://secure.%domain%/Checkout?platform=Default) |
 | Sandbox Endpoint | [https://securesandbox.%domain%/Checkout?platform=Default](https://securesandbox.%domain%/Checkout?platform=Default) |
@@ -19,15 +19,15 @@ Test transactions will not incur any debits, and any credit card details will no
 <a name="Responses"></a>
 ## Request POST
 
-Posting to the EPCarts endpoint, regardless of whether this is done in the live or test environment, should be done using the format <code>application/x-www-form-urlencoded</code>. Please note that EPCarts adopts the convention of prefixing the various key names with <code>x_</code> .
+Posting to the %product_name% endpoint, regardless of whether this is done in the live or test environment, should be done using the format <code>application/x-www-form-urlencoded</code>. Please note that %product_name% adopts the convention of prefixing the various key names with <code>x_</code> .
 
-Below is an overview of the various key-value pairs that can be passed to EPCarts (**Request Values**), a description of what they are as well as an indication of whether they are mandatory or optional.
+Below is an overview of the various key-value pairs that can be passed to %product_name% (**Request Values**), a description of what they are as well as an indication of whether they are mandatory or optional.
 
 ## Request values
 
  Key | Description | Type | Example
 -----|-------------|------|---------
-x_account_id **Required**         | This is a unique Merchant ID that is assigned by EPCarts to individual merchants | unicode string | 123456
+x_account_id **Required**         | This is a unique Merchant ID that is assigned by %product_name% to individual merchants | unicode string | 123456
 x_amount **Required**             | Represents the transaction's total amount including any taxes and shipping costs | decimal | 99.90
 x_currency **Required**           | Currency of the transaction | ISO-4217 | %currency_abbr%
 x_customer_billing_address1       | Billing address line 1 | unicode string | %address_street_1%
@@ -54,14 +54,14 @@ x_reference **Required**          | A reference that uniquely references the ord
 x_shop_country **Required**       | Country of where the merchant's store is located | iso-3166-1alpha-2 | %country_abbr%
 x_shop_name **Required**          | Store name as advertised on the internet, TV and other media | Shop Inc
 x_signature **Required**          | Request payload that is signed/verified using HMAC-SHA256 | hex string, case-insensitive | See [Signature Generation](./signature_generation/)
-x_test **Required**               | Indicates whether the transaction is to be processed using the live or test EPCarts endpoint | true/false | true  
+x_test **Required**               | Indicates whether the transaction is to be processed using the live or test %product_name% endpoint | true/false | true  
 x_url_callback **Required**       | Callback notifications are sent asynchronously to this URL | URL | https://shop%domain_postfix%/callback
-x_url_cancel **Required**         | Customers are redirected to this URL if they want to quit their EPCarts transaction and return to the shopping cart store instead | URL | https://shop%domain_postfix%/cancel
-x_url_complete **Required**       | Customers are redirected to this URL if they have successfully processed their transaction using EPCarts | URL | https://shop%domain_postfix%/compete
+x_url_cancel **Required**         | Customers are redirected to this URL if they want to quit their %product_name% transaction and return to the shopping cart store instead | URL | https://shop%domain_postfix%/cancel
+x_url_complete **Required**       | Customers are redirected to this URL if they have successfully processed their transaction using %product_name% | URL | https://shop%domain_postfix%/compete
 
 # Sample POST
 
-Below is a sample request that might be posted to an EPCarts endpoint that is in the <code>application/x-www-form-urlencoded</code> format. In this example, please ignore values for individual keys - such as the value for <code>x_signature</code> - since this sample POST is for demonstration purposes only and does not demonstrate a real transaction that can be completed by EPCarts.
+Below is a sample request that might be posted to an %product_name% endpoint that is in the <code>application/x-www-form-urlencoded</code> format. In this example, please ignore values for individual keys - such as the value for <code>x_signature</code> - since this sample POST is for demonstration purposes only and does not demonstrate a real transaction that can be completed by %product_name%.
 
 <hr>
 <div style="font-family: monospace; font-size:1.2rem; color: #DC143C; word-wrap: break-word !important;">
@@ -73,23 +73,23 @@ x_reference=123&x_account_id=1&x_amount=100.00&x_currency=%currency_abbr%&x_url_
 <a name="Responses"></a>
 ## POST and GET responses
 
-There are two responses from EPCarts.
+There are two responses from %product_name%.
 
-The first response that EPCarts always performs is a server-to-server asynchronous POST to the shopping cart on the endpoint specified in the <code>x_url_callback</code> and in the format <code>application/x-www-form-urlencoded</code>. Similar to the request POST, the response POST includes key-values pairs that are specific to that transaction and indicate things such as the outcome of that particular transaction if it has failed or is completed successfully for instance.
+The first response that %product_name% always performs is a server-to-server asynchronous POST to the shopping cart on the endpoint specified in the <code>x_url_callback</code> and in the format <code>application/x-www-form-urlencoded</code>. Similar to the request POST, the response POST includes key-values pairs that are specific to that transaction and indicate things such as the outcome of that particular transaction if it has failed or is completed successfully for instance.
 
 The second response is a HTTP GET to the client on either of the URLs specified in <code>x_url_complete</code> or <code>x_url_cancel</code>.
 
 ## Response POST values
 
-Below is an overview of the various response key-value pairs that EPCarts returns after it has finished processing a transaction. Note that some of these key-value pairs echo corresponding key-value pairs in the request that EPCarts receives - as is the case with <code>x_currency</code> for instance.
+Below is an overview of the various response key-value pairs that %product_name% returns after it has finished processing a transaction. Note that some of these key-value pairs echo corresponding key-value pairs in the request that %product_name% receives - as is the case with <code>x_currency</code> for instance.
 
  Key | Description | Type | Example
 -----|-------------|------|---------
-x_account_id              | This is the Merchant ID assigned by EPCarts to the merchant | unicode string | 123456
+x_account_id              | This is the Merchant ID assigned by %product_name% to the merchant | unicode string | 123456
 x_reference               | A reference that uniquely references the order and assigned by the merchant | ascii string | 19783
 x_currency                | Currency of the transaction | ISO-4217 | %currency_abbr%
 x_test                    | Indicates whether the transaction is to be processed as a live or a test transaction | True/False | False
 x_amount                  | Represents the transaction's total amount including any taxes and shipping costs | decimal | 99.90  
-x_gateway_reference       | A reference for the authorisation issues by EPCarts that is unique | unique string | 123
+x_gateway_reference       | A reference for the authorisation issues by %product_name% that is unique | unique string | 123
 x_timestamp               | Time at which the transaction is completed, in UTC format YYYY-MM-DDTHH:MM:SSZ | iso-8601 in UTC | 2017-06-24T12:11:43Z
 x_result                  | Values that represent the outcome of a transaction | Valid values are **completed**, **failed** and **pending** | **completed**
