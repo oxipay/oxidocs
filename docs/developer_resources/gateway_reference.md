@@ -1,6 +1,6 @@
-# API Reference
+# Certegy Ezi-Pay Gateway Reference
 
-Communicating with %product_name% in order to process a transaction via our payment gateway involves **POST**ing a request to the %product_name% endpoint. This can be viewed as an authorisation request that is performed by the shopping cart in order to process the payment via %product_name%.
+Communicating with %product_name% in order to process a transaction via our payment gateway involves the customers' browser issuing an HTTP **POST** request to the %product_name% endpoint. This can be viewed as an authorisation request that is performed by the shopping cart in order to process the payment via %product_name%.
 
 There are two %product_name% endpoints that transaction information can be posted to and they represent the live %product_name% payment gateway and the test (sandbox) gateway.
 
@@ -36,7 +36,7 @@ x_customer_billing_city           | Billing city | unicode string | %address_cit
 x_customer_billing_country        | Billing country | iso-3166-1 alpha-2 | %country_abbr%
 x_customer_billing_state          | Billing state | unicode string | %address_state_abbr%
 x_customer_billing_postcode       | Billing postcode | unicode string | %address_post_code% |
-x_customer_email                  | Billing email address | unicode string | dummy@gmail.com
+x_customer_email                  | Billing email address | unicode string | user@example.com
 x_customer_first_name             | Customer's first name | unicode string | John
 x_customer_last_name              | Customer's last name | unicode string | Appleseed
 x_customer_phone                  | Customer's phone number | unicode string | %address_phone_number%
