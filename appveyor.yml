@@ -22,7 +22,7 @@ deploy:
     access_key_id: AKIAJIUIKUBZBXHSAR5Q
     secret_access_key:
       secure: 3pvBXjsWdGcaxmh5339WyN34ukiKJHyq+lfwxkyd+tfxu/0XgrQDsMfD5Uf44j+h
-    bucket: docs.certegyezipay.com.au
+    bucket: docs.oxipay.com.au
     region: ap-southeast-2
     unzip: true
     set_public: true
@@ -31,7 +31,7 @@ deploy:
     access_key_id: AKIAJIUIKUBZBXHSAR5Q
     secret_access_key:
       secure: 3pvBXjsWdGcaxmh5339WyN34ukiKJHyq+lfwxkyd+tfxu/0XgrQDsMfD5Uf44j+h
-    bucket: docs.certegyezipay.co.nz
+    bucket: docs.oxipay.co.nz
     region: ap-southeast-2
     unzip: true
     set_public: true
