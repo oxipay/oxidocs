@@ -19,19 +19,19 @@ artifacts:
 
 deploy:
   - provider: S3
-    access_key_id: AKIAJADIA4ZIIFISTL6Q
-    secret_access_key: 
-      secure: TJodypbsUmoOM8hJPMXCfSuw4ri7Nkdbs7amSP4UQmwMyAFPYWJGUfO6TOggLyTk
-    bucket: docs.oxipay.com.au
+    access_key_id: AKIAJIUIKUBZBXHSAR5Q
+    secret_access_key:
+      secure: 3pvBXjsWdGcaxmh5339WyN34ukiKJHyq+lfwxkyd+tfxu/0XgrQDsMfD5Uf44j+h
+    bucket: docs.certegyezipay.com.au
     region: ap-southeast-2
     unzip: true
     set_public: true
     artifact: oxipay-au
   - provider: S3
-    access_key_id: AKIAJADIA4ZIIFISTL6Q
-    secret_access_key: 
-      secure: TJodypbsUmoOM8hJPMXCfSuw4ri7Nkdbs7amSP4UQmwMyAFPYWJGUfO6TOggLyTk
-    bucket: docs.oxipay.co.nz
+    access_key_id: AKIAJIUIKUBZBXHSAR5Q
+    secret_access_key:
+      secure: 3pvBXjsWdGcaxmh5339WyN34ukiKJHyq+lfwxkyd+tfxu/0XgrQDsMfD5Uf44j+h
+    bucket: docs.certegyezipay.co.nz
     region: ap-southeast-2
     unzip: true
     set_public: true
