@@ -13,7 +13,7 @@ pages:
 - Developer Resources:
    - Introduction: developer_resources/introduction.md
    - Checkout Process: developer_resources/checkout_process.md
-   - API Reference: developer_resources/api_reference.md
+   - Gateway Reference: developer_resources/gateway_reference.md
    - Sample cURL Script: developer_resources/sample_curl.md
    - Signature Generation: developer_resources/signature_generation.md
    - Test Credit Card Numbers: developer_resources/test_credit_card_numbers.md
