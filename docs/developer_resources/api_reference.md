@@ -1,10 +1,10 @@
 # API Reference
 
-Communicating with Oxipay in order to process a transaction via our payment gateway involves **POST**ing a request to the Oxipay endpoint. This can be viewed as an authorisation request that is performed by the shopping cart in order to process the payment via Oxipay.
+Communicating with Oxipay in order to process a transaction via our payment gateway involves **POST**ing a request to the Oxipay gateway. This can be viewed as an authorisation request that is performed by the shopping cart in order to process the payment via Oxipay.
 
-There are two Oxipay endpoints that transaction information can be posted to and they represent the live Oxipay payment gateway and the test (sandbox) gateway.
+There are two Oxipay gateways that transaction information can be posted to and they represent the live Oxipay payment gateway and the test (sandbox) gateway.
 
-## Oxipay Endpoints
+## Oxipay Gateways
 
 Posting a request to the live payment gateway with the <code>x_test</code> set to <code>false</code> will process a real transaction. This means the credit card that was used as part of the checkout process will be debited. On the other hand, posting to the test gateway simulates a transaction and is not processed as a real transaction; that is, no real dollar amount will be debited from the specified credit card.
 
@@ -13,13 +13,13 @@ Test transactions will not incur any debits, and any credit card details will no
 
 | Oxipay Environment | URL |
 |--------------------|-----|
-| Production Endpoint | [https://secure.%domain%/Checkout?platform=Default](https://secure.%domain%/Checkout?platform=Default) |
-| Sandbox Endpoint | [https://securesandbox.%domain%/Checkout?platform=Default](https://securesandbox.%domain%/Checkout?platform=Default) |
+| Production Gateway | [https://secure.%domain%/Checkout?platform=Default](https://secure.%domain%/Checkout?platform=Default) |
+| Sandbox Gateway | [https://securesandbox.%domain%/Checkout?platform=Default](https://securesandbox.%domain%/Checkout?platform=Default) |
 
 <a name="Responses"></a>
 ## Request POST
 
-Posting to the Oxipay endpoint, regardless of whether this is done in the live or test environment, should be done using the format <code>application/x-www-form-urlencoded</code>. Please note that Oxipay adopts the convention of prefixing the various key names with <code>x_</code> .
+Posting to the Oxipay gateway, regardless of whether this is done in the live or test environment, should be done using the format <code>application/x-www-form-urlencoded</code>. Please note that Oxipay adopts the convention of prefixing the various key names with <code>x_</code> .
 
 Below is an overview of the various key-value pairs that can be passed to Oxipay (**Request Values**), a description of what they are as well as an indication of whether they are mandatory or optional.
 
@@ -54,14 +54,14 @@ x_reference **Required**          | A reference that uniquely references the ord
 x_shop_country **Required**       | Country of where the merchant's store is located | iso-3166-1alpha-2 | %country_abbr%
 x_shop_name **Required**          | Store name as advertised on the internet, TV and other media | Shop Inc
 x_signature **Required**          | Request payload that is signed/verified using HMAC-SHA256 | hex string, case-insensitive | See [Signature Generation](./signature_generation/)
-x_test **Required**               | Indicates whether the transaction is to be processed using the live or test Oxipay endpoint | true/false | true  
+x_test **Required**               | Indicates whether the transaction is to be processed using the live or test Oxipay gateway | true/false | true  
 x_url_callback **Required**       | Callback notifications are sent asynchronously to this URL | URL | https://shop%domain_postfix%/callback
 x_url_cancel **Required**         | Customers are redirected to this URL if they want to quit their Oxipay transaction and return to the shopping cart store instead | URL | https://shop%domain_postfix%/cancel
 x_url_complete **Required**       | Customers are redirected to this URL if they have successfully processed their transaction using Oxipay | URL | https://shop%domain_postfix%/compete
 
 # Sample POST
 
-Below is a sample request that might be posted to an Oxipay endpoint that is in the <code>application/x-www-form-urlencoded</code> format. In this example, please ignore values for individual keys - such as the value for <code>x_signature</code> - since this sample POST is for demonstration purposes only and does not demonstrate a real transaction that can be completed by Oxipay.
+Below is a sample request that might be posted to an Oxipay gateway that is in the <code>application/x-www-form-urlencoded</code> format. In this example, please ignore values for individual keys - such as the value for <code>x_signature</code> - since this sample POST is for demonstration purposes only and does not demonstrate a real transaction that can be completed by Oxipay.
 
 <hr>
 <div style="font-family: monospace; font-size:1.2rem; color: #DC143C; word-wrap: break-word !important;">
@@ -75,7 +75,7 @@ x_reference=123&x_account_id=1&x_amount=100.00&x_currency=%currency_abbr%&x_url_
 
 There are two responses from Oxipay.
 
-The first response that Oxipay always performs is a server-to-server asynchronous POST to the shopping cart on the endpoint specified in the <code>x_url_callback</code> and in the format <code>application/x-www-form-urlencoded</code>. Similar to the request POST, the response POST includes key-values pairs that are specific to that transaction and indicate things such as the outcome of that particular transaction if it has failed or is completed successfully for instance.
+The first response that Oxipay always performs is a server-to-server asynchronous POST to the shopping cart on the gateway specified in the <code>x_url_callback</code> and in the format <code>application/x-www-form-urlencoded</code>. Similar to the request POST, the response POST includes key-values pairs that are specific to that transaction and indicate things such as the outcome of that particular transaction if it has failed or is completed successfully for instance.
 
 The second response is a HTTP GET to the client on either of the URLs specified in <code>x_url_complete</code> or <code>x_url_cancel</code>.
 

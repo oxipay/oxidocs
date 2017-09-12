@@ -6,7 +6,7 @@ Due to PCI DSS compliance **only the following credit card numbers are able to b
 |Type|PAN|Countries Available|AU Result|NZ Result|
 |----|---|-------------------|---------|---------|
 |**VISA**|**4242 4242 4242 4242**|**AU, NZ**|**Always approves**|**Always approves**|
-|VISA|4111 1111 1111 1111|AU Only|Always approves|Always approves|
+|VISA|4111 1111 1111 1111|AU, NZ|Always approves|Always approves|
 |VISA|4564 8099 9999 9992|AU, NZ|Always approves|Always approves|
 |VISA|4564 4564 4564 4564|AU, NZ|Always approves|Always approves|
 |**MASTERCARD**|**5506 7500 0000 4364**|**AU, NZ**|**Always approves**|**Always approves**|
