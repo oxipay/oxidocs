@@ -20,7 +20,7 @@
 
 ![29.png](/img/platforms/woocommerce/29.png)
 
-5 - Still on the same page and once installation is successful, you should see the **Network Activate** button. Click on it.
+5 - Still on the same page and once installation is successful, you should see the **Activate** button. Click on it.
 
 ![30.png](/img/platforms/woocommerce/30.png)
 

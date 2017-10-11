@@ -1,4 +1,5 @@
-site_name: Oxipay Documentation
+site_name: Oxipay Documentation (AU)
+site_dir: 'oxipay-au'
 pages:
 - Home: index.md
 - Platforms:
