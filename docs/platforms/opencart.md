@@ -46,9 +46,15 @@ _Next: Continue onto Complete The Install instructions below._
 
 ![3.png](/img/platforms/opencart/3.png)
 
+4 - Still on Oxipay, now click on the **Edit** icon on th right, this will open the Oxipay settings page.
+
+5 - Ensure that at the bottom of the page, the **Status** setting is set to **Enabled**, that the other settings are configured as below, then click on **Save**.
+
+![6.png](/img/platforms/opencart/6.png)
+
 ## Configuration
 
-Browse to the **Payment Extensions** listing page *(see above steps 3-4)*; Locate %product_name% and click the **Edit** icon on the right
+Browse to the **Payment Extensions** listing page *(see above steps 3-4)*; Locate Oxipay and click the **Edit** icon on the right
 
 ![4.png](/img/platforms/opencart/4.png)
 
