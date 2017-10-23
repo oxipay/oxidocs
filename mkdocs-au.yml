@@ -13,7 +13,8 @@ pages:
 - Developer Resources:
    - Introduction: developer_resources/introduction.md
    - Checkout Process: developer_resources/checkout_process.md
-   - API Reference: developer_resources/api_reference.md
+   - Gateway Reference: developer_resources/gateway_reference.md
+   - Refund API Reference: developer_resources/refund_api.md
    - Sample cURL Script: developer_resources/sample_curl.md
    - Signature Generation: developer_resources/signature_generation.md
    - Testing Declines and Approvals: developer_resources/declines_and_approvals.md

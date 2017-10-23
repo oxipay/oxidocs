@@ -1,6 +1,9 @@
-# API Reference
+# Gateway Reference
 
-Communicating with Oxipay in order to process a transaction via our payment gateway involves **POST**ing a request to the Oxipay gateway. This can be viewed as an authorisation request that is performed by the shopping cart in order to process the payment via Oxipay.
+
+Communicating with Oxipay in order to process a transaction via our payment gateway involves **the buyers' browser** performing an HTTP **POST** to the Oxipay endpoint. This can be viewed as an authorisation request that is performed by the shopping cart in order to process the payment via Oxipay.
+
+Please note, this is not an HTTP API and *can not* be used for server to server communication.
 
 There are two Oxipay gateways that transaction information can be posted to and they represent the live Oxipay payment gateway and the test (sandbox) gateway.
 
@@ -19,7 +22,7 @@ Test transactions will not incur any debits, and any credit card details will no
 <a name="Responses"></a>
 ## Request POST
 
-Posting to the Oxipay gateway, regardless of whether this is done in the live or test environment, should be done using the format <code>application/x-www-form-urlencoded</code>. Please note that Oxipay adopts the convention of prefixing the various key names with <code>x_</code> .
+Posting to the Oxipay endpoint, regardless of whether this is done in the live or test environment, should be done using the format <code>application/x-www-form-urlencoded</code>. Please note that Oxipay adopts the convention of prefixing the various key names with <code>x_</code> .
 
 Below is an overview of the various key-value pairs that can be passed to Oxipay (**Request Values**), a description of what they are as well as an indication of whether they are mandatory or optional.
 
@@ -36,7 +39,7 @@ x_customer_billing_city           | Billing city | unicode string | %address_cit
 x_customer_billing_country        | Billing country | iso-3166-1 alpha-2 | %country_abbr%
 x_customer_billing_state          | Billing state | unicode string | %address_state_abbr%
 x_customer_billing_postcode       | Billing postcode | unicode string | %address_post_code% |
-x_customer_email                  | Billing email address | unicode string | dummy@gmail.com
+x_customer_email                  | Billing email address | unicode string | user@example.com
 x_customer_first_name             | Customer's first name | unicode string | John
 x_customer_last_name              | Customer's last name | unicode string | Appleseed
 x_customer_phone                  | Customer's phone number | unicode string | %address_phone_number%
