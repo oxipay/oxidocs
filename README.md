@@ -4,7 +4,7 @@
 
 To get your mkdocs environment configured; install the following:
 * chocolatey
-* python:
+* python: 
 
         cinst python -y
 * mkdocs:
