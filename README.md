@@ -25,6 +25,7 @@ To update the documentation the following steps need to be done.
         cd oxidocs
 
 * There are 4 branches:
+
   | branch name       |    description     |
   |-------------------|--------------------|
   | oxidocs:          |    docs for Oxipay |
