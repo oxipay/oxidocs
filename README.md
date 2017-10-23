@@ -25,13 +25,11 @@ To update the documentation the following steps need to be done.
         cd oxidocs
 
 * There are 4 branches:
-  
+  | branch name       |    description     |
+  |-------------------|--------------------|
   | oxidocs:          |    docs for Oxipay |
-  ------------------------------------------
   | developmnent:     |    dev branch for oxidocs |
-  ------------------------------------------
   | ezidocs:          |    docs for EPCart |
-  ------------------------------------------
   | ezidocs_development |  dev branch for oxidocs |
 
   Each branch contains contents for both AU and NZ.
