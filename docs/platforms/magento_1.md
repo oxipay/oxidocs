@@ -23,12 +23,15 @@ Oxipay has been developed and tested against the following Magento tech stacks:
 
 2 - Download the Oxipay plugin from [github.com/oxipay/oxipay-magento-1.x/releases](https://github.com/oxipay/oxipay-magento-1.x/releases).
 
-3 - Unzip it, then copy the following plugin files and folders into the corresponding folder on the `app` folder on the Magento root directory.
+3 - Unzip it, then copy the following plugin files and folders into the corresponding folders under the Magento root directory.
 
 - /app/code/community/Oxipay
 - /app/design/frontend/base/default/template/oxipayments
 - /app/design/adminhtml/base/default/template/oxipayments
 - /app/etc/modules/Oxipay_Oxipayments.xml
+
+- /skin/frontend/base/default/images/Oxipay/
+- /skin/adminhtml/base/default/images/Oxipay/
 
 4 - Login into Magento's **Admin Panel**, click on **System** then select **Cache Management**.
 
@@ -45,10 +48,6 @@ Oxipay has been developed and tested against the following Magento tech stacks:
 ![5.png](/img/platforms/magento_1/5.png)
 
 3 - Confirm  **Oxipay Checkout** is visible and once expanded looks similar to the image below.
-
-<xdiv class="panel">
-  Some fields have been blurred out in the image.
-</div>
 
 ![6.png](/img/platforms/magento_1/6.png)
 
