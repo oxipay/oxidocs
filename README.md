@@ -28,28 +28,26 @@ To update the documentation the following steps need to be done.
 
   | branch name       |    description     |
   |-------------------|--------------------|
-  | oxidocs:          |    docs for Oxipay |
+  | oxidocs:          |    master branch for Oxipay docs (http://docs.oxipay.com.au and http://docs.oxipay.co.nz) |
   | developmnent:     |    dev branch for oxidocs |
-  | ezidocs:          |    docs for EPCart |
-  | ezidocs_development |  dev branch for oxidocs |
+  | ezidocs:          |    master branch for Certegy-ezipay docs (http://docs.certegyezipay.com.au and http://docs.certegyezipay.co.nz) |
+  | ezidocs_development |  dev branch for ezidocs |
 
-  Each branch contains contents for both AU and NZ.
+  Each branch contains both AU and NZ version at the same time.  
+The differences are contained in the mkdocs config files (mkdocs-au.yml and mkdocs-au.yml respectively).
 
 * You can to create a branch for your changes.
 
         git checkout -b new-thing
 
 * Make your changes to the documentation.
-* Run the web-application locally:
+* Run the web-application locally:  
 
-  for AU:
-
+        #! for Australia:
         mkdocs serve --config-file mkdocs-au.yml
-  or for NZ:
 
+        #! for New Zealand:
         mkdocs serve --config-file mkdocs-nz.yml
-
-* Commit your changes and push your branch back up to GitHub.
 
 * Commit your changes and push your branch back up to GitHub.
 * Submit a PR.
