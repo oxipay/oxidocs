@@ -45,11 +45,11 @@ Below is a screenshot of the various Oxipay settings available and what they are
 
 **Enabled**: Enables or disables Oxipay
 
-**Price Widget**: Displays an Oxipay price widget on each of your store's product pages.
+**Price Widget**: Displays an Oxipay price widget on each of your store's product pages. (**Recommended**)
 
 **Shop Name**: Your store name that will be displayed in WooCommerce email receipts to customers
 
-**Oxipay Region**: Region were your store is located as per your merchant agreement.
+**Oxipay Region**: Region where your store is located as per your merchant agreement.
 
 **Test Mode**: For troubleshooting of issues or testing of Oxipay's user experience.
 
