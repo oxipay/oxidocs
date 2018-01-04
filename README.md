@@ -36,7 +36,7 @@ To update the documentation the following steps need to be done.
   Each branch contains both AU and NZ version at the same time.  
 The differences are contained in the mkdocs config files (mkdocs-au.yml and mkdocs-nz.yml respectively).
 
-* You can to create a branch for your changes.
+* You can create a branch for your changes.
 
         git checkout -b new-thing
 

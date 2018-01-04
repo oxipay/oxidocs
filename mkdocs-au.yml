@@ -42,3 +42,6 @@ extra:
     address_state_abbr: SA
     address_post_code: 5000
     country: Australia
+    merchantID_for_curl: 30199250
+    signature_for_curl: 5390d3249610b40b146ada45d46493895dbad0e7ca05daa7df42e6bd0cfc203f
+
