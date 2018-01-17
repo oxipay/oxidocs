@@ -18,6 +18,42 @@
 <script id="oxipay-price-info" src="https://widgets.%domain%/content/scripts/price-info.js?productPrice=PLACE_YOUR_PRODUCT_PRICE"></script>
 ```
 
+### Dynamic Price-info widget
+
+For instances where you have multiple products on the same page, or the price of the product dynamically updates as a result of user selection; we provide a more sophisticated price-info widget. 
+
+With this widget you can provide a **URL encoded** jquery style CSS selector and it will bind a call back to the DOMSubTreeModified event. If the price is modified, it will update the payment info accordingly. 
+
+For example, this is a block of html extracted from a typical woo-commerce product page. 
+
+```
+    <span>Product Price:</span>
+    <p class="price">
+        <span id="priceinfo" class="woocommerce-Price-amount amount">
+            <span class="woocommerce-Price-currencySymbol">$</span>1400.00
+        </span>
+    </p>
+```
+
+In this case we use the urlencoded ```%23priceinfo ``` to refer to the id ```#priceinfo```
+
+```
+<script class="oxipay-price-info" id="my-id" src="http://widgets.%domain%/content/scripts/payments.js?price-selector=%23priceinfo"></script>
+```
+
+You could also use ```price-selector=.woocommerce-Price-amount.amount``` if your product price isn't accessible by an xml:id 
+
+If you *do not* provide a ```price-selector``` query argument then you can also use a fixed  ```productPrice``` value. In this instance, the payment period will not update if the price is updated.
+
+
+<p class="price">
+    <span><strong>Product Price</strong>:</span>
+    <span id="priceinfo2" class="woocommerce-Price-amount amount">
+        <span class="woocommerce-Price-currencySymbol">$</span>1400.00
+    </span>
+</p>
+<script class="oxipay-price-info" id="my-id2" src="http://widgets.%domain%/content/scripts/payments.js?price-selector=%23priceinfo2"></script>
+
 <br/><br/>
 
 <div class="panel panel-primary">
