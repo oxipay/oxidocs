@@ -18,7 +18,7 @@ Use the same instructions to upgrade your existing plugin to a newer release.
   You will need your <b>Merchant Number</b> and an <b>Encryption Key</b> handy before continuing with the installation.
 </div>
 
-1 - Download the %product_name% plugin from [github.com/%class_name%/epcrts-magento-2.x/releases](https://github.com/%class_name%/%class_name%-magento-2.x/releases).
+1 - Download the %product_name% plugin from [github.com/Certegy/certegy-ezipay-magento-2.x/releases](https://github.com/Certegy/certegy-ezipay-magento-2.x/releases).
 
 2 - Unzip it then copy the inner `%product_name%` folder into the `MAGENTO_DIR/app/code` directory on your webserver. If the <code>code</code> folder doesn't exist, then create it manually.
 
