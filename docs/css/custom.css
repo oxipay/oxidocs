@@ -18,6 +18,7 @@
 
 .wy-nav-content {
   background-color: #ffffff;
+  max-width: 1024px !important;
 }
 
 .rst-versions, .rst-current-version {

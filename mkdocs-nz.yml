@@ -24,7 +24,6 @@ pages:
     - Installation:
         - Generic Installation: guidelines/installation.md
         - Shopify Specific: price-info/shopify.md
-        - WooCommerce Specific: price-info/woocommerce.md
         - Magento 1 Specific: price-info/magento_1.md 
 theme: readthedocs
 theme_dir: custom_theme

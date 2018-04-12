@@ -7,8 +7,8 @@ Oxipay provides an API to programmatically process refunds or adjustments to an 
 
 | Oxipay Environment | URL |
 |--------------------|-----|
-| Production Endpoint | [https://portals.%domain%/api/ExternalRefund](https://secure.%domain%/api/ExternalRefund) |
-| Sandbox Endpoint | [https://portalssandbox.%domain%/api/ExternalRefund](https://securesandbox.%domain%/api/ExternalRefund) |
+| Production Endpoint | [https://portals.%domain%/api/ExternalRefund/processrefund](https://secure.%domain%/api/ExternalRefund/processrefund) |
+| Sandbox Endpoint | [https://portalssandbox.%domain%/api/ExternalRefund/processrefund](https://securesandbox.%domain%/api/ExternalRefund/processrefund) |
 
 
 ## Request 
@@ -56,5 +56,5 @@ The following ``curl`` command will allow you to test the refunds API. You will 
         "x_reason": "test",
         "signature": "a5fc92ddd2326c6099bd0f43bbe75afb54004a6ba68f354cc2b40328341d8ee2"
     }' \    
-    https://portalssandbox.oxipay.com.au/api/ExternalRefund
+    https://portalssandbox.oxipay.com.au/api/ExternalRefund/processrefund
 

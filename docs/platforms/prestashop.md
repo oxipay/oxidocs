@@ -91,7 +91,7 @@ Immediately after installing the Oxipay plugin, you would be automatically re-di
 
 6 - **API Key**: The API Key or the Encryption key is a case-sensitive alpha-numeric sequence that is used to authenticate payment requests originating from your store. It is vital that you protect it and don't provide it to unauthorised individuals.
 <div class="panel">
-  The Oxipay Platform Integration Team will provide you with your API key over the phone.
+  The Oxipay Platform Integration Team will provide you with your API key.
 </div>
 
 Once you have finished making the necessary configuration changes or updates, click the **Save** button on the bottom left.
