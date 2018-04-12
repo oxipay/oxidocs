@@ -5,6 +5,7 @@ You can install Oxipay automatically with the extension installer or manually by
 Supported OpenCart Versions:
 
  * v2.3.x
+ * v3.0.x
 
 <div class="panel">
   You will need your <b>Merchant ID</b> and an <b>Encryption Key (API Key)</b> handy before continuing with the installation.
@@ -86,7 +87,7 @@ Merchant ID | Identifies your business and is provided as part of your onboardin
 API Key | Code used to verify that payment requests from your site are valid
 
 <div class="panel">
-  The Oxipay Platform Integration Team will provide you with your API key over the phone.
+  The Oxipay Platform Integration Team will provide you with your API key.
 </div>
 
 **General Settings**
