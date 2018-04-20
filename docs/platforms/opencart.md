@@ -4,7 +4,7 @@ You can install Oxipay automatically with the extension installer or manually by
 
 Supported OpenCart Versions:
 
- * v2.3.x
+ * v2.x
  * v3.0.x
 
 <div class="panel">
