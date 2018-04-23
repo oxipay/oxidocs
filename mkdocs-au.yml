@@ -10,6 +10,8 @@ pages:
    - PrestaShop: platforms/prestashop.md
    - CubeCart: platforms/cubecart.md
    - OpenCart: platforms/opencart.md
+- Accreditation:
+  - Test Transactions: accreditation/accreditation.md
 - Developer Resources:
    - Introduction: developer_resources/introduction.md
    - Checkout Process: developer_resources/checkout_process.md
