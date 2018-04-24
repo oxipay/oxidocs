@@ -9,7 +9,7 @@ To setup and configure %product_name% on your Shopify store, please use the inst
   You will need your <b>Merchant ID</b> and an <b>Encryption Key</b> handy before continuing with the installation.
 </div>
 
-1 – Email <a href="mailto:pit@%domain%?Subject=%product_name% URL Request (Shopify)&body=Hi, %0D%0A%0D%0AMy Merchant ID is: %0D%0A%0D%0AI would like to setup %product_name% on my Shopify site. %0D%0A%0D%0AThanks,%0D%0A%0D%0A">pit@%domain%</a> for a copy of the **%product_name% Gateway Authorisation** URL. Please include your Merchant ID in the email.
+1 – Email <a href="mailto:pit@certegy.com.au?Subject=%product_name% URL Request (Shopify)&body=Hi, %0D%0A%0D%0AMy Merchant ID is: %0D%0A%0D%0AI would like to setup %product_name% on my Shopify site. %0D%0A%0D%0AThanks,%0D%0A%0D%0A">pit@certegy.com.au</a> for a copy of the **%product_name% Gateway Authorisation** URL. Please include your Merchant ID in the email.
 
 2 - Clicking the link to be taken to your store's setting page to add %product_name%.
 
