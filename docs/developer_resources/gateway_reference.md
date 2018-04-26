@@ -89,3 +89,13 @@ x_amount                  | Represents the transaction's total amount including 
 x_gateway_reference       | A reference for the authorisation issues by Oxipay that is unique | unique string | 123
 x_timestamp               | Time at which the transaction is completed, in UTC format YYYY-MM-DDTHH:MM:SSZ | iso-8601 in UTC | 2017-06-24T12:11:43Z
 x_result                  | Values that represent the outcome of a transaction | Valid values are **completed**, **failed** and **pending** | **completed**
+
+### Response POST reply
+
+It is expected that the POST reponse will be replied to by the sellers server to confirm that the POST response was recieved.<br>
+The expected key-value pairs of this reply are listed below.
+
+ Key | Description | Type | Example
+-----|-------------|------|---------
+x_reference               | A reference that uniquely references the order and assigned by the merchant | ascii string | 19783
+x_result                  | Values that represent the outcome of a transaction | Valid values are **completed**, **failed** and **pending** | **completed**
