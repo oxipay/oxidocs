@@ -21,10 +21,10 @@ pages:
    - Signature Generation: developer_resources/signature_generation.md
    - Testing Declines and Approvals: developer_resources/declines_and_approvals.md
 - Widgets:
-    - Introduction: guidelines/introduction.md
-    - List of widgets: guidelines/widgets.md
+    - Introduction: widgets/introduction.md
+    - List of widgets: widgets/list_of_widgets.md
     - Installation:
-        - Generic Installation: guidelines/installation.md
+        - Generic Installation: widgets/installation.md
         - Shopify Specific: price-info/shopify.md
         - Magento 1 Specific: price-info/magento_1.md 
 theme: readthedocs
