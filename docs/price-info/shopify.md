@@ -14,6 +14,11 @@ For adding Price-info Widget to your Website, follow the instruction<br>
 </div>
 <strong>Step 5:</strong> Place the ```<script>``` tag in the desired place you'd like it to appear on your website. This should be added before ```Add to Cart ``` button tag.<br>
 
+**(fortnightly repayments)**
+```
+<script id="oxipay-price-info" src="https://widgets.%domain%/content/scripts/payments.js?productPrice={{product.selected_or_first_available_variant.price | divided_by: 100.00}}"></script>
+```
+**(weekly repayments)**
 ```
 <script id="oxipay-price-info" src="https://widgets.%domain%/content/scripts/payments-weekly.js?productPrice={{product.selected_or_first_available_variant.price | divided_by: 100.00}}"></script>
 ```
