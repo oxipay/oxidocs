@@ -12,11 +12,6 @@ There should be only one occurance of the "getPriceHtml" string, and it may look
 ```
 <strong>Step 3:</strong> Place the following ```<script>``` tag below the "getPriceHtml" code.<br>
 
-**(fortnightly repayments)**
-```
-<script id="oxipay-price-info" src="https://widgets.%domain%/content/scripts/payments.js?productPrice=<?php echo $_product->getFinalPrice(); ?>"></script>
-```
-**(weekly repayments)**
 ```
 <script id="oxipay-price-info" src="https://widgets.%domain%/content/scripts/payments-weekly.js?productPrice=<?php echo $_product->getFinalPrice(); ?>"></script>
 ```
@@ -26,8 +21,4 @@ There should be only one occurance of the "getPriceHtml" string, and it may look
 </div>
 <br>
 <strong>Step 4:</strong> Save and you should see a working widget on your website.<br><br>
-**(fortnightly repayments)**
-<script id="oxipay-price-info" src="https://widgets.%domain%/content/scripts/payments.js?productPrice=100"></script>
-<br>
-**(fortnightly repayments)**
 <script id="oxipay-price-info" src="https://widgets.%domain%/content/scripts/payments-weekly.js?productPrice=100"></script>

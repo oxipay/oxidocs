@@ -14,13 +14,6 @@
 
 ### Price-info widget
 
-**(fortnightly repayments)**
-<script id="oxipay-price-info" src="https://widgets.%domain%/content/scripts/payments.js?productPrice=0"></script>
-```
-<script id="oxipay-price-info" src="https://widgets.%domain%/content/scripts/payments.js?productPrice=PLACE_YOUR_PRODUCT_PRICE"></script>
-```
-
-**(weekly repayments)**
 <script id="oxipay-price-info" src="https://widgets.%domain%/content/scripts/payments-weekly.js?productPrice=0"></script>
 ```
 <script id="oxipay-price-info" src="https://widgets.%domain%/content/scripts/payments-weekly.js?productPrice=PLACE_YOUR_PRODUCT_PRICE"></script>
@@ -46,20 +39,6 @@ For example, this is a block of html extracted from a typical woo-commerce produ
 
 In this case we use the urlencoded ```%23priceinfo ``` to refer to the id ```#priceinfo```
 
-**(fortnightly repayments)**
-<p class="price">
-    <span><strong>Product Price</strong>:</span>
-    <span id="priceinfo" class="woocommerce-Price-amount amount">
-        <span class="woocommerce-Price-currencySymbol">$</span>1400.00
-    </span>
-</p>
-<script class="oxipay-price-info" id="my-id" src="http://widgets.%domain%/content/scripts/payments.js?price-selector=%23priceinfo"></script>
-```
-<script class="oxipay-price-info" id="my-id" src="http://widgets.%domain%/content/scripts/payments.js?price-selector=%23priceinfo"></script>
-```
-<br>
-
-**(weekly repayments)**
 <p class="price">
     <span><strong>Product Price</strong>:</span>
     <span id="priceinfo2" class="woocommerce-Price-amount amount">
