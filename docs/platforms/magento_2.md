@@ -33,6 +33,6 @@ Oxipay has been tested against the following tech stacks:
 
 5 - Flush Magento's Cache by navigating to **Settings** -> **Cache Management** -> **Flush Magento Cache**. Alternatively, you can run <code>MAGENTO_DIR/bin/magento cache:flush</code> from the command line.
 
-6 - Run `setup:static-conent:deploy` to avoid generated HTML referring to javascript/css that haven't been added to the list of compiled/minified assets which can break your store's front-end/admin panel.
+6 - Run `setup:static-content:deploy` to avoid generated HTML referring to javascript/css that haven't been added to the list of compiled/minified assets which can break your store's front-end/admin panel.
 
 7 - To view Oxipay's settings page, navigate to **Stores** -> **Configuration** -> **Sales** -> **Payment Methods**.
