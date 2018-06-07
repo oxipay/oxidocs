@@ -22,11 +22,11 @@ pages:
    - Testing Declines and Approvals: developer_resources/declines_and_approvals.md
 - Widgets:
     - Introduction: widgets/introduction.md
-    - List of widgets: widgets/list_of_widgets.md
+    - List of widgets: widgets/list_of_widgets_no_weekly.md
     - Installation:
         - Generic Installation: widgets/installation.md
-        - Shopify Specific: price-info/shopify.md
-        - Magento 1 Specific: price-info/magento_1.md 
+        - Shopify Specific: price-info/shopify_no_weekly.md
+        - Magento 1 Specific: price-info/magento_1_no_weekly.md 
 theme: readthedocs
 theme_dir: custom_theme
 extra_css: [css/jquery.modal.min.css, css/custom.css]
