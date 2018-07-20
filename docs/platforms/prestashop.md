@@ -11,8 +11,6 @@ Oxipay has been tested against the following tech stacks:
 |1.6.1.3           |Ubuntu 14.04.3 LTS |MySQL 5.6.27 |5.5.30       |Apache 2.4.17|
 |1.6.1.13          |Ubuntu 14.04.5 LTS |MySQL 5.5.54 |5.5.9        |Apache 2.4.7 |
 
-**Oxipay is not compatible with PrestaShop 1.7 at the moment**
-
 ## Plugin Installation
 
 <div class="panel">
@@ -28,14 +26,9 @@ The plugin can be installed automatically via PrestaShop's admin panel. This sec
 <div id="installing-oxipay"></div>
 ### Installation Procedure
 
-**1** - Navigate to the following URL and select the zip file to download the Oxipay plugin.
+**1** - Navigate to the following URL and download the zip file corresponding to your PrestaShop version.
 
-For PrestaShop 1.6  
-[https://github.com/oxipay/oxipay-prestashop-1.6/releases](https://github.com/oxipay/oxipay-prestashop-1.6/releases)
-
-For PrestaShop 1.7  
-Oxipay is not compatible with PrestaShop 1.7 at the moment.
-<!--[https://github.com/oxipay/oxipay-prestashop-1.7/releases](https://github.com/oxipay/oxipay-prestashop-1.7/releases)-->
+[https://github.com/oxipay/oxipay-prestashop/releases](https://github.com/oxipay/oxipay-prestashop/releases)
 
 **2** - Log into your PrestaShop's admin area.
 
@@ -43,29 +36,29 @@ Oxipay is not compatible with PrestaShop 1.7 at the moment.
 
 ![2.png](/img/platforms/prestashop/2.png)
 
-**6** - Scroll to the top of the page and then click on the **Add a new module** icon. This will open up the **Add a new module** panel.
+**4** - Scroll to the top of the page and then click on the **Add a new module** icon. This will open up the **Add a new module** panel.
 
 ![4.png](/img/platforms/prestashop/4.png)
 
-**7** - From within the **Add a new module** panel, click on **Choose a file**. This will allow you to specify the folder or directory that contains the Oxipay .zip plugin. Once selected, click on **Upload this module**.
+**5** - From within the **Add a new module** panel, click on **Choose a file**. This will allow you to specify the folder or directory that contains the Oxipay .zip plugin. Once selected, click on **Upload this module**.
 
 ![5.png](/img/platforms/prestashop/5.png)
 
-**8** - If the upload of the plugin was successful, you will be presented with a success alert at the top of the page.
+**6** - If the upload of the plugin was successful, you will be presented with a success alert at the top of the page.
 
 ![6.png](/img/platforms/prestashop/6.png)
 
-**9** - Scroll downwards to bring the **Modules List** panel into focus, and you will find Oxipay Plugin in the modules list.
+**7** - Scroll downwards to bring the **Modules List** panel into focus, and you will find Oxipay Plugin in the modules list.
 
 ![7.png](/img/platforms/prestashop/7.png)
 
-**10** - Click on the green **Install** button next to the Oxipay PrestaShop listing.
+**8** - Click on the green **Install** button next to the Oxipay PrestaShop listing.
 
-**11** - Click on the orange **Proceed with the Installation** button. (This message is displayed because the module you are installing was uploaded from your computer, rather than through PrestaShop's module marketplace.)
+**9** - Click on the orange **Proceed with the Installation** button. (This message is displayed because the module you are installing was uploaded from your computer, rather than through PrestaShop's module marketplace.)
 
 ![9.png](/img/platforms/prestashop/9.png)
 
-**12** - After the installation, you will be re-directed to the the Oxipay module configuration page with a message at the top of the page indicating that the module was installed successfully.
+**10** - After the installation, you will be re-directed to the the Oxipay module configuration page with a message at the top of the page indicating that the module was installed successfully.
 
 ![10.png](/img/platforms/prestashop/10.png)
 
