@@ -57,6 +57,7 @@ x_test **Required**               | Indicates whether the transaction is to be p
 x_url_callback **Required**       | Callback notifications are sent asynchronously to this URL | URL | https://shop%domain_postfix%/callback | 200
 x_url_cancel **Required**         | Customers are redirected to this URL if they want to quit their Oxipay transaction and return to the shopping cart store instead | URL | https://shop%domain_postfix%/cancel | 200
 x_url_complete **Required**       | Customers are redirected to this URL if they have successfully processed their transaction using Oxipay | URL | https://shop%domain_postfix%/compete | 200
+x_transaction_timeout             | Transaction timout in minutes. Maximum value is 1440. | int | 60
 
 # Sample POST
 
