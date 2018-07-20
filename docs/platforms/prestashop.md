@@ -2,15 +2,6 @@
 
 This document outlines the steps needed to install Oxipay on your PrestaShop store.
 
-## Supported Tech Stacks
-
-Oxipay has been tested against the following tech stacks:
-
-|Prestashop Version| Operating System  | SQL         | PHP Version | Web Server  |
-|------------------|-------------------|-------------|-------------|-------------|
-|1.6.1.3           |Ubuntu 14.04.3 LTS |MySQL 5.6.27 |5.5.30       |Apache 2.4.17|
-|1.6.1.13          |Ubuntu 14.04.5 LTS |MySQL 5.5.54 |5.5.9        |Apache 2.4.7 |
-
 ## Plugin Installation
 
 <div class="panel">
@@ -26,9 +17,13 @@ The plugin can be installed automatically via PrestaShop's admin panel. This sec
 <div id="installing-oxipay"></div>
 ### Installation Procedure
 
-**1** - Navigate to the following URL and download the zip file corresponding to your PrestaShop version.
+**1** - Click the following URL corresponding to your PrestaShop version to download the plugin.
 
-[https://github.com/oxipay/oxipay-prestashop/releases](https://github.com/oxipay/oxipay-prestashop/releases)
+For PrestaShop 1.6:
+[https://github.com/oxipay/oxipay-prestashop/releases/download/1.3.1/oxipay_prestashop_v1.3.1.zip](https://github.com/oxipay/oxipay-prestashop/releases/download/1.3.1/oxipay_prestashop_v1.3.1.zip)
+
+For PrestaShop 1.7:
+[https://github.com/oxipay/oxipay-prestashop/releases/download/1.3.2/oxipay_prestashop_v1.3.2.zip](https://github.com/oxipay/oxipay-prestashop/releases/download/1.3.2/oxipay_prestashop_v1.3.2.zip)
 
 **2** - Log into your PrestaShop's admin area.
 
