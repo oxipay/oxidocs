@@ -83,7 +83,7 @@ If the automatic installation is not successful, you will be presented with a me
 ## Configuring %product_name%
 
 <div class="panel">
-  This section describes the <b>Module Settings</b> available once you have installed the %product_name% plugin. This includes the %product_name% endpoints to communicate with, as well as whether or not to enable Test Mode.  
+  This section describes the <b>Module Settings</b> available once you have installed the %product_name% plugin. This includes the %product_name% gateways to communicate with, as well as whether or not to enable Test Mode.  
 </div>
 
 **1** - Log into the CubeCart Admin Control Panel as an Administrator.
