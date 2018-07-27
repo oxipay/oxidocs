@@ -19,14 +19,14 @@ pages:
    - Sample cURL Script: developer_resources/sample_curl.md
    - Signature Generation: developer_resources/signature_generation.md
    - Test Credit Card Numbers: developer_resources/test_credit_card_numbers.md
-- Widgets:
-    - Introduction: widgets/introduction.md
-    - List of widgets: widgets/list_of_widgets.md
-    - Installation:
-        - Generic Installation: widgets/installation.md
-        - Shopify Specific: price-info/shopify.md
-        - WooCommerce Specific: price-info/woocommerce.md
-        - Magento 1 Specific: price-info/magento_1.md 
+# - Widgets:
+#     - Introduction: guidelines/introduction.md
+#     - List of widgets: guidelines/widgets.md
+#     - Installation:
+#         - Generic Installation: guidelines/installation.md
+#         - Shopify Specific: price-info/shopify.md
+#         - WooCommerce Specific: price-info/woocommerce.md
+#         - Magento 1 Specific: price-info/magento_1.md 
 theme: readthedocs
 theme_dir: custom_theme
 extra_css: [css/jquery.modal.min.css, css/custom.css]
