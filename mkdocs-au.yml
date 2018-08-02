@@ -5,7 +5,7 @@ pages:
 - Platforms:
    - Shopify: platforms/shopify.md
    - WooCommerce: platforms/woocommerce.md
-#    - Magento 1: platforms/magento_1.md
+   - Magento 1: platforms/magento_1.md
    - Magento 2: platforms/magento_2.md
 #    - PrestaShop: platforms/prestashop.md
 #    - CubeCart: platforms/cubecart.md
