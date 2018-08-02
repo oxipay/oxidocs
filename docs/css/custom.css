@@ -24,6 +24,7 @@
 
 .wy-nav-content {
 	background: #FFFFFF !important;
+  max-width: 1024px !important;
 }
 
 .wy-nav-content-wrap {

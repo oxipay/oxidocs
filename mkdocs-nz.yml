@@ -19,6 +19,10 @@ pages:
    - Sample cURL Script: developer_resources/sample_curl.md
    - Signature Generation: developer_resources/signature_generation.md
    - Test Credit Card Numbers: developer_resources/test_credit_card_numbers.md
+- Transact API:
+   - Overview: transact_api/overview.md
+   - Gateway Reference: transact_api/gateway_reference.md
+   - Sample Code: transact_api/sample_code.md
 # - Widgets:
 #     - Introduction: guidelines/introduction.md
 #     - List of widgets: guidelines/widgets.md
