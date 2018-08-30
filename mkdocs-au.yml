@@ -46,3 +46,4 @@ extra:
     merchantID_for_curl: 30199250
     signature_for_curl: 5390d3249610b40b146ada45d46493895dbad0e7ca05daa7df42e6bd0cfc203f
     payment_desc: There are a total of 8 equal payments, one at point of purchase and the remaining 7 over the next 7 weeks.
+    max_purchase: 2100
