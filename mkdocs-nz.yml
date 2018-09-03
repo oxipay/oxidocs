@@ -1,6 +1,6 @@
 site_name: Certegy Ezi-Pay Documentation (NZ)
 site_dir: 'ezipay-nz'
-pages:
+nav:
 - Home: index.md
 - Platforms:
    - Shopify: platforms/shopify.md
@@ -19,6 +19,10 @@ pages:
    - Sample cURL Script: developer_resources/sample_curl.md
    - Signature Generation: developer_resources/signature_generation.md
    - Test Credit Card Numbers: developer_resources/test_credit_card_numbers.md
+- Transact API:
+   - Overview: transact_api/overview.md
+   - Gateway Reference: transact_api/gateway_reference.md
+   - Sample Code: transact_api/sample_code.md
 # - Widgets:
 #     - Introduction: guidelines/introduction.md
 #     - List of widgets: guidelines/widgets.md
@@ -27,8 +31,9 @@ pages:
 #         - Shopify Specific: price-info/shopify.md
 #         - WooCommerce Specific: price-info/woocommerce.md
 #         - Magento 1 Specific: price-info/magento_1.md 
-theme: readthedocs
-theme_dir: custom_theme
+theme:
+    name: readthedocs
+    custom_dir: custom_theme
 extra_css: [css/jquery.modal.min.css, css/custom.css]
 extra_javascript: [js/jquery.modal.js]
 extra:
