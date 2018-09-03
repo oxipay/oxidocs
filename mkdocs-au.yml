@@ -2,7 +2,7 @@ site_name: Oxipay Documentation (AU)
 site_dir: 'oxipay-au'
 pages:
 - Home: index.md
-- Platforms:
+- E-commerce Platforms:
    - Shopify: platforms/shopify.md
    - WooCommerce: platforms/woocommerce.md
    - Magento 1: platforms/magento_1.md
@@ -10,6 +10,8 @@ pages:
    - PrestaShop: platforms/prestashop.md
    - CubeCart: platforms/cubecart.md
    - OpenCart: platforms/opencart.md
+- POS Platforms:
+   - Vend: platforms/vend.md
 - Accreditation:
   - Test Transactions: accreditation/accreditation.md
 - Developer Resources:
