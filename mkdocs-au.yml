@@ -1,6 +1,6 @@
 site_name: Oxipay Documentation (AU)
 site_dir: 'oxipay-au'
-pages:
+nav:
 - Home: index.md
 - Platforms:
    - Shopify: platforms/shopify.md
@@ -27,8 +27,9 @@ pages:
         - Generic Installation: widgets/installation.md
         - Shopify Specific: price-info/shopify.md
         - Magento 1 Specific: price-info/magento_1.md 
-theme: readthedocs
-theme_dir: custom_theme
+theme: 
+    name: readthedocs
+    custom_dir: custom_theme
 extra_css: [css/jquery.modal.min.css, css/custom.css]
 extra_javascript: [js/jquery.modal.js]
 extra:
