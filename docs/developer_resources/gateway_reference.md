@@ -54,7 +54,7 @@ x_shop_country **Required**       | Country of where the merchant's store is loc
 x_shop_name **Required**          | Store name as advertised on the internet, TV and other media | Shop Inc | 200
 x_signature **Required**          | Request payload that is signed/verified using HMAC-SHA256 | hex string, case-insensitive | See [Signature Generation](./signature_generation/) | 64
 x_test **Required**               | Indicates whether the transaction is to be processed using the live or test Oxipay gateway | true/false | true   | 1
-x_url_callback **Required**       | Callback notifications are sent asynchronously to this URL | URL | https://shop%domain_postfix%/callback | 200
+x_url_callback **Required**       | Callback notifications are sent asynchronously to this URL. **The protocol must be HTTPS** | URL | https://shop%domain_postfix%/callback | 200
 x_url_cancel **Required**         | Customers are redirected to this URL if they want to quit their Oxipay transaction and return to the shopping cart store instead | URL | https://shop%domain_postfix%/cancel | 200
 x_url_complete **Required**       | Customers are redirected to this URL if they have successfully processed their transaction using Oxipay | URL | https://shop%domain_postfix%/compete | 200
 x_transaction_timeout             | Transaction timout in minutes. Maximum value is 1440. | int | 60
@@ -72,7 +72,8 @@ Below is a sample request that might be posted to an Oxipay gateway that is in t
 
 There are two responses from Oxipay.
 
-The first response that Oxipay always performs is a server-to-server asynchronous POST to the shopping cart on the gateway specified in the <code>x_url_callback</code> and in the format <code>application/x-www-form-urlencoded</code>. Similar to the request POST, the response POST includes key-values pairs that are specific to that transaction and indicate things such as the outcome of that particular transaction if it has failed or is completed successfully for instance.
+The first response that Oxipay always performs is a server-to-server asynchronous POST to the shopping cart on the gateway specified in the <code>x_url_callback</code> and in the format <code>application/x-www-form-urlencoded</code>. Similar to the request POST, the response POST includes key-values pairs that are specific to that transaction and indicate things such as the outcome of that particular transaction if it has failed or is completed successfully for instance.</br>
+Please note that this POST must be sent over HTTPS. Consequently the <code>x_url_callback</code> field should specify the HTTPS has the protocol.
 
 The second response is a HTTP GET to the client on either of the URLs specified in <code>x_url_complete</code> or <code>x_url_cancel</code>.
 
