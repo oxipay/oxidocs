@@ -129,3 +129,125 @@ class Main
 
 ```
 
+## Go Example
+
+```
+// RegistrationPayload required to register a device with Oxipay
+type RegistrationPayload struct {
+    MerchantID      string `json:"x_merchant_id"`
+    DeviceID        string `json:"x_device_id"`
+    DeviceToken     string `json:"x_device_token"`
+    OperatorID      string `json:"x_operator_id"`
+    FirmwareVersion string `json:"x_firmware_version"`
+    POSVendor       string `json:"x_pos_vendor"`
+    TrackingData    string `json:"tracking_data,omitempty"`
+    Signature       string `json:"signature"`
+}
+
+// AuthorisationPayload Payload used to send to Oxipay
+type AuthorisationPayload struct {
+    MerchantID        string `json:"x_merchant_id"`
+    DeviceID          string `json:"x_device_id"`
+    OperatorID        string `json:"x_operator_id"`
+    FirmwareVersion   string `json:"x_firmware_version"`
+    PosTransactionRef string `json:"x_pos_transaction_ref"`
+    PreApprovalCode   string `json:"x_pre_approval_code"`
+    FinanceAmount     string `json:"x_finance_amount"`
+    PurchaseAmount    string `json:"x_purchase_amount"`
+    Signature         string `json:"signature"`
+}
+
+// Response is the response returned from Oxipay for both a CreateKey and Sales Adjustment
+type Response struct {
+    PurchaseNumber string `json:"x_purchase_number,omitempty"`
+    Status         string `json:"x_status,omitempty"`
+    Code           string `json:"x_code,omitempty"`
+    Message        string `json:"x_message"`
+    Key            string `json:"x_key,omitempty"`
+    Signature      string `json:"signature"`
+}
+
+// SalesAdjustmentPayload holds a request to Oxipay for the ProcessAdjustment
+type SalesAdjustmentPayload struct {
+    PosTransactionRef string `json:"x_pos_transaction_ref"`
+    PurchaseRef       string `json:"x_purchase_ref"`
+    MerchantID        string `json:"x_merchant_id"`
+    Amount            string `json:"x_amount,omitempty"`
+    DeviceID          string `json:"x_device_id,omitempty"`
+    OperatorID        string `json:"x_operator_id,omitempty"`
+    FirmwareVersion   string `json:"x_firmware_version,omitempty"`
+    TrackingData      string `json:"tracking_data,omitempty"`
+    Signature         string `json:"signature"`
+}
+
+
+
+//Authenticate validates HMAC
+func (r *Response) Authenticate(key string) (bool, error) {
+    responsePlainText := GeneratePlainTextSignature(r)
+
+    if len(r.Signature) >= 0 {
+        return CheckMAC([]byte(responsePlainText), []byte(r.Signature), []byte(key))
+    }
+    return false, errors.New("Plaintext is signature is 0 length")
+}
+
+// GeneratePlainTextSignature will generate an Oxipay plain text message ready for signing
+func GeneratePlainTextSignature(payload interface{}) string {
+
+    var buffer bytes.Buffer
+
+    // create a temporary map so we can sort the keys,
+    // go intentionally randomises maps so we need to
+    // store the keys in an array which we can sort
+    v := reflect.TypeOf(payload).Elem()
+    y := reflect.ValueOf(payload)
+    if y.IsNil() {
+        return ""
+    }
+    x := y.Elem()
+
+    payloadList := make(map[string]string, x.NumField())
+
+    for i := 0; i < x.NumField(); i++ {
+        field := x.Field(i)
+        ftype := v.Field(i)
+
+        data := field.Interface()
+        tag := ftype.Tag.Get("json")
+        idx := strings.Index(tag, ",")
+        if idx > 0 {
+            tag = tag[:idx]
+        }
+
+        payloadList[tag] = data.(string)
+
+    }
+    var keys []string
+    for k := range payloadList {
+        keys = append(keys, k)
+    }
+    sort.Strings(keys)
+
+    for _, v := range keys {
+        // there shouldn't be any nil values
+        // Signature needs to be populated with the actual HMAC
+        // calld
+        if v[0:2] == "x_" && payloadList[v] != "" {
+            buffer.WriteString(fmt.Sprintf("%s%s", v, payloadList[v]))
+        }
+    }
+    plainText := buffer.String()
+    return plainText
+}
+
+
+// SignMessage will generate an HMAC of the plaintext
+func SignMessage(plainText string, signingKey string) string {
+    key := []byte(signingKey)
+    mac := hmac.New(sha256.New, key)
+    mac.Write([]byte(plainText))
+    macString := hex.EncodeToString(mac.Sum(nil))
+    return macString
+}
+```
