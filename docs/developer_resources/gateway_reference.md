@@ -90,7 +90,7 @@ x_test                    | Indicates whether the transaction is to be processed
 x_amount                  | Represents the transaction's total amount including any taxes and shipping costs | decimal | 99.90  
 x_gateway_reference       | A reference for the authorisation issues by Oxipay that is unique | unique string | 123
 x_timestamp               | Time at which the transaction is completed, in UTC format YYYY-MM-DDTHH:MM:SSZ | iso-8601 in UTC | 2017-06-24T12:11:43Z
-x_result                  | Values that represent the outcome of a transaction | Valid values are **completed**, **failed** and **pending** | **completed**
+x_result                  | Values that represent the outcome of a transaction | Valid values are **completed** and **failed** | **completed**
 
 ### Response POST reply
 
@@ -100,4 +100,4 @@ The expected key-value pairs of this reply are listed below.
  Key | Description | Type | Example
 -----|-------------|------|---------
 x_reference               | A reference that uniquely references the order and assigned by the merchant | ascii string | 19783
-x_result                  | Values that represent the outcome of a transaction | Valid values are **completed**, **failed** and **pending** | **completed**
+x_result                  | Values that represent the outcome of a transaction | Valid values are **completed** and **failed**| **completed**
