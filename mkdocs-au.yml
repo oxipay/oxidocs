@@ -24,7 +24,8 @@ nav:
    - Testing Declines and Approvals: developer_resources/declines_and_approvals.md
 - Widgets:
     - Introduction: widgets/introduction.md
-    - List of widgets: widgets/list_of_widgets.md
+    - List of Widgets: widgets/list_of_widgets.md
+    - Landing Page Widget: widgets/landing_widget.md
     - Installation:
         - Generic Installation: widgets/installation.md
         - Shopify Specific: price-info/shopify.md
