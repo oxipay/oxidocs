@@ -24,7 +24,6 @@ You must perform two test transactions, an approved and a declined transaction.
 2 - Sign up for an Oxipay account using your personal information.
 
 - Please ensure your mobile number is correct as you will need to receive a verification code.
-- You must use factual personal information to be identified correctly.
 
 <div class="panel">
     If you can't sign up please contact <a href="mailto:pit@{{< domain >}}">pit@{{< domain >}}</a>

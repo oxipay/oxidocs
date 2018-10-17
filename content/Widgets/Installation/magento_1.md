@@ -37,5 +37,5 @@ There should be only one occurance of the "getPriceHtml" string, and it may look
 **(fortnightly repayments)**
 <script id="oxipay-price-info" src="https://widgets.{{< domain >}}/content/scripts/payments.js?productPrice=100"></script>
 <br>
-**(fortnightly repayments)**
+**(weekly repayments)**
 <script id="oxipay-price-info" src="https://widgets.{{< domain >}}/content/scripts/payments-weekly.js?productPrice=100"></script>

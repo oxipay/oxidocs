@@ -21,7 +21,7 @@ There are two Oxipay gateways that transaction information can be posted to and 
 | Production Gateway | [https://secure.{{< domain >}}/Checkout?platform=Default](https://secure.{{< domain >}}/Checkout?platform=Default) |
 | Sandbox Gateway | [https://securesandbox.{{< domain >}}/Checkout?platform=Default](https://securesandbox.{{< domain >}}/Checkout?platform=Default) |
 
-<a name="Responses"></a>
+<a name="Request"></a>
 
 ## Request POST
 
@@ -35,7 +35,7 @@ Below is an overview of the various key-value pairs that can be passed to Oxipay
 -----|-------------|------|---------|--------
 x_account_id **Required**         | This is a unique Merchant ID that is assigned by Oxipay to individual merchants | unicode string | 123456 | 10
 x_amount **Required**             | Represents the transaction's total amount including any taxes and shipping costs | decimal | 99.90 | 12
-x_currency **Required**           | Currency of the transaction | ISO-4217 | {{< domain_postfix >}} | 3
+x_currency **Required**           | Currency of the transaction | ISO-4217 | {{< currency_abbr >}} | 3
 x_customer_billing_address1       | Billing address line 1 | unicode string | {{< address_street_1 >}} | 200
 x_customer_billing_address2       | Billing address line 2 | unicode string | {{< address_street_2 >}} | 200
 x_customer_billing_city           | Billing city | unicode string | {{< address_city >}} | 200 
@@ -61,7 +61,7 @@ x_shop_country **Required**       | Country of where the merchant's store is loc
 x_shop_name **Required**          | Store name as advertised on the internet, TV and other media | Shop Inc | 200
 x_signature **Required**          | Request payload that is signed/verified using HMAC-SHA256 | hex string, case-insensitive | See [Signature Generation](./signature_generation/) | 64
 x_test **Required**               | Indicates whether the transaction is to be processed using the live or test Oxipay gateway | true/false | true   | 1
-x_url_callback **Required**       | Callback notifications are sent asynchronously to this URL | URL | https://shop{{< domain_postfix >}}/callback | 200
+x_url_callback **Required**       | Callback notifications are sent asynchronously to this URL. **The protocol must be HTTPS** | URL | https://shop{{< domain_postfix >}}/callback | 200
 x_url_cancel **Required**         | Customers are redirected to this URL if they want to quit their Oxipay transaction and return to the shopping cart store instead | URL | https://shop{{< domain_postfix >}}/cancel | 200
 x_url_complete **Required**       | Customers are redirected to this URL if they have successfully processed their transaction using Oxipay | URL | https://shop{{< domain_postfix >}}/compete | 200
 
@@ -70,15 +70,16 @@ x_url_complete **Required**       | Customers are redirected to this URL if they
 Below is a sample request that might be posted to an Oxipay gateway that is in the <code>application/x-www-form-urlencoded</code> format. In this example, please ignore values for individual keys - such as the value for <code>x_signature</code> - since this sample POST is for demonstration purposes only and does not demonstrate a real transaction that can be completed by Oxipay.
 
 
-    x_reference=123&x_account_id=1&x_amount=100.00&x_currency={{< domain_postfix >}}&x_url_callback=sample_callback_url&x_url_complete=sample_complete_url&x_shop_country={{< country_abbr >}}&x_shop_name=Sample+Shop&x_test=true&x_customer_first_name=first&x_customer_last_name=last&x_customer_email=sample%40email.com&x_customer_billing_country={{< country_abbr >}}&x_customer_billing_city={{< address_city >}}&x_customer_billing_address1=97+Pirie&x_customer_billing_address2=St&x_customer_billing_state={{< address_state_abbr >}}&x_customer_billing_zip={{< address_post_code >}}&x_invoice=%123&x_description=Sample+Store+-+%123&x_url_cancel=sample_cancel_url&x_signature=dummy_signature
+    x_reference=123&x_account_id=1&x_amount=100.00&x_currency={{< currency_abbr >}}&x_url_callback=sample_callback_url&x_url_complete=sample_complete_url&x_shop_country={{< country_abbr >}}&x_shop_name=Sample+Shop&x_test=true&x_customer_first_name=first&x_customer_last_name=last&x_customer_email=sample%40email.com&x_customer_billing_country={{< country_abbr >}}&x_customer_billing_city={{< address_city >}}&x_customer_billing_address1=97+Pirie&x_customer_billing_address2=St&x_customer_billing_state={{< address_state_abbr >}}&x_customer_billing_zip={{< address_post_code >}}&x_invoice=%123&x_description=Sample+Store+-+%123&x_url_cancel=sample_cancel_url&x_signature=dummy_signature
 
 
-<a name="Responses"></a>
+<a name="Response"></a>
 ## POST and GET responses
 
 There are two responses from Oxipay.
 
-The first response that Oxipay always performs is a server-to-server asynchronous POST to the shopping cart on the gateway specified in the <code>x_url_callback</code> and in the format <code>application/x-www-form-urlencoded</code>. Similar to the request POST, the response POST includes key-values pairs that are specific to that transaction and indicate things such as the outcome of that particular transaction if it has failed or is completed successfully for instance.
+The first response that Oxipay always performs is a server-to-server asynchronous POST to the shopping cart on the gateway specified in the <code>x_url_callback</code> and in the format <code>application/x-www-form-urlencoded</code>. Similar to the request POST, the response POST includes key-values pairs that are specific to that transaction and indicate things such as the outcome of that particular transaction if it has failed or is completed successfully for instance.</br>
+Please note that this POST must be sent over HTTPS. Consequently the <code>x_url_callback</code> field should specify the HTTPS has the protocol.
 
 The second response is a HTTP GET to the client on either of the URLs specified in <code>x_url_complete</code> or <code>x_url_cancel</code>.
 
@@ -90,7 +91,7 @@ Below is an overview of the various response key-value pairs that Oxipay returns
 -----|-------------|------|---------
 x_account_id              | This is the Merchant ID assigned by Oxipay to the merchant | unicode string | 123456
 x_reference               | A reference that uniquely references the order and assigned by the merchant | ascii string | 19783
-x_currency                | Currency of the transaction | ISO-4217 | {{< domain_postfix >}}
+x_currency                | Currency of the transaction | ISO-4217 | {{< currency_abbr >}}
 x_test                    | Indicates whether the transaction is to be processed as a live or a test transaction | True/False | False
 x_amount                  | Represents the transaction's total amount including any taxes and shipping costs | decimal | 99.90  
 x_gateway_reference       | A reference for the authorisation issues by Oxipay that is unique | unique string | 123

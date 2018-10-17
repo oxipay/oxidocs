@@ -89,17 +89,10 @@ If you *do not* provide a ```price-selector``` query argument then you can also 
 
 <br/><br/>
 
-<div class="panel panel-primary">
-  <div class="panel-heading">
-    <h3 class="panel-title">Installation based on Platforms</h3>
-  </div>
-  <div class="panel-body">
-<ul>
-  <li><a href="../../price-info/shopify">Shopify specific instructions</a></li>
-  <li><a href="../../price-info/woocommerce">WooCommerce specific instructions</a></li>
-</ul>
-  </div>
-</div>
+### Installation based on Platforms
+
+* [Shopify specific instructions](../installation/shopify)
+* [Magento 1 specific instructions](../installation/magento_1)
 
 <br/><br/>
 
