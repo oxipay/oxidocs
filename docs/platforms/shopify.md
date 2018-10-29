@@ -21,7 +21,8 @@ To setup and configure Oxipay on your Shopify store, please use the instructions
 
 ![6.png](/img/platforms/shopify/6.png)
 
-5 - Bring the **Alternative Payments** section into focus, expand the **Select additional payment method** drop-down and click **Oxipay**.
+5 - From your Shopify dashboard, select **Settings** in the bottom left hand corner, then select select **Payment providers**.</br>
+Bring the **Alternative Payments** section into focus, expand the **Select additional payment method** drop-down and click **Oxipay**.
 
 ![7.png](/img/platforms/shopify/7.png)
 
