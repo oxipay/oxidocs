@@ -23,6 +23,10 @@ To setup and configure Oxipay on your Shopify store, please use the instructions
 
 5 - Bring the **Alternative Payments** section into focus, expand the **Select additional payment method** drop-down and click **Oxipay**.
 
+<div class="panel">
+	To access this page from your Shopify dashboard, select <b>Settings</b> in the bottom left hand corner, then select select <b>Payment providers</b>.
+</div>
+
 ![7.png](/img/platforms/shopify/7.png)
 
 6 - Key in you **Merchant Number** and **Encryption Key** then click on **Save**. You can also specify the credit cards you want to allow with Oxipay.

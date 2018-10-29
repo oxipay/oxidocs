@@ -10,6 +10,8 @@ nav:
    - PrestaShop: platforms/prestashop.md
    - CubeCart: platforms/cubecart.md
    - OpenCart: platforms/opencart.md
+- POS Platforms:
+   - Vend: platforms/vend.md
 - Accreditation:
   - Test Transactions: accreditation/accreditation.md
 - Developer Resources:
