@@ -10,9 +10,9 @@ To setup and configure Oxipay with your Vend POS device you will need the follow
  </ul>
 </div>
 
-Device Tokens can be generated in your <a href="https://portals.oxipay.com.au/merchantarea#/login">Oxipay Merchant Portal</a>
+Device Tokens can be generated in your <a href="https://portals.%domain%/merchantarea#/login">Oxipay Merchant Portal</a>
 
-1. Login to the <a href="https://portals.oxipay.com.au/merchantarea#/login">Oxipay Merchant Portal</a>
+1. Login to the <a href="https://portals.%domain%/merchantarea#/login">Oxipay Merchant Portal</a>
 
 2. Select the menu in the top right corner
 
@@ -59,7 +59,7 @@ On the Settings -> Payment Types screen, choose the Oxipay Payment Type
 
 Set the Gateway URL to:
 
-```https://vend.oxipay.com.au ```
+```https://vend.%domain% ```
 
 Press the "Save Pament Type"
 
@@ -79,7 +79,7 @@ You will be prompted for your:
 
 Your **Merchant ID** is provided in your Welcome Pack.
 
-**Device Tokens** can be generated in the <a href="https://portals.oxipay.com.au/merchantarea#/login">Oxipay Merchant Portal</a>
+**Device Tokens** can be generated in the <a href="https://portals.%domain%/merchantarea#/login">Oxipay Merchant Portal</a>
 
 
 
