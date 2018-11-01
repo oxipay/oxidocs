@@ -53,7 +53,7 @@ x_description                     | Item's description as setup in the shopping 
 x_reference **Required**          | A reference that uniquely references the order and assigned by the merchant. This is unique to the shopping cart. | ascii string (max length 36 bytes) | 19783
 x_shop_country **Required**       | Country of where the merchant's store is located | iso-3166-1alpha-2 | %country_abbr%
 x_shop_name **Required**          | Store name as advertised on the internet, TV and other media | Shop Inc
-x_signature **Required**          | Request payload that is signed/verified using HMAC-SHA256 | hex string, case-insensitive | See [Signature Generation](./signature_generation/)
+x_signature **Required**          | Request payload that is signed/verified using HMAC-SHA256 | hex string, case-insensitive | See [Signature Generation](../signature_generation/)
 x_test **Required**               | Indicates whether the transaction is to be processed using the live or test %product_name% gateway | true/false | true  
 x_url_callback **Required**       | Callback notifications are sent asynchronously to this URL | URL | https://shop%domain_postfix%/callback
 x_url_cancel **Required**         | Customers are redirected to this URL if they want to quit their %product_name% transaction and return to the shopping cart store instead | URL | https://shop%domain_postfix%/cancel
@@ -92,7 +92,8 @@ x_test                    | Indicates whether the transaction is to be processed
 x_amount                  | Represents the transaction's total amount including any taxes and shipping costs | decimal | 99.90  
 x_gateway_reference       | A reference for the authorisation issues by %product_name% that is unique | unique string | 123
 x_timestamp               | Time at which the transaction is completed, in UTC format YYYY-MM-DDTHH:MM:SSZ | iso-8601 in UTC | 2017-06-24T12:11:43Z
-x_result                  | Values that represent the outcome of a transaction | Valid values are **completed**, **failed** and **pending** | **completed**
+x_result                  | Values that represent the outcome of a transaction | Valid values are **completed** or **failed** | **completed**
+x_signature               | Response payload that is signed/verified using HMAC-SHA256 | hex string, case-insensitive | See [Signature Generation](../signature_generation/)
 
 ### Response POST reply
 
@@ -102,4 +103,4 @@ The expected key-value pairs of this reply are listed below.
  Key | Description | Type | Example
 -----|-------------|------|---------
 x_reference               | A reference that uniquely references the order and assigned by the merchant | ascii string | 19783
-x_result                  | Values that represent the outcome of a transaction | Valid values are **completed**, **failed** and **pending** | **completed**
+x_result                  | Values that represent the outcome of a transaction | Valid values are **completed** or **failed** | **completed**
