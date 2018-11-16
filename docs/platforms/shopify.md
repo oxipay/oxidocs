@@ -40,3 +40,16 @@ To setup and configure Oxipay on your Shopify store, please use the instructions
 <div class="panel">
   Use <b>Test Mode</b> to test Oxipay or diagnose issue; transactions are similated and credit cards are not debited.
 </div>
+
+<div class="panel">
+  In order to add the Price-info widget as below, please see the Shopify instructions <a href="../../price-info/%no_weekly_shopify%">here</a>.
+</div>
+
+<p class="price">
+    <span><strong>Product Price</strong>:</span>
+    <span id="priceinfo" class="woocommerce-Price-amount amount">
+        <span class="woocommerce-Price-currencySymbol">$</span>1400.00
+    </span>
+</p>
+<script class="oxipay-price-info" id="my-id" src="http://widgets.%domain%/content/scripts/payments.js?price-selector=%23priceinfo"></script>
+</br>
