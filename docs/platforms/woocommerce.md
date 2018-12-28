@@ -30,11 +30,11 @@
 
 ## Configuring Plugin
 
-1 - From the side-bar, click on **WooCommerce** then on **Settings**.
+1 - From the side-bar, click on **WooCommerce** and then on **Settings**.
 
 ![32.png](/img/platforms/woocommerce/32.png)
 
-2 - From the top bar, click on **Checkout** then on **Oxipay**.
+2 - From the top bar, click on **Payments** and then on **Oxipay**.
 
 ![33.png](/img/platforms/woocommerce/33.png)
 
@@ -45,8 +45,6 @@ Below is a screenshot of the various Oxipay settings available and what they are
 
 **Enabled**: Enables or disables Oxipay
 
-**Price Widget**: Displays an Oxipay price widget on each of your store's product pages. (**Recommended**)
-
 **Shop Name**: Your store name that will be displayed in WooCommerce email receipts to customers
 
 **Oxipay Region**: Region where your store is located as per your merchant agreement.
@@ -55,13 +53,23 @@ Below is a screenshot of the various Oxipay settings available and what they are
 
 **Modal Checkout**: Completes transaction on your store for a more seamless experience.
 
+**Price Widget**: Displays an Oxipay price widget on each of your store's product pages. (**Recommended**)
+
+**Top Banner Widget**: Displays an Oxipay banner at the top of all pages. (Australian stores only)
+
+**Top Banner on FrontPage Only**: Displays an Oxipay banner at the top of the FrontPage only. (Australian stores only)
+
+**Pre-select Checkout Button**: Adds a button to the cart page to quickly checkout with Oxipay.
+
+**Pre-select Button Order**: Determines the order in which the pre-select button is displayed. Lower numbers are displayed first. Default is 20.
+
 **Merchant ID**: Provided to you as part of your welcome pack.
 
 **API Key**: Provided to you by Platform Integration Team; used to verify orders from your store.
 
-**Minimum Order Total**: Orders below that will not have Oxipay as a payment option.
+**Minimum Order Total**: Orders below that will not have Oxipay as a payment option. leave as 0 for no limit.
 
-**Maximum Order Total**: Orders above that will not have Oxipay as a payment option.
+**Maximum Order Total**: Orders above that will not have Oxipay as a payment option. leave as 0 for no limit.
 
 <div class="panel">
   Leaving both - Minimum and Maximum Order Totals - blank will enable Oxipay on all products.
