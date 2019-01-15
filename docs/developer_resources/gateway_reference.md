@@ -53,7 +53,6 @@ x_reference **Required**          | A reference that uniquely references the ord
 x_shop_country **Required**       | Country of where the merchant's store is located | iso-3166-1alpha-2 | %country_abbr% | 3
 x_shop_name **Required**          | Store name as advertised on the internet, TV and other media | Shop Inc | 200
 x_signature **Required**          | Request payload that is signed/verified using HMAC-SHA256 | hex string, case-insensitive | See [Signature Generation](../signature_generation/) | 64
-x_test **Required**               | Indicates whether the transaction is to be processed using the live or test Oxipay gateway | true/false | true   | 1
 x_url_callback **Required**       | Callback notifications are sent asynchronously to this URL. **The protocol must be HTTPS** | URL | https://shop%domain_postfix%/callback | 200
 x_url_cancel **Required**         | Customers are redirected to this URL if they want to quit their Oxipay transaction and return to the shopping cart store instead | URL | https://shop%domain_postfix%/cancel | 200
 x_url_complete **Required**       | Customers are redirected to this URL if they have successfully processed their transaction using Oxipay | URL | https://shop%domain_postfix%/compete | 200
@@ -64,7 +63,7 @@ x_transaction_timeout             | Transaction timout in minutes. Maximum value
 Below is a sample request that might be posted to an Oxipay gateway that is in the <code>application/x-www-form-urlencoded</code> format. In this example, please ignore values for individual keys - such as the value for <code>x_signature</code> - since this sample POST is for demonstration purposes only and does not demonstrate a real transaction that can be completed by Oxipay.
 
 
-    x_reference=123&x_account_id=1&x_amount=100.00&x_currency=%currency_abbr%&x_url_callback=sample_callback_url&x_url_complete=sample_complete_url&x_shop_country=%country_abbr%&x_shop_name=Sample+Shop&x_test=true&x_customer_first_name=first&x_customer_last_name=last&x_customer_email=sample%40email.com&x_customer_billing_country=%country_abbr%&x_customer_billing_city=%address_city%&x_customer_billing_address1=97+Pirie&x_customer_billing_address2=St&x_customer_billing_state=%address_state_abbr%&x_customer_billing_zip=%address_post_code%&x_invoice=%123&x_description=Sample+Store+-+%123&x_url_cancel=sample_cancel_url&x_signature=dummy_signature
+    x_reference=123&x_account_id=1&x_amount=100.00&x_currency=%currency_abbr%&x_url_callback=sample_callback_url&x_url_complete=sample_complete_url&x_shop_country=%country_abbr%&x_shop_name=Sample+Shop&x_customer_first_name=first&x_customer_last_name=last&x_customer_email=sample%40email.com&x_customer_billing_country=%country_abbr%&x_customer_billing_city=%address_city%&x_customer_billing_address1=97+Pirie&x_customer_billing_address2=St&x_customer_billing_state=%address_state_abbr%&x_customer_billing_zip=%address_post_code%&x_description=Sample+Store+-+%123&x_url_cancel=sample_cancel_url&x_signature=dummy_signature
 
 
 <a name="Responses"></a>
@@ -93,7 +92,7 @@ x_timestamp               | Time at which the transaction is completed, in UTC f
 x_result                  | Values that represent the outcome of a transaction | Valid values are **completed** or **failed** | **completed**
 x_signature               | Response payload that is signed/verified using HMAC-SHA256 | hex string, case-insensitive | See [Signature Generation](../signature_generation/)
 
-### Response POST reply
+## Response POST reply
 
 It is expected that the POST reponse will be replied to by the sellers server to confirm that the POST response was recieved.<br>
 The expected key-value pairs of this reply are listed below.
