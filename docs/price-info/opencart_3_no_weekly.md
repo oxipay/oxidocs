@@ -22,6 +22,7 @@ Note that you would place the widget in the section marked ```INSERT_WIDGET_HERE
       <h2>{{ special }}</h2>
     </li>
     {% endif %}
+    INSERT_WIDGET_HERE
     {% if tax %}
     <li>{{ text_tax }} {{ tax }}</li>
     {% endif %}
@@ -36,14 +37,13 @@ Note that you would place the widget in the section marked ```INSERT_WIDGET_HERE
     <li>{{ discount.quantity }}{{ text_discount }}{{ discount.price }}</li>
     {% endfor %}
     {% endif %}
-    INSERT_WIDGET_HERE
   </ul>
 {% endif %}
 ```
 <strong>Step 3:</strong> Place the following ```<script>``` tag into the ```product.twig``` file.<br>
 
 ```
-<script id="oxipay-price-info" src="https://widgets.%domain%/content/scripts/payments.js?productPrice={{ price }}"></script>
+<script id="oxipay-price-info" src="https://widgets.%domain%/content/scripts/payments.js?productPrice={%if special%}{{special}}{%else%}{{price}}{%endif%}"></script>
 ```
 
 <div class="panel">
