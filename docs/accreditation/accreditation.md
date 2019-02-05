@@ -4,7 +4,7 @@ Once Oxipay is installed on your platform it must be verified before it can proc
 To do this your website must be able to process a test transaction and have it verified by Oxipay.
 
 <div class="panel">
-    Before performing the test transaction, **test mode** must be activated in the Oxipay settings.<br>
+    Before performing the test transaction, <b>test mode</b> must be activated in the Oxipay settings.<br>
     Please refer to the documentation for your platform.
 </div>
 
