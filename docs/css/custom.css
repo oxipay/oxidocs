@@ -8,8 +8,8 @@
 }
 
 .wy-menu-vertical a:hover {
-  color: #fff;
-  background-color: #515565;
+    color: #fff;
+    background-color: #515565;
 }
 
 .wy-nav-content-wrap {
@@ -17,20 +17,20 @@
 }
 
 .wy-nav-content {
-  background-color: #ffffff;
-  max-width: 1024px !important;
+    background-color: #ffffff;
+    max-width: 1024px !important;
 }
 
 .rst-versions, .rst-current-version {
-  background: #31333f !important;
+    background: #31333f !important;
 }
 
 .wy-side-nav-search {
-  background: #fa8b23 !important;
+    background: #fa8b23 !important;
 }
 
 .wy-side-nav-search img {
-  width:500px !important;
+    width:500px !important;
 }
 
 
@@ -57,11 +57,11 @@
 }
 
 #oxipay-tag-01 img {
-   height: 20px !important;
+    height: 20px !important;
 }
 
 #oxipay-banner-01 img {
-   height: 100% !important;
+    height: 100% !important;
 }
 
 #oxipay-banner-01 p {
@@ -120,16 +120,13 @@
 }
 
 #oxipay-tag-02{
-  font-size: 12px;
-  margin-bottom: -40px !important;
+    font-size: 12px;
+    margin-bottom: -20px !important;
 }
 
-#oxipay-tag-02 > p{
-  margin-bottom: 10px !important;
-}
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-     /* IE10+ CSS styles go here */
-     #oxipay-img{
-     top: 0px !important;
-     }
+    /* IE10+ CSS styles go here */
+    #oxipay-img{
+        top: 0px !important;
+    }
 }

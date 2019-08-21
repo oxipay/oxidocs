@@ -53,9 +53,9 @@ In this case we use the urlencoded ```%23priceinfo ``` to refer to the id ```#pr
         <span class="woocommerce-Price-currencySymbol">$</span>1400.00
     </span>
 </p>
-<script class="oxipay-price-info" id="my-id" src="http://widgets.%domain%/content/scripts/payments.js?price-selector=%23priceinfo"></script>
+<script class="oxipay-price-info" id="my-id" src="https://widgets.%domain%/content/scripts/payments.js?price-selector=%23priceinfo"></script>
 ```
-<script class="oxipay-price-info" id="my-id" src="http://widgets.%domain%/content/scripts/payments.js?price-selector=%23priceinfo"></script>
+<script class="oxipay-price-info" id="my-id" src="https://widgets.%domain%/content/scripts/payments.js?price-selector=%23priceinfo"></script>
 ```
 <br>
 
@@ -66,9 +66,9 @@ In this case we use the urlencoded ```%23priceinfo ``` to refer to the id ```#pr
         <span class="woocommerce-Price-currencySymbol">$</span>1400.00
     </span>
 </p>
-<script class="oxipay-price-info" id="my-id" src="http://widgets.%domain%/content/scripts/payments-weekly.js?price-selector=%23priceinfo2"></script>
+<script class="oxipay-price-info" id="my-id" src="https://widgets.%domain%/content/scripts/payments-weekly.js?price-selector=%23priceinfo2"></script>
 ```
-<script class="oxipay-price-info" id="my-id" src="http://widgets.%domain%/content/scripts/payments-weekly.js?price-selector=%23priceinfo2"></script>
+<script class="oxipay-price-info" id="my-id" src="https://widgets.%domain%/content/scripts/payments-weekly.js?price-selector=%23priceinfo2"></script>
 ```
 
 <br>
