@@ -24,13 +24,13 @@ nav:
    - Testing Declines and Approvals: developer_resources/declines_and_approvals.md
 - Widgets:
    - Introduction: widgets/introduction.md
-   - List of Widgets: widgets/list_of_widgets_nz.md
+   - List of Widgets: widgets/list_of_widgets_no_weekly.md
    - Landing Page Widget: widgets/landing_widget.md
    - Installation:
       - Generic Installation: widgets/installation.md
-      - Shopify Specific: price-info/shopify.md
-      - Magento 1 Specific: price-info/magento_1.md
-      - OpenCart 3 Specific: price-info/opencart_3.md
+      - Shopify Specific: price-info/shopify_no_weekly.md
+      - Magento 1 Specific: price-info/magento_1_no_weekly.md
+      - OpenCart 3 Specific: price-info/opencart_3_no_weekly.md
 theme:
    name: readthedocs
    custom_dir: custom_theme
