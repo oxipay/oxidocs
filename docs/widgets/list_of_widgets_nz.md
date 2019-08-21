@@ -97,7 +97,7 @@ This is done by setting the ```data-min``` and ```data-max``` fields when callin
 ```
 In this instance the Price-info widget will not display if the proudct price is above $300 and will display in an altered form if the value is below $20 as seen below.
 
-<script data-min="20" data-max="300" src="https://widgets.%domain%/content/scripts/payments-weekly.js?productPrice=0"></script>
+<script data-min="20" data-max="300" src="https://widgets.%domain%/content/scripts/payments.js?productPrice=0"></script>
 <br>
 By default the **Price-info** widget will not display for prices above $%max_purchase%.
 <br>
