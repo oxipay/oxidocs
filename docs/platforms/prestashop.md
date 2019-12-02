@@ -17,13 +17,13 @@ The plugin can be installed automatically via PrestaShop's admin panel. This sec
 <div id="installing-oxipay"></div>
 ### Installation Procedure
 
-**1** - Click the following URL corresponding to your PrestaShop version to download the plugin.
+**1** - Click the following URL corresponding to your PrestaShop version to download your Oxipay/**humm** plugin.
 
 For PrestaShop 1.6:
-[https://github.com/oxipay/oxipay-prestashop/releases/download/1.3.3-forPS1.6/oxipay_prestashop_v1.3.3-forPS1.6.zip](https://github.com/oxipay/oxipay-prestashop/releases/download/1.3.3-forPS1.6/oxipay_prestashop_v1.3.3-forPS1.6.zip)
+[https://github.com/shophumm/humm-prestashop/releases/download/1.5.7-forPS1.6/humm_prestashop_v1.5.7-forPS1.6.zip](https://github.com/shophumm/humm-prestashop/releases/download/1.5.7-forPS1.6/humm_prestashop_v1.5.7-forPS1.6.zip)
 
 For PrestaShop 1.7:
-[https://github.com/oxipay/oxipay-prestashop/releases/download/1.3.3-forPS1.7/oxipay_prestashop_v1.3.3-forPS1.7.zip](https://github.com/oxipay/oxipay-prestashop/releases/download/1.3.3-forPS1.7/oxipay_prestashop_v1.3.3-forPS1.7.zip)
+[https://github.com/shophumm/humm-prestashop/releases/download/1.5.7-forPS1.7/humm_prestashop_v1.5.7-forPS1.7.zip](https://github.com/shophumm/humm-prestashop/releases/download/1.5.7-forPS1.7/humm_prestashop_v1.5.7-forPS1.7.zip)
 
 **2** - Log into your PrestaShop's admin area.
 

@@ -17,7 +17,7 @@ Supported OpenCart Versions:
   The Extension Installer requires FTP settings to be already configured with-in OpenCart. If this is not already done we recommend following the Manual Installation steps below.
 </div>
 
-1 - Download the Oxipay extension from [github.com/oxipay/oxipay-opencart/releases](https://github.com/oxipay/oxipay-opencart/releases).
+1 - Download the Oxipay extension from [github.com/oxipay/oxipay-opencart/releases](https://github.com/shophumm/humm-opencart/releases).
 
 2 - Log into your **OpenCart Admin**, click on **Extensions** on the left menu then on **Extension Installer** in the submenu item below.
 
@@ -29,7 +29,7 @@ _Next: Continue onto Complete The Install instructions below._
 
 ## Manual Installation
 
-1 - Download the Oxipay extension from [github.com/oxipay/oxipay-opencart/releases](https://github.com/oxipay/oxipay-opencart/releases).
+1 - Download the Oxipay extension from [github.com/oxipay/oxipay-opencart/releases](https://github.com/shophumm/humm-opencart/releases).
 
 2 - Unzip it and copy the contents of the `uploads` folder into OpenCarts root folder. For a new install no files should be overwriten, with an upgrade only previous Oxipay files should be overwritten.
 

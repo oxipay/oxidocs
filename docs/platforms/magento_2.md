@@ -3,22 +3,13 @@
 You can install Oxipay plugin by manually copying plugin files across into your store's webserver. <br>
 Use the same instructions to upgrade your existing plugin to a newer release.
 
-## Supported Tech Stacks
-
-Oxipay has been tested against the following tech stacks:
-
-|Magento Version| Operating System  | SQL         | PHP Version | Web Server  |
-|---------------|-------------------|-------------|-------------|-------------|
-|Magento 2.1.5  |Ubuntu 14.04.5 LTS |MySQL 5.7.17 |7.0.16       |Apache 2.4.25|
-
-
 ## Plugin Installation
 
 <div class="panel">
   You will need your <b>Merchant Number</b> and an <b>Encryption Key</b> handy before continuing with the installation.
 </div>
 
-1 - Download the Oxipay plugin from [github.com/oxipay/oxipay-magento-2.x/releases](https://github.com/oxipay/oxipay-magento-2.x/releases).
+1 - Download the latest Oxipay/**humm** plugin here: [https://github.com/shophumm/humm-magento2.x/releases](https://github.com/shophumm/humm-magento2.x/releases).
 
 2 - Unzip it then copy the inner `Oxipay` folder into the `MAGENTO_DIR/app/code` directory on your webserver. If the <code>code</code> folder doesn't exist, then create it manually.
 
