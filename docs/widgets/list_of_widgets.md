@@ -94,6 +94,8 @@ By default the Price-info widget will not display for prices above $%max_purchas
 
 <br/>
 
+### Minimum and Maximum Price-info widget (Optional)
+
 <div class="panel panel-primary">
   <div class="panel-heading">
     <h3 class="panel-title">Installation based on Platforms</h3>
