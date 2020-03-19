@@ -111,7 +111,7 @@ In the case that you have created a custom widget on your website, you will need
 
 The first repayment will always be **25%** of the Oxipay purchase amount, and the remaining amount will be split into **7 equal weekly repayments**.
 
-The below pseudo* JQuery code is an example of the change in calculation:
+The below Javascript code is an example of the change in calculation:
 ```
     productPrice = 781.90
     let initialDeposit = Math.floor((productPrice / 4) * Math.pow(10, 2)) / Math.pow(10, 2);
