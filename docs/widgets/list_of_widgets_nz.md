@@ -104,6 +104,31 @@ By default the **Price-info** widget will not display for prices above $%max_pur
 By default the **Price-info weekly** widget will not display for prices above $%max_purchase% and below 40.
 <br/>
 
+### Oxipay Deposit Increase
+
+As of **19/03/2020** the initial deposit for weekly repayments was changed to **25% of the purchase price**.
+In the case that you have created a custom widget on your website, you will need to alter the calculation logic to reflect this change.
+
+The first repayment will always be **25%** of the Oxipay purchase amount, and the remaining amount will be split into **7 equal weekly repayments**.
+
+The below Javascript code is an example of the change in calculation:
+```
+    productPrice = 781.90
+    let initialDeposit = Math.floor((productPrice / 4) * Math.pow(10, 2)) / Math.pow(10, 2);
+    let remainingWeeklyRepayment = (productPrice - initialDeposit) / 7;
+
+    let roundedDownWeeklyRepayment = Math.floor(remainingWeeklyRepayment * Math.pow(10, 2)) / Math.pow(10, 2)
+
+    <a id="oxipay">
+      <p>or 1 initial payment of <b>$${initialDeposit.toFixed(2)}</b></p>
+      <p>and 7 weekly payments of <b>$${roundedDownWeeklyRepayment.toFixed(2)}</b></p>
+      <p>Interest free with <span id="oxipay-img"></span><span class="more-info">more info</span></p>
+    </a>
+```
+If you have any questions, or need assistance, please contact us at <a href = "mailto:pit@shophumm.co.nz">pit@shophumm.co.nz</a>
+
+<br>
+
 <div class="panel panel-primary">
   <div class="panel-heading">
     <h3 class="panel-title">Installation based on Platforms</h3>
