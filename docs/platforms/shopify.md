@@ -9,9 +9,9 @@ To setup and configure Oxipay on your Shopify store, please use the instructions
   You will need your <b>Merchant ID</b> and an <b>Encryption Key</b> handy before continuing with the installation.
 </div>
 
-1 – Email <a href="mailto:pit@%domain%?Subject=Oxipay URL Request (Shopify)&body=Hi, %0D%0A%0D%0AMy Merchant ID is: %0D%0A%0D%0AI would like to setup Oxipay on my Shopify site. %0D%0A%0D%0AThanks,%0D%0A%0D%0A">pit@%domain%</a> for a copy of the **Oxipay Gateway Authorisation** URL. Please include your Merchant ID in the email.
+1 – Email <a href="mailto:pit@%domain%?Subject=Oxipay URL Request (Shopify)&body=Hi, %0D%0A%0D%0AMy Merchant ID is: %0D%0A%0D%0AI would like to setup Oxipay on my Shopify site. %0D%0A%0D%0AThanks,%0D%0A%0D%0A">pit@%domain%</a> to be sent your unique API key. Please include your Merchant ID in the email.
 
-2 - Clicking the link to be taken to your store's setting page to add Oxipay.
+2 - Add **Oxipay** to your Shopify payments, by following through the link <a href = "https://www.shopify.com/login?redirect=%2Fadmin%2Fauthorize_gateway%2F1052217">here</a>.
 
 3 - Once logged in, you will see the prompt below. Click **Install payment provider**.
 
