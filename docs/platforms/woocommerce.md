@@ -4,21 +4,17 @@
   You will need your <b>Merchant ID</b> and an <b>Encryption Key</b> for the installation.
 </div>
 
-1 - Log into the WordPress admin area, then click on **Plugins** on the sidebar.
+1 - Download the newest version of the oxipay plugin from [Github](https://github.com/oxipay/oxipay-woocommerce/archive/review.zip).
+
+2 - Log into the WordPress admin area, then click on **Plugins** on the sidebar.
 
 ![1.png](/img/platforms/woocommerce/1.png)
 
-2 - Click on **Add New** on the top left.
+3 - Click on **Add New** on the top left, then click on the **Upload Plugin** button at the top of the page.
 
 ![2.png](/img/platforms/woocommerce/2.png)
 
-3 - In the top left, type Oxipay in the **Search plugins...** search box then hit Enter.
-
-![3.png](/img/platforms/woocommerce/3.png)
-
-4 - From the search results, click on **Install Now** next to **Oxipay Payment Gateway for WooCommerce**.
-
-![29.png](/img/platforms/woocommerce/29.png)
+4 - Add the Oxipay **.zip** file downloaded earlier and install it to your WordPress website.
 
 5 - Still on the same page and once installation is successful, you should see the **Activate** button. Click on it.
 
